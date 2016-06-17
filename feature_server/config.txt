@@ -35,7 +35,7 @@
     "cap_limit" : 10,
     "default_time_limit" : 120,
     "advance_on_win" : true,
-    "maps" : ["random", "pinpoint", "normandy", "assault2"],
+    "maps" : ["random", "pinpoint", "normandie", "assault2"],
     "random_rotation" : false,
 
     "respawn_time" : 16,

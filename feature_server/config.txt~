@@ -1,9 +1,9 @@
 {
     "name" : "LAMPOVIY SERVACHOK",
     "motd" : [
-        "Dobro pojalovat`. Snova.`",
-        "Map: %(map_name)s by %(map_author)s",
-        "Game mode: %(game_mode)s"
+        "Dobro pojalovat`. Snova.",
+        "Karta %(map_name)s by %(map_author)s",
+        "Mod  %(game_mode)s"
     ],
     "help" : [
         "Lampoviy.",
@@ -31,8 +31,8 @@
     "port" : 32887,
     "network_interface" : "",
 
-    "game_mode" : "tow",
-    "cap_limit" : 1,
+    "game_mode" : "babel",
+    "cap_limit" : 10,
     "default_time_limit" : 120,
     "advance_on_win" : true,
     "maps" : ["random"],
@@ -130,13 +130,15 @@
         "map_extensions",
         "disco",
         "votekick",
+        "votemap",
         "trusted",
         "ratio",
         "passreload",
         "blockinfo",
         "bugfix",
         "fbpatch",
-        "afk"
+        "afk",
+        "babel-script"
     ],
 
     "squad_respawn_time" : 32,

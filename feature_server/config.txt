@@ -3,7 +3,7 @@
     "motd" : [
         "Dobro pojalovat`. Snova.",
         "Karta %(map_name)s by %(map_author)s",
-        "Mod  %(game_mode)s",
+        "Mod  %(game_mode)s"
     ],
     "help" : [
         "Lampoviy.",

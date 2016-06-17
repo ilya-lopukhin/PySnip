@@ -16,8 +16,7 @@
     "tips" : [
         "Vi na Lampovom servachke",
         "'/streak' pokazyvaet skolko ubiystv podryad vy sovershili",
-        "'/votekick # [reason]' kickayet chiteroblyadey (kak reshit
-bezdushnaya tolpa)",
+        "'/votekick # [reason]' kickayet chiteroblyadey (kak reshit bezdushnaya tolpa)",
         "Ispolzuy lopatu s umom! Ona bolno byet."
     ],
     "tip_frequency" : 5,
@@ -32,8 +31,8 @@ bezdushnaya tolpa)",
     "port" : 32887,
     "network_interface" : "",
 
-    "game_mode" : "ctf",
-    "cap_limit" : 10,
+    "game_mode" : "tow",
+    "cap_limit" : 1,
     "default_time_limit" : 120,
     "advance_on_win" : true,
     "maps" : ["random"],
@@ -74,11 +73,11 @@ bezdushnaya tolpa)",
     "profile" : false,
 
     "team1" : {
-        "name" : "Blue",
-        "color" : [0, 0, 255]
+        "name" : "2ch",
+        "color" : [255, 102, 0]
     },
     "team2" : {
-        "name" : "Green",
+        "name" : "0ch",
         "color" : [0, 255, 0]
     },
    "passwords" : {

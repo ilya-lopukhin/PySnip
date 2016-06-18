@@ -25,17 +25,17 @@
         "Rule #2: Cheateroblyad - ne chelovek. Smeytes nad nim. Unijayte ego.",
         "Rule #3: Vse ostalnoe i tak yasno."
     ],
-    "master" : true,
+    "master" : false,
     "max_players" : 32,
     "max_connections_per_ip" : 3,
     "port" : 32887,
     "network_interface" : "",
 
-    "game_mode" : "babel",
+    "game_mode" : "boss",
     "cap_limit" : 10,
     "default_time_limit" : 120,
     "advance_on_win" : true,
-    "maps" : ["random", "pinpoint", "normandie", "assault2"],
+    "maps" : ["nuketown"],
     "random_rotation" : false,
 
     "respawn_time" : 16,
@@ -73,12 +73,12 @@
     "profile" : false,
 
     "team1" : {
-        "name" : "2ch",
-        "color" : [255, 102, 0]
+        "name" : "PLEBS",
+        "color" : [88, 88, 88]
     },
     "team2" : {
-        "name" : "0ch",
-        "color" : [0, 255, 0]
+        "name" : "BOSS",
+        "color" : [0, 0, 0]
     },
    "passwords" : {
         "admin" : ["bunimo33"],
@@ -125,20 +125,7 @@
         "chatprefix" : "."
     },
     "scripts" : [
-        "rollback",
-        "protect",
-        "map_extensions",
-        "disco",
-        "votekick",
-        "votemap",
-        "trusted",
-        "ratio",
-        "passreload",
-        "blockinfo",
-        "bugfix",
-        "fbpatch",
-        "afk",
-        "babel-script"
+        "boss"
     ],
 
     "squad_respawn_time" : 32,

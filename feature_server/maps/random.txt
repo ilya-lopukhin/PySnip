@@ -3,7 +3,7 @@ version = '1.0'
 author = 'Triplefox'
 description = ('Random generated map.')
 extensions = { 
-	'water_damage' : 8,
+	'water_damage' : 99,
 	'babel' : True, 
 	'heavens_color' : (250, 130, 40, 255)
 }

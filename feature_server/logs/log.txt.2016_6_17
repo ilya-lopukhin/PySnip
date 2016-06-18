@@ -1,0 +1,26 @@
+2016-06-17 21:46:53+0300 [-] pyspades server started on Fri Jun 17 21:46:53 2016
+2016-06-17 21:46:53+0300 [-] Log opened.
+2016-06-17 21:46:53+0300 [-] WARNING: FOUND DEFAULT PASSWORD 'adminpass1' IN GROUP 'admin'
+2016-06-17 21:46:53+0300 [-] WARNING: FOUND DEFAULT PASSWORD 'adminpass2' IN GROUP 'admin'
+2016-06-17 21:46:53+0300 [-] WARNING: FOUND DEFAULT PASSWORD 'adminpass3' IN GROUP 'admin'
+2016-06-17 21:46:53+0300 [-] WARNING: FOUND DEFAULT PASSWORD 'modpass' IN GROUP 'moderator'
+2016-06-17 21:46:53+0300 [-] WARNING: FOUND DEFAULT PASSWORD 'guardpass' IN GROUP 'guard'
+2016-06-17 21:46:53+0300 [-] WARNING: FOUND DEFAULT PASSWORD 'trustedpass' IN GROUP 'trusted'
+2016-06-17 21:46:53+0300 [-] Generating map 'classicgen #1267016796'...
+2016-06-17 21:46:55+0300 [-] Map loaded successfully.
+2016-06-17 21:46:55+0300 [-] Started server...
+2016-06-17 21:46:56+0300 [-] Master connection established.
+2016-06-17 21:46:56+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-17 21:48:36+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-17 21:49:09+0300 [-] Architektor_kun disconnected!
+2016-06-17 21:49:22+0300 [-] Received SIGINT, shutting down.
+2016-06-17 21:49:22+0300 [-] Main loop terminated.
+2016-06-17 22:02:00+0300 [-] pyspades server started on Fri Jun 17 22:02:00 2016
+2016-06-17 22:02:00+0300 [-] Log opened.
+2016-06-17 22:02:00+0300 [-] Generating map 'random #1616481603'...
+2016-06-17 22:02:01+0300 [-] Map loaded successfully.
+2016-06-17 22:02:02+0300 [-] Started server...
+2016-06-17 22:02:02+0300 [-] Master connection established.
+2016-06-17 22:02:02+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-17 22:02:03+0300 [HTTPPageGetter,client] Received SIGINT, shutting down.
+2016-06-17 22:02:03+0300 [-] Main loop terminated.

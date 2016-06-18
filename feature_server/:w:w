@@ -1,0 +1,50 @@
+"""
+Boss game mode
+
+Maintainer: Triplefox
+"""
+
+from pyspades.constants import *
+
+import commands
+
+BOSS_TEAM = 1
+
+def apply_script(protocol, connection, config):
+    class BossConnection(connection):
+        def on_join(self):
+            playerCount = self.protocol.playerCount
+            playerCount = playerCount + 1
+            self.protocol.connections.append(connection)
+            print(self.protocol.connections)
+            connection.on_join(self)
+
+        def on_team_join(self, team):
+            playerCount = self.protocol.playerCount
+            bossTeam = self.protocol.bossTeam
+            if team is bossTeam:
+                self.send_chat('Can`t join boss team, boss is choosen automatically')
+                return False
+            if playerCount > 0:
+                self.protocol.send_chat('Enough players for boss mode. Starting game!')
+                self.protocol.initializeBossMode()
+            connection.on_team_join(self, team)
+
+        def on_reset(self):
+            playerCount = self.protocol.playerCount
+            playerCount = playerCount - 1
+            connection.on_reset(self)
+
+    class BossProtocol(protocol):
+        playerCount = 0
+        connections = []
+        bossTeam = None
+        def on_map_change(self, map):
+           self.bossTeam = self.teams[BOSS_TEAM]
+           protocol.on_map_change(self, map)
+        def initializeBossMode():
+            print(self)
+            print(protocol.__dict__)
+
+
+    return BossProtocol, BossConnection

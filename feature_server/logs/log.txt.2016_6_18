@@ -1,0 +1,1498 @@
+2016-06-18 14:15:09+0300 [-] pyspades server started on Sat Jun 18 14:15:09 2016
+2016-06-18 14:15:09+0300 [-] Log opened.
+2016-06-18 14:15:09+0300 [-] Generating map 'random #1081357121'...
+2016-06-18 14:15:11+0300 [-] Map loaded successfully.
+2016-06-18 14:15:12+0300 [-] Started server...
+2016-06-18 14:15:12+0300 [-] Master connection established.
+2016-06-18 14:15:12+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 14:15:36+0300 [-] Traceback (most recent call last):
+2016-06-18 14:15:36+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 14:15:36+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 14:15:36+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 14:15:36+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 14:15:36+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 14:15:36+0300 [-]     connection.loader_received(packet)
+2016-06-18 14:15:36+0300 [-]   File "../pyspades/server.py", line 249, in loader_received
+2016-06-18 14:15:36+0300 [-]     self.on_login(self.name)
+2016-06-18 14:15:36+0300 [-]   File "./scripts/boss.py", line 16, in on_login
+2016-06-18 14:15:36+0300 [-]     playerCount += 1
+2016-06-18 14:15:36+0300 [-] UnboundLocalError: local variable 'playerCount' referenced before assignment
+2016-06-18 14:15:43+0300 [-] None disconnected!
+2016-06-18 14:15:43+0300 [-] Traceback (most recent call last):
+2016-06-18 14:15:43+0300 [-]   File "../pyspades/protocol.py", line 163, in update
+2016-06-18 14:15:43+0300 [-]     self.on_disconnect(peer)
+2016-06-18 14:15:43+0300 [-]   File "../pyspades/protocol.py", line 111, in on_disconnect
+2016-06-18 14:15:43+0300 [-]     connection.on_disconnect()
+2016-06-18 14:15:43+0300 [-]   File "./scripts/afk.py", line 85, in on_disconnect
+2016-06-18 14:15:43+0300 [-]     connection.on_disconnect(self)
+2016-06-18 14:15:43+0300 [-]   File "./scripts/votekick.py", line 268, in on_disconnect
+2016-06-18 14:15:43+0300 [-]     connection.on_disconnect(self)
+2016-06-18 14:15:43+0300 [-]   File "run.py", line 244, in on_disconnect
+2016-06-18 14:15:43+0300 [-]     ServerConnection.on_disconnect(self)
+2016-06-18 14:15:43+0300 [-]   File "../pyspades/server.py", line 821, in on_disconnect
+2016-06-18 14:15:43+0300 [-]     self.reset()
+2016-06-18 14:15:43+0300 [-]   File "../pyspades/server.py", line 834, in reset
+2016-06-18 14:15:43+0300 [-]     self.on_reset()
+2016-06-18 14:15:43+0300 [-]   File "./scripts/boss.py", line 20, in on_reset
+2016-06-18 14:15:43+0300 [-]     playerCount -= 1
+2016-06-18 14:15:43+0300 [-] UnboundLocalError: local variable 'playerCount' referenced before assignment
+2016-06-18 14:15:45+0300 [-] Received SIGINT, shutting down.
+2016-06-18 14:15:45+0300 [-] Main loop terminated.
+2016-06-18 14:16:23+0300 [-] pyspades server started on Sat Jun 18 14:16:23 2016
+2016-06-18 14:16:23+0300 [-] Log opened.
+2016-06-18 14:16:23+0300 [-] Generating map 'random #449690269'...
+2016-06-18 14:16:25+0300 [-] Map loaded successfully.
+2016-06-18 14:16:25+0300 [-] Started server...
+2016-06-18 14:16:25+0300 [-] Master connection established.
+2016-06-18 14:16:25+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 14:16:41+0300 [-] Traceback (most recent call last):
+2016-06-18 14:16:41+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 14:16:41+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 14:16:41+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 14:16:41+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 14:16:41+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 14:16:41+0300 [-]     connection.loader_received(packet)
+2016-06-18 14:16:41+0300 [-]   File "../pyspades/server.py", line 249, in loader_received
+2016-06-18 14:16:41+0300 [-]     self.on_login(self.name)
+2016-06-18 14:16:41+0300 [-]   File "./scripts/boss.py", line 16, in on_login
+2016-06-18 14:16:41+0300 [-]     playerCount += 1
+2016-06-18 14:16:41+0300 [-] UnboundLocalError: local variable 'playerCount' referenced before assignment
+2016-06-18 14:17:51+0300 [-] Received SIGINT, shutting down.
+2016-06-18 14:17:51+0300 [-] Main loop terminated.
+2016-06-18 14:18:00+0300 [-] pyspades server started on Sat Jun 18 14:18:00 2016
+2016-06-18 14:18:00+0300 [-] Log opened.
+2016-06-18 14:18:00+0300 [-] Generating map 'random #2052494086'...
+2016-06-18 14:18:03+0300 [-] Map loaded successfully.
+2016-06-18 14:18:03+0300 [-] Started server...
+2016-06-18 14:18:03+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 14:18:03+0300 [-] Master connection established.
+2016-06-18 14:18:11+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 14:18:12+0300 [-] Architektor_kun disconnected!
+2016-06-18 14:18:51+0300 [-] Received SIGINT, shutting down.
+2016-06-18 14:18:51+0300 [-] Main loop terminated.
+2016-06-18 14:18:52+0300 [-] pyspades server started on Sat Jun 18 14:18:52 2016
+2016-06-18 14:18:52+0300 [-] Log opened.
+2016-06-18 14:18:52+0300 [-] Generating map 'random #1894774919'...
+2016-06-18 14:18:54+0300 [-] Map loaded successfully.
+2016-06-18 14:18:54+0300 [-] Started server...
+2016-06-18 14:18:54+0300 [-] Master connection established.
+2016-06-18 14:18:54+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 14:19:13+0300 [-] <class 'scripts.afk.AFKConnection'>
+2016-06-18 14:19:13+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 14:20:22+0300 [-] 188.100.1.58 disconnected
+2016-06-18 14:20:28+0300 [-] Received SIGINT, shutting down.
+2016-06-18 14:20:28+0300 [-] Main loop terminated.
+2016-06-18 14:21:37+0300 [-] pyspades server started on Sat Jun 18 14:21:37 2016
+2016-06-18 14:21:37+0300 [-] Log opened.
+2016-06-18 14:21:37+0300 [-] Generating map 'random #401906204'...
+2016-06-18 14:21:40+0300 [-] Map loaded successfully.
+2016-06-18 14:21:41+0300 [-] Started server...
+2016-06-18 14:21:41+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 14:21:47+0300 [-] {'__module__': 'scripts.afk', 'on_user_login': <function on_user_login at 0x7f83e3d78488>, 'on_orientation_update': <function on_orientation_update at 0x7f83e3d785f0>, 'last_activity': None, 'on_connect': <function on_connect at 0x7f83e3d78500>, 'on_disconnect': <function on_disconnect at 0x7f83e3d78410>, 'on_chat': <function on_chat at 0x7f83e3d78578>, 'afk_kick_call': None, 'afk_kick': <function afk_kick at 0x7f83e3d78320>, '__doc__': None, 'reset_afk_kick_call': <function reset_afk_kick_call at 0x7f83e3d78398>}
+2016-06-18 14:21:47+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 14:22:28+0300 [-] Received SIGINT, shutting down.
+2016-06-18 14:22:28+0300 [-] Main loop terminated.
+2016-06-18 14:22:29+0300 [-] pyspades server started on Sat Jun 18 14:22:29 2016
+2016-06-18 14:22:29+0300 [-] Log opened.
+2016-06-18 14:22:29+0300 [-] Generating map 'random #610679681'...
+2016-06-18 14:22:32+0300 [-] Map loaded successfully.
+2016-06-18 14:22:32+0300 [-] Started server...
+2016-06-18 14:22:33+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 14:22:45+0300 [-] {'streak': 0, '__module__': '__main__', 'mute': False, 'god_build': False, 'deaf': False, 'chat_time': 0, '_can_build': <function _can_build at 0x7efdae232230>, 'fly': False, 'on_login': <function on_login at 0x7efdae232050>, 'on_block_build': <function on_block_build at 0x7efdae232410>, 'on_hit': <function on_hit at 0x7efdae232578>, 'last_chat': None, 'on_block_build_attempt': <function on_block_build_attempt at 0x7efdae2322a8>, 'login_retries': None, 'best_streak': 0, 'god': False, 'on_fall': <function on_fall at 0x7efdae232758>, 'send_lines': <function send_lines at 0x7efdae232a28>, 'on_grenade': <function on_grenade at 0x7efdae2327d0>, 'on_block_removed': <function on_block_removed at 0x7efdae232500>, 'on_block_destroy': <function on_block_destroy at 0x7efdae232488>, 'on_command': <function on_command at 0x7efdae2321b8>, '__doc__': None, 'kick': <function kick at 0x7efdae232938>, 'building': True, 'on_kill': <function on_kill at 0x7efdae2325f0>, 'on_join': <function on_join at 0x7efdae237f50>, 'killing': True, 'on_disconnect': <function on_disconnect at 0x7efdae232140>, 'on_chat': <function on_chat at 0x7efdae2328c0>, 'invisible': False, 'on_line_build': <function on_line_build at 0x7efdae232398>, 'on_hack_attempt': <function on_hack_attempt at 0x7efdae232aa0>, 'on_user_login': <function on_user_login at 0x7efdae232b18>, 'on_animation_update': <function on_animation_update at 0x7efdae2326e0>, 'admin': False, 'on_connect': <function on_connect at 0x7efdae237ed8>, 'printable_name': None, 'get_spawn_location': <function get_spawn_location at 0x7efdae2320c8>, 'timed_out': <function timed_out at 0x7efdae232b90>, 'on_team_join': <function on_team_join at 0x7efdae232848>, 'on_line_build_attempt': <function on_line_build_attempt at 0x7efdae232320>, 'chat_count': 0, 'user_types': None, 'ban': <function ban at 0x7efdae2329b0>, 'last_switch': None, 'on_reset': <function on_reset at 0x7efdae232668>}
+2016-06-18 14:22:45+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 14:24:03+0300 [-] Received SIGINT, shutting down.
+2016-06-18 14:24:03+0300 [-] Main loop terminated.
+2016-06-18 14:24:04+0300 [-] pyspades server started on Sat Jun 18 14:24:04 2016
+2016-06-18 14:24:04+0300 [-] Log opened.
+2016-06-18 14:24:04+0300 [-] Generating map 'random #1793969583'...
+2016-06-18 14:24:07+0300 [-] Map loaded successfully.
+2016-06-18 14:24:07+0300 [-] Started server...
+2016-06-18 14:24:07+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 14:24:25+0300 [-] {'streak': 0, '__module__': '__main__', 'mute': False, 'god_build': False, 'deaf': False, 'chat_time': 0, '_can_build': <function _can_build at 0x7f23e0d3c230>, 'fly': False, 'on_login': <function on_login at 0x7f23e0d3c050>, 'on_block_build': <function on_block_build at 0x7f23e0d3c410>, 'on_hit': <function on_hit at 0x7f23e0d3c578>, 'last_chat': None, 'on_block_build_attempt': <function on_block_build_attempt at 0x7f23e0d3c2a8>, 'login_retries': None, 'best_streak': 0, 'god': False, 'on_fall': <function on_fall at 0x7f23e0d3c758>, 'send_lines': <function send_lines at 0x7f23e0d3ca28>, 'on_grenade': <function on_grenade at 0x7f23e0d3c7d0>, 'on_block_removed': <function on_block_removed at 0x7f23e0d3c500>, 'on_block_destroy': <function on_block_destroy at 0x7f23e0d3c488>, 'on_command': <function on_command at 0x7f23e0d3c1b8>, '__doc__': None, 'kick': <function kick at 0x7f23e0d3c938>, 'building': True, 'on_kill': <function on_kill at 0x7f23e0d3c5f0>, 'on_join': <function on_join at 0x7f23e0d41f50>, 'killing': True, 'on_disconnect': <function on_disconnect at 0x7f23e0d3c140>, 'on_chat': <function on_chat at 0x7f23e0d3c8c0>, 'invisible': False, 'on_line_build': <function on_line_build at 0x7f23e0d3c398>, 'on_hack_attempt': <function on_hack_attempt at 0x7f23e0d3caa0>, 'on_user_login': <function on_user_login at 0x7f23e0d3cb18>, 'on_animation_update': <function on_animation_update at 0x7f23e0d3c6e0>, 'admin': False, 'on_connect': <function on_connect at 0x7f23e0d41ed8>, 'printable_name': None, 'get_spawn_location': <function get_spawn_location at 0x7f23e0d3c0c8>, 'timed_out': <function timed_out at 0x7f23e0d3cb90>, 'on_team_join': <function on_team_join at 0x7f23e0d3c848>, 'on_line_build_attempt': <function on_line_build_attempt at 0x7f23e0d3c320>, 'chat_count': 0, 'user_types': None, 'ban': <function ban at 0x7f23e0d3c9b0>, 'last_switch': None, 'on_reset': <function on_reset at 0x7f23e0d3c668>}
+2016-06-18 14:24:25+0300 [-] {'save_bans': <function save_bans at 0x7f23e0d44aa0>, 'cancel_vote': <function cancel_vote at 0x7f23e0d45140>, 'master_reconnect_call': None, 'irc_say': <function irc_say at 0x7f23e0d44c08>, 'format_lines': <function format_lines at 0x7f23e0d446e0>, 'undo_last_ban': <function undo_last_ban at 0x7f23e0d44a28>, 'last_time': None, 'on_map_change': <function on_map_change at 0x7f23e0d44de8>, 'get_map': <function get_map at 0x7f23e0d44410>, 'advance_rotation': <function advance_rotation at 0x7f23e0d442a8>, 'user_blocks': None, 'master_disconnected': <function master_disconnected at 0x7f23e0d447d0>, 'ban_manager': None, 'get_advance_time': <function get_advance_time at 0x7f23e0d45398>, 'master': False, 'get_map_rotation': <function get_map_rotation at 0x7f23e0d44500>, '__doc__': None, 'connectTCP': <function connectTCP at 0x7f23e0d45230>, 'advance_call': None, 'set_master_state': <function set_master_state at 0x7f23e0d448c0>, 'connection_class': <class '__main__.FeatureConnection'>, 'bans': None, 'format': <function format at 0x7f23e0d44668>, 'on_ban': <function on_ban at 0x7f23e0d450c8>, 'on_advance': <function on_advance at 0x7f23e0d44f50>, 'listenTCP': <function listenTCP at 0x7f23e0d451b8>, 'god_blocks': None, 'balanced_teams': None, 'map_info': None, 'remote_console': None, 'reconnect_master': <function reconnect_master at 0x7f23e0d44848>, 'on_map_leave': <function on_map_leave at 0x7f23e0d44e60>, 'data_received': <function data_received at 0x7f23e0d44b90>, 'game_mode': None, 'got_master_connection': <function got_master_connection at 0x7f23e0d44758>, 'send_chat': <function send_chat at 0x7f23e0d44cf8>, 'identifier': None, 'send_tip': <function send_tip at 0x7f23e0d44c80>, 'on_ban_attempt': <function on_ban_attempt at 0x7f23e0d45050>, '__module__': '__main__', 'ip': None, 'set_map_name': <function set_map_name at 0x7f23e0d44398>, 'set_map_rotation': <function set_map_rotation at 0x7f23e0d44488>, 'global_chat': True, 'is_indestructable': <function is_indestructable at 0x7f23e0d44578>, 'debug_log': None, '_next_time_announce': <function _next_time_announce at 0x7f23e0d441b8>, '__init__': <function __init__ at 0x7f23e0d44050>, 'on_game_end': <function on_game_end at 0x7f23e0d44ed8>, 'add_ban': <function add_ban at 0x7f23e0d44938>, 'update_world': <function update_world at 0x7f23e0d44d70>, 'timestamps': None, 'spawns': None, 'time_announce_schedule': None, 'set_time_limit': <function set_time_limit at 0x7f23e0d44140>, 'everyone_is_admin': False, 'remove_ban': <function remove_ban at 0x7f23e0d449b0>, 'team_class': <class '__main__.FeatureTeam'>, 'getPage': <function getPage at 0x7f23e0d452a8>, '_time_up': <function _time_up at 0x7f23e0d44230>, 'call_end': <function call_end at 0x7f23e0d45320>, 'killing': True, 'ban_publish': None, 'receive_callback': <function receive_callback at 0x7f23e0d44b18>, 'interface': None, 'server_version': 'linux2 - rev snapshot', 'building': True, 'got_external_ip': <function got_external_ip at 0x7f23e0d440c8>, 'get_mode_name': <function get_mode_name at 0x7f23e0d44320>, 'planned_map': None, 'update_format': <function update_format at 0x7f23e0d445f0>, 'player_memory': None, 'irc_relay': None}
+2016-06-18 14:24:25+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 14:24:52+0300 [-] Received SIGINT, shutting down.
+2016-06-18 14:24:52+0300 [-] Main loop terminated.
+2016-06-18 14:32:19+0300 [-] pyspades server started on Sat Jun 18 14:32:19 2016
+2016-06-18 14:32:19+0300 [-] Log opened.
+2016-06-18 14:32:19+0300 [-] Generating map 'random #143226253'...
+2016-06-18 14:32:21+0300 [-] Map loaded successfully.
+2016-06-18 14:32:21+0300 [-] Started server...
+2016-06-18 14:32:22+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 14:32:25+0300 [-] Unhandled error in Deferred:
+2016-06-18 14:32:25+0300 [-] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/base.py", line 1194, in run
+	    self.mainLoop()
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/base.py", line 1203, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/base.py", line 825, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/task.py", line 239, in __call__
+	    d = defer.maybeDeferred(self.f, *self.a, **self.kw)
+	--- <exception caught here> ---
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/defer.py", line 150, in maybeDeferred
+	    result = f(*args, **kw)
+	  File "../pyspades/server.py", line 1574, in update
+	    player.continue_map_transfer()
+	  File "../pyspades/server.py", line 1083, in continue_map_transfer
+	    self.send_map()
+	  File "../pyspades/server.py", line 1074, in send_map
+	    self.on_join()
+	  File "./scripts/boss.py", line 16, in on_join
+	    playerCount = playerCount + 1
+	exceptions.UnboundLocalError: local variable 'playerCount' referenced before assignment
+	
+2016-06-18 14:32:40+0300 [-] Received SIGINT, shutting down.
+2016-06-18 14:32:40+0300 [-] Main loop terminated.
+2016-06-18 14:32:41+0300 [-] pyspades server started on Sat Jun 18 14:32:41 2016
+2016-06-18 14:32:41+0300 [-] Log opened.
+2016-06-18 14:32:41+0300 [-] Generating map 'random #1748899152'...
+2016-06-18 14:32:43+0300 [-] Map loaded successfully.
+2016-06-18 14:32:43+0300 [-] Started server...
+2016-06-18 14:32:43+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 14:33:16+0300 [-] Received SIGINT, shutting down.
+2016-06-18 14:33:16+0300 [-] Main loop terminated.
+2016-06-18 14:33:41+0300 [-] pyspades server started on Sat Jun 18 14:33:41 2016
+2016-06-18 14:33:41+0300 [-] Log opened.
+2016-06-18 14:33:41+0300 [-] Generating map 'random #1951100481'...
+2016-06-18 14:33:43+0300 [-] Map loaded successfully.
+2016-06-18 14:33:43+0300 [-] Started server...
+2016-06-18 14:33:44+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 14:33:57+0300 [-] Unhandled error in Deferred:
+2016-06-18 14:33:57+0300 [-] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/base.py", line 1194, in run
+	    self.mainLoop()
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/base.py", line 1203, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/base.py", line 825, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/task.py", line 239, in __call__
+	    d = defer.maybeDeferred(self.f, *self.a, **self.kw)
+	--- <exception caught here> ---
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/defer.py", line 150, in maybeDeferred
+	    result = f(*args, **kw)
+	  File "../pyspades/server.py", line 1574, in update
+	    player.continue_map_transfer()
+	  File "../pyspades/server.py", line 1083, in continue_map_transfer
+	    self.send_map()
+	  File "../pyspades/server.py", line 1074, in send_map
+	    self.on_join()
+	  File "./scripts/boss.py", line 17, in on_join
+	    playerCount = playerCount + 1
+	exceptions.UnboundLocalError: local variable 'playerCount' referenced before assignment
+	
+2016-06-18 14:34:56+0300 [-] Received SIGINT, shutting down.
+2016-06-18 14:34:56+0300 [-] Main loop terminated.
+2016-06-18 14:34:56+0300 [-] pyspades server started on Sat Jun 18 14:34:56 2016
+2016-06-18 14:34:56+0300 [-] Log opened.
+2016-06-18 14:34:56+0300 [-] Generating map 'random #1101100625'...
+2016-06-18 14:34:58+0300 [-] Map loaded successfully.
+2016-06-18 14:34:58+0300 [-] Started server...
+2016-06-18 14:34:58+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 14:35:14+0300 [-] Unhandled error in Deferred:
+2016-06-18 14:35:14+0300 [-] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/base.py", line 1194, in run
+	    self.mainLoop()
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/base.py", line 1203, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/base.py", line 825, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/task.py", line 239, in __call__
+	    d = defer.maybeDeferred(self.f, *self.a, **self.kw)
+	--- <exception caught here> ---
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/defer.py", line 150, in maybeDeferred
+	    result = f(*args, **kw)
+	  File "../pyspades/server.py", line 1574, in update
+	    player.continue_map_transfer()
+	  File "../pyspades/server.py", line 1083, in continue_map_transfer
+	    self.send_map()
+	  File "../pyspades/server.py", line 1074, in send_map
+	    self.on_join()
+	  File "./scripts/boss.py", line 18, in on_join
+	    playerCount = playerCount + 1
+	exceptions.UnboundLocalError: local variable 'playerCount' referenced before assignment
+	
+2016-06-18 14:35:51+0300 [-] Received SIGINT, shutting down.
+2016-06-18 14:35:51+0300 [-] Main loop terminated.
+2016-06-18 14:36:38+0300 [-] pyspades server started on Sat Jun 18 14:36:38 2016
+2016-06-18 14:36:38+0300 [-] Log opened.
+2016-06-18 14:36:38+0300 [-] Generating map 'random #1970555570'...
+2016-06-18 14:36:40+0300 [-] Map loaded successfully.
+2016-06-18 14:36:40+0300 [-] Started server...
+2016-06-18 14:36:40+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 14:36:48+0300 [-] Traceback (most recent call last):
+2016-06-18 14:36:48+0300 [-]   File "../pyspades/protocol.py", line 161, in update
+2016-06-18 14:36:48+0300 [-]     self.on_connect(peer)
+2016-06-18 14:36:48+0300 [-]   File "../pyspades/protocol.py", line 103, in on_connect
+2016-06-18 14:36:48+0300 [-]     connection = self.connection_class(self, peer)
+2016-06-18 14:36:48+0300 [-] TypeError: __init__() takes exactly 1 argument (3 given)
+2016-06-18 14:37:32+0300 [-] Received SIGINT, shutting down.
+2016-06-18 14:37:32+0300 [-] Main loop terminated.
+2016-06-18 14:37:32+0300 [-] pyspades server started on Sat Jun 18 14:37:32 2016
+2016-06-18 14:37:32+0300 [-] Log opened.
+2016-06-18 14:37:32+0300 [-] Generating map 'random #1103263026'...
+2016-06-18 14:37:34+0300 [-] Map loaded successfully.
+2016-06-18 14:37:34+0300 [-] Started server...
+2016-06-18 14:37:35+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 14:37:41+0300 [-] Traceback (most recent call last):
+2016-06-18 14:37:41+0300 [-]   File "../pyspades/protocol.py", line 161, in update
+2016-06-18 14:37:41+0300 [-]     self.on_connect(peer)
+2016-06-18 14:37:41+0300 [-]   File "../pyspades/protocol.py", line 105, in on_connect
+2016-06-18 14:37:41+0300 [-]     connection.on_connect()
+2016-06-18 14:37:41+0300 [-]   File "run.py", line 188, in on_connect
+2016-06-18 14:37:41+0300 [-]     protocol = self.protocol
+2016-06-18 14:37:41+0300 [-] AttributeError: 'BossConnection' object has no attribute 'protocol'
+2016-06-18 14:38:03+0300 [-] Received SIGINT, shutting down.
+2016-06-18 14:38:03+0300 [-] Main loop terminated.
+2016-06-18 14:38:04+0300 [-] pyspades server started on Sat Jun 18 14:38:04 2016
+2016-06-18 14:38:04+0300 [-] Log opened.
+2016-06-18 14:38:04+0300 [-] Generating map 'random #1344870303'...
+2016-06-18 14:38:06+0300 [-] Map loaded successfully.
+2016-06-18 14:38:06+0300 [-] Started server...
+2016-06-18 14:38:06+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 14:38:21+0300 [-] Traceback (most recent call last):
+2016-06-18 14:38:21+0300 [-]   File "../pyspades/protocol.py", line 161, in update
+2016-06-18 14:38:21+0300 [-]     self.on_connect(peer)
+2016-06-18 14:38:21+0300 [-]   File "../pyspades/protocol.py", line 105, in on_connect
+2016-06-18 14:38:21+0300 [-]     connection.on_connect()
+2016-06-18 14:38:21+0300 [-]   File "run.py", line 188, in on_connect
+2016-06-18 14:38:21+0300 [-]     protocol = self.protocol
+2016-06-18 14:38:21+0300 [-] AttributeError: 'BossConnection' object has no attribute 'protocol'
+2016-06-18 14:40:41+0300 [-] Received SIGINT, shutting down.
+2016-06-18 14:40:41+0300 [-] Main loop terminated.
+2016-06-18 14:40:49+0300 [-] pyspades server started on Sat Jun 18 14:40:49 2016
+2016-06-18 14:40:49+0300 [-] Log opened.
+2016-06-18 14:40:49+0300 [-] Generating map 'random #871075057'...
+2016-06-18 14:40:51+0300 [-] Map loaded successfully.
+2016-06-18 14:40:51+0300 [-] Started server...
+2016-06-18 14:40:51+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 14:40:59+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 14:41:02+0300 [-] Architektor_kun disconnected!
+2016-06-18 14:41:34+0300 [-] Received SIGINT, shutting down.
+2016-06-18 14:41:34+0300 [-] Main loop terminated.
+2016-06-18 14:41:34+0300 [-] pyspades server started on Sat Jun 18 14:41:34 2016
+2016-06-18 14:41:34+0300 [-] Log opened.
+2016-06-18 14:41:34+0300 [-] Generating map 'random #709889360'...
+2016-06-18 14:41:36+0300 [-] Map loaded successfully.
+2016-06-18 14:41:36+0300 [-] Started server...
+2016-06-18 14:41:36+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 14:41:48+0300 [-] 1
+2016-06-18 14:42:22+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 14:43:36+0300 [-] Received SIGINT, shutting down.
+2016-06-18 14:43:36+0300 [-] Main loop terminated.
+2016-06-18 14:43:37+0300 [-] pyspades server started on Sat Jun 18 14:43:37 2016
+2016-06-18 14:43:37+0300 [-] Log opened.
+2016-06-18 14:43:37+0300 [-] Generating map 'random #2109135583'...
+2016-06-18 14:43:39+0300 [-] Map loaded successfully.
+2016-06-18 14:43:39+0300 [-] Started server...
+2016-06-18 14:43:40+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 14:44:03+0300 [-] 1
+2016-06-18 14:44:06+0300 [-] Traceback (most recent call last):
+2016-06-18 14:44:06+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 14:44:06+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 14:44:06+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 14:44:06+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 14:44:06+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 14:44:06+0300 [-]     connection.loader_received(packet)
+2016-06-18 14:44:06+0300 [-]   File "../pyspades/server.py", line 238, in loader_received
+2016-06-18 14:44:06+0300 [-]     if self.on_team_join(team) == False:
+2016-06-18 14:44:06+0300 [-]   File "./scripts/boss.py", line 23, in on_team_join
+2016-06-18 14:44:06+0300 [-]     protocol.send_chat('NOT ENOUGH PLAYERS')
+2016-06-18 14:44:06+0300 [-] TypeError: unbound method send_chat() must be called with FeatureProtocol instance as first argument (got str instance instead)
+2016-06-18 14:44:06+0300 [-] Traceback (most recent call last):
+2016-06-18 14:44:06+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 14:44:06+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 14:44:06+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 14:44:06+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 14:44:06+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 14:44:06+0300 [-]     connection.loader_received(packet)
+2016-06-18 14:44:06+0300 [-]   File "../pyspades/server.py", line 238, in loader_received
+2016-06-18 14:44:06+0300 [-]     if self.on_team_join(team) == False:
+2016-06-18 14:44:06+0300 [-]   File "./scripts/boss.py", line 23, in on_team_join
+2016-06-18 14:44:06+0300 [-]     protocol.send_chat('NOT ENOUGH PLAYERS')
+2016-06-18 14:44:06+0300 [-] TypeError: unbound method send_chat() must be called with FeatureProtocol instance as first argument (got str instance instead)
+2016-06-18 14:44:06+0300 [-] Traceback (most recent call last):
+2016-06-18 14:44:06+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 14:44:06+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 14:44:06+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 14:44:06+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 14:44:06+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 14:44:06+0300 [-]     connection.loader_received(packet)
+2016-06-18 14:44:06+0300 [-]   File "../pyspades/server.py", line 238, in loader_received
+2016-06-18 14:44:06+0300 [-]     if self.on_team_join(team) == False:
+2016-06-18 14:44:06+0300 [-]   File "./scripts/boss.py", line 23, in on_team_join
+2016-06-18 14:44:06+0300 [-]     protocol.send_chat('NOT ENOUGH PLAYERS')
+2016-06-18 14:44:06+0300 [-] TypeError: unbound method send_chat() must be called with FeatureProtocol instance as first argument (got str instance instead)
+2016-06-18 14:44:06+0300 [-] Traceback (most recent call last):
+2016-06-18 14:44:06+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 14:44:06+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 14:44:06+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 14:44:06+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 14:44:06+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 14:44:06+0300 [-]     connection.loader_received(packet)
+2016-06-18 14:44:06+0300 [-]   File "../pyspades/server.py", line 238, in loader_received
+2016-06-18 14:44:06+0300 [-]     if self.on_team_join(team) == False:
+2016-06-18 14:44:06+0300 [-]   File "./scripts/boss.py", line 23, in on_team_join
+2016-06-18 14:44:06+0300 [-]     protocol.send_chat('NOT ENOUGH PLAYERS')
+2016-06-18 14:44:06+0300 [-] TypeError: unbound method send_chat() must be called with FeatureProtocol instance as first argument (got str instance instead)
+2016-06-18 14:44:07+0300 [-] Traceback (most recent call last):
+2016-06-18 14:44:07+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 14:44:07+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 14:44:07+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 14:44:07+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 14:44:07+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 14:44:07+0300 [-]     connection.loader_received(packet)
+2016-06-18 14:44:07+0300 [-]   File "../pyspades/server.py", line 238, in loader_received
+2016-06-18 14:44:07+0300 [-]     if self.on_team_join(team) == False:
+2016-06-18 14:44:07+0300 [-]   File "./scripts/boss.py", line 23, in on_team_join
+2016-06-18 14:44:07+0300 [-]     protocol.send_chat('NOT ENOUGH PLAYERS')
+2016-06-18 14:44:07+0300 [-] TypeError: unbound method send_chat() must be called with FeatureProtocol instance as first argument (got str instance instead)
+2016-06-18 14:44:07+0300 [-] Traceback (most recent call last):
+2016-06-18 14:44:07+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 14:44:07+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 14:44:07+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 14:44:07+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 14:44:07+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 14:44:07+0300 [-]     connection.loader_received(packet)
+2016-06-18 14:44:07+0300 [-]   File "../pyspades/server.py", line 238, in loader_received
+2016-06-18 14:44:07+0300 [-]     if self.on_team_join(team) == False:
+2016-06-18 14:44:07+0300 [-]   File "./scripts/boss.py", line 23, in on_team_join
+2016-06-18 14:44:07+0300 [-]     protocol.send_chat('NOT ENOUGH PLAYERS')
+2016-06-18 14:44:07+0300 [-] TypeError: unbound method send_chat() must be called with FeatureProtocol instance as first argument (got str instance instead)
+2016-06-18 14:44:07+0300 [-] Traceback (most recent call last):
+2016-06-18 14:44:07+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 14:44:07+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 14:44:07+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 14:44:07+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 14:44:07+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 14:44:07+0300 [-]     connection.loader_received(packet)
+2016-06-18 14:44:07+0300 [-]   File "../pyspades/server.py", line 238, in loader_received
+2016-06-18 14:44:07+0300 [-]     if self.on_team_join(team) == False:
+2016-06-18 14:44:07+0300 [-]   File "./scripts/boss.py", line 23, in on_team_join
+2016-06-18 14:44:07+0300 [-]     protocol.send_chat('NOT ENOUGH PLAYERS')
+2016-06-18 14:44:07+0300 [-] TypeError: unbound method send_chat() must be called with FeatureProtocol instance as first argument (got str instance instead)
+2016-06-18 14:44:08+0300 [-] Traceback (most recent call last):
+2016-06-18 14:44:08+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 14:44:08+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 14:44:08+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 14:44:08+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 14:44:08+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 14:44:08+0300 [-]     connection.loader_received(packet)
+2016-06-18 14:44:08+0300 [-]   File "../pyspades/server.py", line 238, in loader_received
+2016-06-18 14:44:08+0300 [-]     if self.on_team_join(team) == False:
+2016-06-18 14:44:08+0300 [-]   File "./scripts/boss.py", line 23, in on_team_join
+2016-06-18 14:44:08+0300 [-]     protocol.send_chat('NOT ENOUGH PLAYERS')
+2016-06-18 14:44:08+0300 [-] TypeError: unbound method send_chat() must be called with FeatureProtocol instance as first argument (got str instance instead)
+2016-06-18 14:44:08+0300 [-] Traceback (most recent call last):
+2016-06-18 14:44:08+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 14:44:08+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 14:44:08+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 14:44:08+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 14:44:08+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 14:44:08+0300 [-]     connection.loader_received(packet)
+2016-06-18 14:44:08+0300 [-]   File "../pyspades/server.py", line 238, in loader_received
+2016-06-18 14:44:08+0300 [-]     if self.on_team_join(team) == False:
+2016-06-18 14:44:08+0300 [-]   File "./scripts/boss.py", line 23, in on_team_join
+2016-06-18 14:44:08+0300 [-]     protocol.send_chat('NOT ENOUGH PLAYERS')
+2016-06-18 14:44:08+0300 [-] TypeError: unbound method send_chat() must be called with FeatureProtocol instance as first argument (got str instance instead)
+2016-06-18 14:44:09+0300 [-] Traceback (most recent call last):
+2016-06-18 14:44:09+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 14:44:09+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 14:44:09+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 14:44:09+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 14:44:09+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 14:44:09+0300 [-]     connection.loader_received(packet)
+2016-06-18 14:44:09+0300 [-]   File "../pyspades/server.py", line 238, in loader_received
+2016-06-18 14:44:09+0300 [-]     if self.on_team_join(team) == False:
+2016-06-18 14:44:09+0300 [-]   File "./scripts/boss.py", line 23, in on_team_join
+2016-06-18 14:44:09+0300 [-]     protocol.send_chat('NOT ENOUGH PLAYERS')
+2016-06-18 14:44:09+0300 [-] TypeError: unbound method send_chat() must be called with FeatureProtocol instance as first argument (got str instance instead)
+2016-06-18 14:44:09+0300 [-] Traceback (most recent call last):
+2016-06-18 14:44:09+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 14:44:09+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 14:44:09+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 14:44:09+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 14:44:09+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 14:44:09+0300 [-]     connection.loader_received(packet)
+2016-06-18 14:44:09+0300 [-]   File "../pyspades/server.py", line 238, in loader_received
+2016-06-18 14:44:09+0300 [-]     if self.on_team_join(team) == False:
+2016-06-18 14:44:09+0300 [-]   File "./scripts/boss.py", line 23, in on_team_join
+2016-06-18 14:44:09+0300 [-]     protocol.send_chat('NOT ENOUGH PLAYERS')
+2016-06-18 14:44:09+0300 [-] TypeError: unbound method send_chat() must be called with FeatureProtocol instance as first argument (got str instance instead)
+2016-06-18 14:44:09+0300 [-] Traceback (most recent call last):
+2016-06-18 14:44:09+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 14:44:09+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 14:44:09+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 14:44:09+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 14:44:09+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 14:44:09+0300 [-]     connection.loader_received(packet)
+2016-06-18 14:44:09+0300 [-]   File "../pyspades/server.py", line 238, in loader_received
+2016-06-18 14:44:09+0300 [-]     if self.on_team_join(team) == False:
+2016-06-18 14:44:09+0300 [-]   File "./scripts/boss.py", line 23, in on_team_join
+2016-06-18 14:44:09+0300 [-]     protocol.send_chat('NOT ENOUGH PLAYERS')
+2016-06-18 14:44:09+0300 [-] TypeError: unbound method send_chat() must be called with FeatureProtocol instance as first argument (got str instance instead)
+2016-06-18 14:44:12+0300 [-] Traceback (most recent call last):
+2016-06-18 14:44:12+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 14:44:12+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 14:44:12+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 14:44:12+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 14:44:12+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 14:44:12+0300 [-]     connection.loader_received(packet)
+2016-06-18 14:44:12+0300 [-]   File "../pyspades/server.py", line 238, in loader_received
+2016-06-18 14:44:12+0300 [-]     if self.on_team_join(team) == False:
+2016-06-18 14:44:12+0300 [-]   File "./scripts/boss.py", line 23, in on_team_join
+2016-06-18 14:44:12+0300 [-]     protocol.send_chat('NOT ENOUGH PLAYERS')
+2016-06-18 14:44:12+0300 [-] TypeError: unbound method send_chat() must be called with FeatureProtocol instance as first argument (got str instance instead)
+2016-06-18 14:44:12+0300 [-] Traceback (most recent call last):
+2016-06-18 14:44:12+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 14:44:12+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 14:44:12+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 14:44:12+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 14:44:12+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 14:44:12+0300 [-]     connection.loader_received(packet)
+2016-06-18 14:44:12+0300 [-]   File "../pyspades/server.py", line 238, in loader_received
+2016-06-18 14:44:12+0300 [-]     if self.on_team_join(team) == False:
+2016-06-18 14:44:12+0300 [-]   File "./scripts/boss.py", line 23, in on_team_join
+2016-06-18 14:44:12+0300 [-]     protocol.send_chat('NOT ENOUGH PLAYERS')
+2016-06-18 14:44:12+0300 [-] TypeError: unbound method send_chat() must be called with FeatureProtocol instance as first argument (got str instance instead)
+2016-06-18 14:44:13+0300 [-] Traceback (most recent call last):
+2016-06-18 14:44:13+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 14:44:13+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 14:44:13+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 14:44:13+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 14:44:13+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 14:44:13+0300 [-]     connection.loader_received(packet)
+2016-06-18 14:44:13+0300 [-]   File "../pyspades/server.py", line 238, in loader_received
+2016-06-18 14:44:13+0300 [-]     if self.on_team_join(team) == False:
+2016-06-18 14:44:13+0300 [-]   File "./scripts/boss.py", line 23, in on_team_join
+2016-06-18 14:44:13+0300 [-]     protocol.send_chat('NOT ENOUGH PLAYERS')
+2016-06-18 14:44:13+0300 [-] TypeError: unbound method send_chat() must be called with FeatureProtocol instance as first argument (got str instance instead)
+2016-06-18 14:44:13+0300 [-] Traceback (most recent call last):
+2016-06-18 14:44:13+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 14:44:13+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 14:44:13+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 14:44:13+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 14:44:13+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 14:44:13+0300 [-]     connection.loader_received(packet)
+2016-06-18 14:44:13+0300 [-]   File "../pyspades/server.py", line 238, in loader_received
+2016-06-18 14:44:13+0300 [-]     if self.on_team_join(team) == False:
+2016-06-18 14:44:13+0300 [-]   File "./scripts/boss.py", line 23, in on_team_join
+2016-06-18 14:44:13+0300 [-]     protocol.send_chat('NOT ENOUGH PLAYERS')
+2016-06-18 14:44:13+0300 [-] TypeError: unbound method send_chat() must be called with FeatureProtocol instance as first argument (got str instance instead)
+2016-06-18 14:44:13+0300 [-] Traceback (most recent call last):
+2016-06-18 14:44:13+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 14:44:13+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 14:44:13+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 14:44:13+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 14:44:13+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 14:44:13+0300 [-]     connection.loader_received(packet)
+2016-06-18 14:44:13+0300 [-]   File "../pyspades/server.py", line 238, in loader_received
+2016-06-18 14:44:13+0300 [-]     if self.on_team_join(team) == False:
+2016-06-18 14:44:13+0300 [-]   File "./scripts/boss.py", line 23, in on_team_join
+2016-06-18 14:44:13+0300 [-]     protocol.send_chat('NOT ENOUGH PLAYERS')
+2016-06-18 14:44:13+0300 [-] TypeError: unbound method send_chat() must be called with FeatureProtocol instance as first argument (got str instance instead)
+2016-06-18 14:44:13+0300 [-] Traceback (most recent call last):
+2016-06-18 14:44:13+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 14:44:13+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 14:44:13+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 14:44:13+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 14:44:13+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 14:44:13+0300 [-]     connection.loader_received(packet)
+2016-06-18 14:44:13+0300 [-]   File "../pyspades/server.py", line 238, in loader_received
+2016-06-18 14:44:13+0300 [-]     if self.on_team_join(team) == False:
+2016-06-18 14:44:13+0300 [-]   File "./scripts/boss.py", line 23, in on_team_join
+2016-06-18 14:44:13+0300 [-]     protocol.send_chat('NOT ENOUGH PLAYERS')
+2016-06-18 14:44:13+0300 [-] TypeError: unbound method send_chat() must be called with FeatureProtocol instance as first argument (got str instance instead)
+2016-06-18 14:44:13+0300 [-] Traceback (most recent call last):
+2016-06-18 14:44:13+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 14:44:13+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 14:44:13+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 14:44:13+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 14:44:13+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 14:44:13+0300 [-]     connection.loader_received(packet)
+2016-06-18 14:44:13+0300 [-]   File "../pyspades/server.py", line 238, in loader_received
+2016-06-18 14:44:13+0300 [-]     if self.on_team_join(team) == False:
+2016-06-18 14:44:13+0300 [-]   File "./scripts/boss.py", line 23, in on_team_join
+2016-06-18 14:44:13+0300 [-]     protocol.send_chat('NOT ENOUGH PLAYERS')
+2016-06-18 14:44:13+0300 [-] TypeError: unbound method send_chat() must be called with FeatureProtocol instance as first argument (got str instance instead)
+2016-06-18 14:49:59+0300 [-] Received SIGINT, shutting down.
+2016-06-18 14:49:59+0300 [-] Main loop terminated.
+2016-06-18 14:52:50+0300 [-] pyspades server started on Sat Jun 18 14:52:50 2016
+2016-06-18 14:52:50+0300 [-] Log opened.
+2016-06-18 14:52:50+0300 [-] Generating map 'random #110406882'...
+2016-06-18 14:52:52+0300 [-] Map loaded successfully.
+2016-06-18 14:52:52+0300 [-] lol
+2016-06-18 14:52:52+0300 [-] Traceback (most recent call last):
+2016-06-18 14:52:52+0300 [-]   File "run.py", line 1081, in <module>
+2016-06-18 14:52:52+0300 [-]     protocol_instance = protocol_class(interface, config)
+2016-06-18 14:52:52+0300 [-]   File "run.py", line 696, in __init__
+2016-06-18 14:52:52+0300 [-]     ret = self.set_map_rotation(config['maps'])
+2016-06-18 14:52:52+0300 [-]   File "run.py", line 804, in set_map_rotation
+2016-06-18 14:52:52+0300 [-]     self.advance_rotation()
+2016-06-18 14:52:52+0300 [-]   File "run.py", line 770, in advance_rotation
+2016-06-18 14:52:52+0300 [-]     self.set_map_name(map)
+2016-06-18 14:52:52+0300 [-]   File "run.py", line 788, in set_map_name
+2016-06-18 14:52:52+0300 [-]     self.set_map(self.map_info.data)
+2016-06-18 14:52:52+0300 [-]   File "../pyspades/server.py", line 1603, in set_map
+2016-06-18 14:52:52+0300 [-]     self.on_map_change(map)
+2016-06-18 14:52:52+0300 [-]   File "./scripts/boss.py", line 37, in on_map_change
+2016-06-18 14:52:52+0300 [-]     self.bossTeam = self.teams[BOSS_TEAM]
+2016-06-18 14:52:52+0300 [-] NameError: global name 'BOSS_TEAM' is not defined
+2016-06-18 14:53:09+0300 [-] pyspades server started on Sat Jun 18 14:53:09 2016
+2016-06-18 14:53:09+0300 [-] Log opened.
+2016-06-18 14:53:09+0300 [-] Generating map 'random #56631756'...
+2016-06-18 14:53:11+0300 [-] Map loaded successfully.
+2016-06-18 14:53:11+0300 [-] lol
+2016-06-18 14:53:11+0300 [-] Traceback (most recent call last):
+2016-06-18 14:53:11+0300 [-]   File "run.py", line 1081, in <module>
+2016-06-18 14:53:11+0300 [-]     protocol_instance = protocol_class(interface, config)
+2016-06-18 14:53:11+0300 [-]   File "run.py", line 696, in __init__
+2016-06-18 14:53:11+0300 [-]     ret = self.set_map_rotation(config['maps'])
+2016-06-18 14:53:11+0300 [-]   File "run.py", line 804, in set_map_rotation
+2016-06-18 14:53:11+0300 [-]     self.advance_rotation()
+2016-06-18 14:53:11+0300 [-]   File "run.py", line 770, in advance_rotation
+2016-06-18 14:53:11+0300 [-]     self.set_map_name(map)
+2016-06-18 14:53:11+0300 [-]   File "run.py", line 788, in set_map_name
+2016-06-18 14:53:11+0300 [-]     self.set_map(self.map_info.data)
+2016-06-18 14:53:11+0300 [-]   File "../pyspades/server.py", line 1603, in set_map
+2016-06-18 14:53:11+0300 [-]     self.on_map_change(map)
+2016-06-18 14:53:11+0300 [-]   File "./scripts/boss.py", line 40, in on_map_change
+2016-06-18 14:53:11+0300 [-]     on_map_change(self, map)
+2016-06-18 14:53:11+0300 [-] NameError: global name 'on_map_change' is not defined
+2016-06-18 14:53:45+0300 [-] pyspades server started on Sat Jun 18 14:53:45 2016
+2016-06-18 14:53:45+0300 [-] Log opened.
+2016-06-18 14:53:45+0300 [-] Generating map 'random #80489320'...
+2016-06-18 14:53:47+0300 [-] Map loaded successfully.
+2016-06-18 14:53:47+0300 [-] lol
+2016-06-18 14:53:47+0300 [-] Started server...
+2016-06-18 14:53:47+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 14:53:52+0300 [-] 1
+2016-06-18 14:53:55+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 15:02:36+0300 [-] Received SIGINT, shutting down.
+2016-06-18 15:02:36+0300 [-] Main loop terminated.
+2016-06-18 15:02:37+0300 [-] pyspades server started on Sat Jun 18 15:02:37 2016
+2016-06-18 15:02:37+0300 [-] Log opened.
+2016-06-18 15:02:37+0300 [-] Generating map 'random #1517983150'...
+2016-06-18 15:02:39+0300 [-] Map loaded successfully.
+2016-06-18 15:02:39+0300 [-] Started server...
+2016-06-18 15:02:40+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 15:02:44+0300 [-] Received SIGINT, shutting down.
+2016-06-18 15:02:44+0300 [-] Main loop terminated.
+2016-06-18 15:02:45+0300 [-] pyspades server started on Sat Jun 18 15:02:45 2016
+2016-06-18 15:02:45+0300 [-] Log opened.
+2016-06-18 15:02:45+0300 [-] Generating map 'random #228013785'...
+2016-06-18 15:02:47+0300 [-] Map loaded successfully.
+2016-06-18 15:02:47+0300 [-] Started server...
+2016-06-18 15:02:47+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 15:02:51+0300 [-] 1
+2016-06-18 15:02:54+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 15:03:21+0300 [-] Traceback (most recent call last):
+2016-06-18 15:03:21+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 15:03:21+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 15:03:21+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 15:03:21+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 15:03:21+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 15:03:21+0300 [-]     connection.loader_received(packet)
+2016-06-18 15:03:21+0300 [-]   File "../pyspades/server.py", line 605, in loader_received
+2016-06-18 15:03:21+0300 [-]     if self.on_team_join(team) == False:
+2016-06-18 15:03:21+0300 [-]   File "./scripts/boss.py", line 25, in on_team_join
+2016-06-18 15:03:21+0300 [-]     self.send_chat('Can`t join boss team (%t), boss is choosen automatically' % bossTeam)
+2016-06-18 15:03:21+0300 [-] ValueError: unsupported format character 't' (0x74) at index 23
+2016-06-18 15:03:35+0300 [-] Traceback (most recent call last):
+2016-06-18 15:03:35+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 15:03:35+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 15:03:35+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 15:03:35+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 15:03:35+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 15:03:35+0300 [-]     connection.loader_received(packet)
+2016-06-18 15:03:35+0300 [-]   File "../pyspades/server.py", line 605, in loader_received
+2016-06-18 15:03:35+0300 [-]     if self.on_team_join(team) == False:
+2016-06-18 15:03:35+0300 [-]   File "./scripts/boss.py", line 25, in on_team_join
+2016-06-18 15:03:35+0300 [-]     self.send_chat('Can`t join boss team (%t), boss is choosen automatically' % bossTeam)
+2016-06-18 15:03:35+0300 [-] ValueError: unsupported format character 't' (0x74) at index 23
+2016-06-18 15:03:53+0300 [-] Traceback (most recent call last):
+2016-06-18 15:03:53+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 15:03:53+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 15:03:53+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 15:03:53+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 15:03:53+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 15:03:53+0300 [-]     connection.loader_received(packet)
+2016-06-18 15:03:53+0300 [-]   File "../pyspades/server.py", line 605, in loader_received
+2016-06-18 15:03:53+0300 [-]     if self.on_team_join(team) == False:
+2016-06-18 15:03:53+0300 [-]   File "./scripts/boss.py", line 25, in on_team_join
+2016-06-18 15:03:53+0300 [-]     self.send_chat('Can`t join boss team (%t), boss is choosen automatically' % bossTeam)
+2016-06-18 15:03:53+0300 [-] ValueError: unsupported format character 't' (0x74) at index 23
+2016-06-18 15:04:31+0300 [-] Received SIGINT, shutting down.
+2016-06-18 15:04:31+0300 [-] Main loop terminated.
+2016-06-18 15:04:32+0300 [-] pyspades server started on Sat Jun 18 15:04:32 2016
+2016-06-18 15:04:32+0300 [-] Log opened.
+2016-06-18 15:04:32+0300 [-] Generating map 'random #1986395457'...
+2016-06-18 15:04:35+0300 [-] Map loaded successfully.
+2016-06-18 15:04:35+0300 [-] Started server...
+2016-06-18 15:04:35+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 15:04:43+0300 [-] 1
+2016-06-18 15:04:49+0300 [-] Traceback (most recent call last):
+2016-06-18 15:04:49+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 15:04:49+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 15:04:49+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 15:04:49+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 15:04:49+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 15:04:49+0300 [-]     connection.loader_received(packet)
+2016-06-18 15:04:49+0300 [-]   File "../pyspades/server.py", line 238, in loader_received
+2016-06-18 15:04:49+0300 [-]     if self.on_team_join(team) == False:
+2016-06-18 15:04:49+0300 [-]   File "./scripts/boss.py", line 25, in on_team_join
+2016-06-18 15:04:49+0300 [-]     self.send_chat('Can`t join boss team %t, boss is choosen automatically' % bossTeam)
+2016-06-18 15:04:49+0300 [-] ValueError: unsupported format character 't' (0x74) at index 22
+2016-06-18 15:04:51+0300 [-] Traceback (most recent call last):
+2016-06-18 15:04:51+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 15:04:51+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 15:04:51+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 15:04:51+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 15:04:51+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 15:04:51+0300 [-]     connection.loader_received(packet)
+2016-06-18 15:04:51+0300 [-]   File "../pyspades/server.py", line 238, in loader_received
+2016-06-18 15:04:51+0300 [-]     if self.on_team_join(team) == False:
+2016-06-18 15:04:51+0300 [-]   File "./scripts/boss.py", line 25, in on_team_join
+2016-06-18 15:04:51+0300 [-]     self.send_chat('Can`t join boss team %t, boss is choosen automatically' % bossTeam)
+2016-06-18 15:04:51+0300 [-] ValueError: unsupported format character 't' (0x74) at index 22
+2016-06-18 15:04:52+0300 [-] Traceback (most recent call last):
+2016-06-18 15:04:52+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 15:04:52+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 15:04:52+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 15:04:52+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 15:04:52+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 15:04:52+0300 [-]     connection.loader_received(packet)
+2016-06-18 15:04:52+0300 [-]   File "../pyspades/server.py", line 238, in loader_received
+2016-06-18 15:04:52+0300 [-]     if self.on_team_join(team) == False:
+2016-06-18 15:04:52+0300 [-]   File "./scripts/boss.py", line 25, in on_team_join
+2016-06-18 15:04:52+0300 [-]     self.send_chat('Can`t join boss team %t, boss is choosen automatically' % bossTeam)
+2016-06-18 15:04:52+0300 [-] ValueError: unsupported format character 't' (0x74) at index 22
+2016-06-18 15:04:52+0300 [-] Traceback (most recent call last):
+2016-06-18 15:04:52+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 15:04:52+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 15:04:52+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 15:04:52+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 15:04:52+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 15:04:52+0300 [-]     connection.loader_received(packet)
+2016-06-18 15:04:52+0300 [-]   File "../pyspades/server.py", line 238, in loader_received
+2016-06-18 15:04:52+0300 [-]     if self.on_team_join(team) == False:
+2016-06-18 15:04:52+0300 [-]   File "./scripts/boss.py", line 25, in on_team_join
+2016-06-18 15:04:52+0300 [-]     self.send_chat('Can`t join boss team %t, boss is choosen automatically' % bossTeam)
+2016-06-18 15:04:52+0300 [-] ValueError: unsupported format character 't' (0x74) at index 22
+2016-06-18 15:04:54+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 15:04:58+0300 [-] Traceback (most recent call last):
+2016-06-18 15:04:58+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 15:04:58+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 15:04:58+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 15:04:58+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 15:04:58+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 15:04:58+0300 [-]     connection.loader_received(packet)
+2016-06-18 15:04:58+0300 [-]   File "../pyspades/server.py", line 605, in loader_received
+2016-06-18 15:04:58+0300 [-]     if self.on_team_join(team) == False:
+2016-06-18 15:04:58+0300 [-]   File "./scripts/boss.py", line 25, in on_team_join
+2016-06-18 15:04:58+0300 [-]     self.send_chat('Can`t join boss team %t, boss is choosen automatically' % bossTeam)
+2016-06-18 15:04:58+0300 [-] ValueError: unsupported format character 't' (0x74) at index 22
+2016-06-18 15:05:23+0300 [-] Received SIGINT, shutting down.
+2016-06-18 15:05:23+0300 [-] Main loop terminated.
+2016-06-18 15:05:24+0300 [-] pyspades server started on Sat Jun 18 15:05:24 2016
+2016-06-18 15:05:24+0300 [-] Log opened.
+2016-06-18 15:05:24+0300 [-] Generating map 'random #1781285113'...
+2016-06-18 15:05:28+0300 [-] Map loaded successfully.
+2016-06-18 15:05:28+0300 [-] Started server...
+2016-06-18 15:05:29+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 15:05:34+0300 [-] 1
+2016-06-18 15:05:38+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 15:06:07+0300 [-] Architektor_kun disconnected!
+2016-06-18 15:07:55+0300 [-] Received SIGINT, shutting down.
+2016-06-18 15:07:55+0300 [-] Main loop terminated.
+2016-06-18 15:07:56+0300 [-] pyspades server started on Sat Jun 18 15:07:56 2016
+2016-06-18 15:07:56+0300 [-] Log opened.
+2016-06-18 15:07:56+0300 [-] Generating map 'random #1813175092'...
+2016-06-18 15:07:59+0300 [-] Map loaded successfully.
+2016-06-18 15:07:59+0300 [-] Started server...
+2016-06-18 15:07:59+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 15:08:02+0300 [-] Unhandled error in Deferred:
+2016-06-18 15:08:02+0300 [-] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/base.py", line 1194, in run
+	    self.mainLoop()
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/base.py", line 1203, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/base.py", line 825, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/task.py", line 239, in __call__
+	    d = defer.maybeDeferred(self.f, *self.a, **self.kw)
+	--- <exception caught here> ---
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/defer.py", line 150, in maybeDeferred
+	    result = f(*args, **kw)
+	  File "../pyspades/server.py", line 1574, in update
+	    player.continue_map_transfer()
+	  File "../pyspades/server.py", line 1083, in continue_map_transfer
+	    self.send_map()
+	  File "../pyspades/server.py", line 1074, in send_map
+	    self.on_join()
+	  File "./scripts/boss.py", line 18, in on_join
+	    self.protocol.connections.push(connection)
+	exceptions.AttributeError: 'dict' object has no attribute 'push'
+	
+2016-06-18 15:08:43+0300 [-] Received SIGINT, shutting down.
+2016-06-18 15:08:43+0300 [-] Main loop terminated.
+2016-06-18 15:08:48+0300 [-] pyspades server started on Sat Jun 18 15:08:48 2016
+2016-06-18 15:08:48+0300 [-] Log opened.
+2016-06-18 15:08:48+0300 [-] Generating map 'random #164558877'...
+2016-06-18 15:08:50+0300 [-] Map loaded successfully.
+2016-06-18 15:08:50+0300 [-] Started server...
+2016-06-18 15:08:50+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 15:09:41+0300 [-] Unhandled error in Deferred:
+2016-06-18 15:09:41+0300 [-] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/base.py", line 1194, in run
+	    self.mainLoop()
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/base.py", line 1203, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/base.py", line 825, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/task.py", line 239, in __call__
+	    d = defer.maybeDeferred(self.f, *self.a, **self.kw)
+	--- <exception caught here> ---
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/defer.py", line 150, in maybeDeferred
+	    result = f(*args, **kw)
+	  File "../pyspades/server.py", line 1574, in update
+	    player.continue_map_transfer()
+	  File "../pyspades/server.py", line 1083, in continue_map_transfer
+	    self.send_map()
+	  File "../pyspades/server.py", line 1074, in send_map
+	    self.on_join()
+	  File "./scripts/boss.py", line 18, in on_join
+	    self.protocol.connections.append(connection)
+	exceptions.AttributeError: 'dict' object has no attribute 'append'
+	
+2016-06-18 15:13:17+0300 [-] Received SIGINT, shutting down.
+2016-06-18 15:13:17+0300 [-] Main loop terminated.
+2016-06-18 15:13:19+0300 [-] pyspades server started on Sat Jun 18 15:13:19 2016
+2016-06-18 15:13:19+0300 [-] Log opened.
+2016-06-18 15:13:19+0300 [-] Generating map 'random #1331737485'...
+2016-06-18 15:13:21+0300 [-] Map loaded successfully.
+2016-06-18 15:13:21+0300 [-] Started server...
+2016-06-18 15:13:22+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 15:13:31+0300 [-] Unhandled error in Deferred:
+2016-06-18 15:13:31+0300 [-] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/base.py", line 1194, in run
+	    self.mainLoop()
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/base.py", line 1203, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/base.py", line 825, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/task.py", line 239, in __call__
+	    d = defer.maybeDeferred(self.f, *self.a, **self.kw)
+	--- <exception caught here> ---
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/defer.py", line 150, in maybeDeferred
+	    result = f(*args, **kw)
+	  File "../pyspades/server.py", line 1574, in update
+	    player.continue_map_transfer()
+	  File "../pyspades/server.py", line 1083, in continue_map_transfer
+	    self.send_map()
+	  File "../pyspades/server.py", line 1074, in send_map
+	    self.on_join()
+	  File "./scripts/boss.py", line 18, in on_join
+	    self.protocol.connections.append(self)
+	exceptions.AttributeError: 'dict' object has no attribute 'append'
+	
+2016-06-18 15:15:26+0300 [-] Received SIGINT, shutting down.
+2016-06-18 15:15:26+0300 [-] Main loop terminated.
+2016-06-18 15:15:27+0300 [-] pyspades server started on Sat Jun 18 15:15:27 2016
+2016-06-18 15:15:27+0300 [-] Log opened.
+2016-06-18 15:15:27+0300 [-] Generating map 'random #1955629255'...
+2016-06-18 15:15:29+0300 [-] Map loaded successfully.
+2016-06-18 15:15:29+0300 [-] Started server...
+2016-06-18 15:15:29+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 15:15:42+0300 [-] Unhandled error in Deferred:
+2016-06-18 15:15:42+0300 [-] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/base.py", line 1194, in run
+	    self.mainLoop()
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/base.py", line 1203, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/base.py", line 825, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/task.py", line 239, in __call__
+	    d = defer.maybeDeferred(self.f, *self.a, **self.kw)
+	--- <exception caught here> ---
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/defer.py", line 150, in maybeDeferred
+	    result = f(*args, **kw)
+	  File "../pyspades/server.py", line 1574, in update
+	    player.continue_map_transfer()
+	  File "../pyspades/server.py", line 1083, in continue_map_transfer
+	    self.send_map()
+	  File "../pyspades/server.py", line 1074, in send_map
+	    self.on_join()
+	  File "./scripts/boss.py", line 18, in on_join
+	    self.protocol.connections.append(self)
+	exceptions.AttributeError: 'dict' object has no attribute 'append'
+	
+2016-06-18 15:15:53+0300 [-] Received SIGINT, shutting down.
+2016-06-18 15:15:53+0300 [-] Main loop terminated.
+2016-06-18 15:18:12+0300 [-] pyspades server started on Sat Jun 18 15:18:12 2016
+2016-06-18 15:18:12+0300 [-] Log opened.
+2016-06-18 15:18:12+0300 [-] Generating map 'random #824416017'...
+2016-06-18 15:18:13+0300 [-] Map loaded successfully.
+2016-06-18 15:18:13+0300 [-] Started server...
+2016-06-18 15:18:14+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 15:18:26+0300 [-] Unhandled error in Deferred:
+2016-06-18 15:18:26+0300 [-] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/base.py", line 1194, in run
+	    self.mainLoop()
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/base.py", line 1203, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/base.py", line 825, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/task.py", line 239, in __call__
+	    d = defer.maybeDeferred(self.f, *self.a, **self.kw)
+	--- <exception caught here> ---
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/defer.py", line 150, in maybeDeferred
+	    result = f(*args, **kw)
+	  File "../pyspades/server.py", line 1574, in update
+	    player.continue_map_transfer()
+	  File "../pyspades/server.py", line 1083, in continue_map_transfer
+	    self.send_map()
+	  File "../pyspades/server.py", line 1074, in send_map
+	    self.on_join()
+	  File "./scripts/boss.py", line 18, in on_join
+	    self.protocol.connections.append(connection)
+	exceptions.AttributeError: 'dict' object has no attribute 'append'
+	
+2016-06-18 15:18:53+0300 [-] Received SIGINT, shutting down.
+2016-06-18 15:18:53+0300 [-] Main loop terminated.
+2016-06-18 15:19:22+0300 [-] pyspades server started on Sat Jun 18 15:19:22 2016
+2016-06-18 15:19:22+0300 [-] Log opened.
+2016-06-18 15:19:22+0300 [-] Generating map 'random #1348798386'...
+2016-06-18 15:19:24+0300 [-] Map loaded successfully.
+2016-06-18 15:19:24+0300 [-] Started server...
+2016-06-18 15:19:24+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 15:19:37+0300 [-] {<enet.Peer object at 0x7f851a0de690>: <scripts.boss.BossConnection object at 0x7f85119fa690>, 1: <scripts.boss.BossConnection object at 0x7f85119fa690>}
+2016-06-18 15:19:40+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 15:21:44+0300 [-] Received SIGINT, shutting down.
+2016-06-18 15:21:44+0300 [-] Main loop terminated.
+2016-06-18 15:22:06+0300 [-] pyspades server started on Sat Jun 18 15:22:06 2016
+2016-06-18 15:22:06+0300 [-] Log opened.
+2016-06-18 15:22:06+0300 [-] Generating map 'random #1311416623'...
+2016-06-18 15:22:10+0300 [-] Map loaded successfully.
+2016-06-18 15:22:10+0300 [-] Started server...
+2016-06-18 15:22:10+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 15:22:17+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 15:22:19+0300 [-] {'protocol': <scripts.boss.BossProtocol object at 0x7fc30accaf10>, 'rapids': <pyspades.server.SlidingWindow object at 0x7fc30a531550>, 'color': (111, 111, 111), 'rapid_hack_detect': True, 'grenades': 3, 'player_id': 0, 'saved_loaders': None, 'speedhack_detect': True, 'spawn_call': None, 'weapon_object': <pyspades.weapon.Rifle object at 0x7fc309e98a10>, 'last_position_update': 1466252539.488943, 'tool': 1, 'blocks': 49, 'hp': 100, 'respawn_time': 16, 'world_object': <pyspades.world.Character object at 0x7fc30accc280>, 'address': (u'127.0.0.1', 41634), 'peer': <enet.Peer object at 0x7fc312c27690>, 'last_block': 1466252539.771833, 'name': 'Architektor_kun', 'rights': AttributeSet([]), 'weapon': 0, 'printable_name': 'Architektor_kun', 'user_types': AttributeSet([]), 'team': <__main__.FeatureTeam object at 0x7fc30ace6ad0>, 'last_switch': 1466252537.405065, 'map_data': None}
+2016-06-18 15:23:03+0300 [-] Received SIGINT, shutting down.
+2016-06-18 15:23:03+0300 [-] Main loop terminated.
+2016-06-18 15:23:04+0300 [-] pyspades server started on Sat Jun 18 15:23:04 2016
+2016-06-18 15:23:04+0300 [-] Log opened.
+2016-06-18 15:23:04+0300 [-] Generating map 'random #851793479'...
+2016-06-18 15:23:07+0300 [-] Map loaded successfully.
+2016-06-18 15:23:07+0300 [-] Started server...
+2016-06-18 15:23:07+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 15:23:17+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 15:24:54+0300 [-] Received SIGINT, shutting down.
+2016-06-18 15:24:54+0300 [-] Main loop terminated.
+2016-06-18 15:24:55+0300 [-] pyspades server started on Sat Jun 18 15:24:55 2016
+2016-06-18 15:24:55+0300 [-] Log opened.
+2016-06-18 15:24:55+0300 [-] Generating map 'random #48613551'...
+2016-06-18 15:24:58+0300 [-] Map loaded successfully.
+2016-06-18 15:24:58+0300 [-] Started server...
+2016-06-18 15:24:59+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 15:25:09+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 15:25:12+0300 [-] <class '__main__.FeatureConnection'>
+2016-06-18 15:25:53+0300 [-] Received SIGINT, shutting down.
+2016-06-18 15:25:53+0300 [-] Main loop terminated.
+2016-06-18 15:25:53+0300 [-] pyspades server started on Sat Jun 18 15:25:53 2016
+2016-06-18 15:25:53+0300 [-] Log opened.
+2016-06-18 15:25:54+0300 [-] Generating map 'random #1644051461'...
+2016-06-18 15:25:57+0300 [-] Map loaded successfully.
+2016-06-18 15:25:57+0300 [-] Started server...
+2016-06-18 15:25:58+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 15:26:07+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 15:26:10+0300 [-] <class '__main__.FeatureConnection'>
+2016-06-18 15:26:18+0300 [-] <class '__main__.FeatureConnection'>
+2016-06-18 15:26:18+0300 [-] <class '__main__.FeatureConnection'>
+2016-06-18 15:26:19+0300 [-] <class '__main__.FeatureConnection'>
+2016-06-18 15:26:22+0300 [-] <class '__main__.FeatureConnection'>
+2016-06-18 15:26:23+0300 [-] <class '__main__.FeatureConnection'>
+2016-06-18 15:26:24+0300 [-] <class '__main__.FeatureConnection'>
+2016-06-18 15:26:26+0300 [-] <class '__main__.FeatureConnection'>
+2016-06-18 15:26:27+0300 [-] <class '__main__.FeatureConnection'>
+2016-06-18 15:26:28+0300 [-] <class '__main__.FeatureConnection'>
+2016-06-18 15:26:29+0300 [-] <class '__main__.FeatureConnection'>
+2016-06-18 15:26:29+0300 [-] <class '__main__.FeatureConnection'>
+2016-06-18 15:26:30+0300 [-] <class '__main__.FeatureConnection'>
+2016-06-18 15:26:31+0300 [-] <class '__main__.FeatureConnection'>
+2016-06-18 15:26:31+0300 [-] <class '__main__.FeatureConnection'>
+2016-06-18 15:26:32+0300 [-] <class '__main__.FeatureConnection'>
+2016-06-18 15:26:33+0300 [-] <class '__main__.FeatureConnection'>
+2016-06-18 15:26:33+0300 [-] <class '__main__.FeatureConnection'>
+2016-06-18 15:26:34+0300 [-] <class '__main__.FeatureConnection'>
+2016-06-18 15:26:34+0300 [-] <class '__main__.FeatureConnection'>
+2016-06-18 15:26:35+0300 [-] <class '__main__.FeatureConnection'>
+2016-06-18 15:26:36+0300 [-] <class '__main__.FeatureConnection'>
+2016-06-18 15:26:36+0300 [-] <class '__main__.FeatureConnection'>
+2016-06-18 15:26:38+0300 [-] <class '__main__.FeatureConnection'>
+2016-06-18 15:26:42+0300 [-] <class '__main__.FeatureConnection'>
+2016-06-18 15:29:02+0300 [-] Received SIGINT, shutting down.
+2016-06-18 15:29:02+0300 [-] Main loop terminated.
+2016-06-18 15:29:03+0300 [-] pyspades server started on Sat Jun 18 15:29:03 2016
+2016-06-18 15:29:03+0300 [-] Log opened.
+2016-06-18 15:29:03+0300 [-] Generating map 'random #954765948'...
+2016-06-18 15:29:05+0300 [-] Map loaded successfully.
+2016-06-18 15:29:05+0300 [-] Started server...
+2016-06-18 15:29:06+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 15:29:18+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 15:29:19+0300 [-] <class '__main__.FeatureConnection'>
+2016-06-18 15:29:20+0300 [-] <class '__main__.FeatureConnection'>
+2016-06-18 15:31:23+0300 [-] Received SIGINT, shutting down.
+2016-06-18 15:31:23+0300 [-] Main loop terminated.
+2016-06-18 15:31:24+0300 [-] pyspades server started on Sat Jun 18 15:31:24 2016
+2016-06-18 15:31:24+0300 [-] Log opened.
+2016-06-18 15:31:24+0300 [-] Generating map 'random #1026734605'...
+2016-06-18 15:31:27+0300 [-] Map loaded successfully.
+2016-06-18 15:31:27+0300 [-] Started server...
+2016-06-18 15:31:27+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 15:31:39+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 15:31:40+0300 [-] <__main__.FeatureTeam object at 0x7f6848e42b10>
+2016-06-18 15:31:40+0300 [-] <__main__.FeatureTeam object at 0x7f6848e42b10>
+2016-06-18 15:33:29+0300 [-] Received SIGINT, shutting down.
+2016-06-18 15:33:29+0300 [-] Main loop terminated.
+2016-06-18 15:33:30+0300 [-] pyspades server started on Sat Jun 18 15:33:30 2016
+2016-06-18 15:33:30+0300 [-] Log opened.
+2016-06-18 15:33:30+0300 [-] Generating map 'random #883994297'...
+2016-06-18 15:33:33+0300 [-] Map loaded successfully.
+2016-06-18 15:33:33+0300 [-] <scripts.boss.BossProtocol object at 0x7fcd6757ef10>
+2016-06-18 15:33:34+0300 [-] Started server...
+2016-06-18 15:33:34+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 15:33:37+0300 [-] Received SIGINT, shutting down.
+2016-06-18 15:33:37+0300 [-] Main loop terminated.
+2016-06-18 15:33:45+0300 [-] pyspades server started on Sat Jun 18 15:33:45 2016
+2016-06-18 15:33:45+0300 [-] Log opened.
+2016-06-18 15:33:45+0300 [-] Generating map 'random #1811490004'...
+2016-06-18 15:33:49+0300 [-] Map loaded successfully.
+2016-06-18 15:33:49+0300 [-] {'update_loop': LoopingCall<0.016666666666666666>(BossProtocol.update, *(), **{}), 'advance_call': <twisted.internet.base.DelayedCall instance at 0x7f7aa1a8d878>, 'spade_teamkills_on_grief': False, 'player_ids': <pyspades.types.IDPool object at 0x7f7aa1a84a50>, 'map': <pyspades.vxl.VXLData object at 0x7f7aa475ab70>, 'connections': {}, 'pos_table': [(0, 0, 0), (0, 0, -1), (0, 0, 1), (0, -1, 0), (0, 1, 0), (-1, 0, 0), (1, 0, 0), (0, 0, -2), (0, 0, 2), (0, -1, -1), (0, -1, 1), (0, 1, -1), (0, 1, 1), (-1, 0, -1), (-1, 0, 1), (0, -2, 0), (0, 2, 0), (1, 0, -1), (1, 0, 1), (-1, -1, 0), (-1, 1, 0), (1, -1, 0), (1, 1, 0), (-2, 0, 0), (2, 0, 0), (0, 0, -3), (0, 0, 3), (0, -1, -2), (0, -1, 2), (0, 1, -2), (0, 1, 2), (-1, 0, -2), (-1, 0, 2), (0, -2, -1), (0, -2, 1), (0, 2, -1), (0, 2, 1), (1, 0, -2), (1, 0, 2), (-1, -1, -1), (-1, -1, 1), (-1, 1, -1), (-1, 1, 1), (1, -1, -1), (1, -1, 1), (1, 1, -1), (1, 1, 1), (0, -3, 0), (0, 3, 0), (-2, 0, -1), (-2, 0, 1), (-1, -2, 0), (-1, 2, 0), (1, -2, 0), (1, 2, 0), (2, 0, -1), (2, 0, 1), (-2, -1, 0), (-2, 1, 0), (2, -1, 0), (2, 1, 0), (-3, 0, 0), (3, 0, 0), (0, 0, -4), (0, 0, 4), (0, -1, -3), (0, -1, 3), (0, 1, -3), (0, 1, 3), (-1, 0, -3), (-1, 0, 3), (0, -2, -2), (0, -2, 2), (0, 2, -2), (0, 2, 2), (1, 0, -3), (1, 0, 3), (-1, -1, -2), (-1, -1, 2), (-1, 1, -2), (-1, 1, 2), (0, -3, -1), (0, -3, 1), (0, 3, -1), (0, 3, 1), (1, -1, -2), (1, -1, 2), (1, 1, -2), (1, 1, 2), (-2, 0, -2), (-2, 0, 2), (-1, -2, -1), (-1, -2, 1), (-1, 2, -1), (-1, 2, 1), (0, -4, 0), (0, 4, 0), (1, -2, -1), (1, -2, 1), (1, 2, -1), (1, 2, 1), (2, 0, -2), (2, 0, 2), (-2, -1, -1), (-2, -1, 1), (-2, 1, -1), (-2, 1, 1), (-1, -3, 0), (-1, 3, 0), (1, -3, 0), (1, 3, 0), (2, -1, -1), (2, -1, 1), (2, 1, -1), (2, 1, 1), (-3, 0, -1), (-3, 0, 1), (-2, -2, 0), (-2, 2, 0), (2, -2, 0), (2, 2, 0), (3, 0, -1), (3, 0, 1), (-3, -1, 0), (-3, 1, 0), (3, -1, 0), (3, 1, 0), (-4, 0, 0), (4, 0, 0), (0, 0, -5), (0, 0, 5), (0, -1, -4), (0, -1, 4), (0, 1, -4), (0, 1, 4), (-1, 0, -4), (-1, 0, 4), (0, -2, -3), (0, -2, 3), (0, 2, -3), (0, 2, 3), (1, 0, -4), (1, 0, 4), (-1, -1, -3), (-1, -1, 3), (-1, 1, -3), (-1, 1, 3), (0, -3, -2), (0, -3, 2), (0, 3, -2), (0, 3, 2), (1, -1, -3), (1, -1, 3), (1, 1, -3), (1, 1, 3), (-2, 0, -3), (-2, 0, 3), (-1, -2, -2), (-1, -2, 2), (-1, 2, -2), (-1, 2, 2), (0, -4, -1), (0, -4, 1), (0, 4, -1), (0, 4, 1), (1, -2, -2), (1, -2, 2), (1, 2, -2), (1, 2, 2), (2, 0, -3), (2, 0, 3), (-2, -1, -2), (-2, -1, 2), (-2, 1, -2), (-2, 1, 2), (-1, -3, -1), (-1, -3, 1), (-1, 3, -1), (-1, 3, 1), (0, -5, 0), (0, 5, 0), (1, -3, -1), (1, -3, 1), (1, 3, -1), (1, 3, 1), (2, -1, -2), (2, -1, 2), (2, 1, -2), (2, 1, 2), (-3, 0, -2), (-3, 0, 2), (-2, -2, -1), (-2, -2, 1), (-2, 2, -1), (-2, 2, 1), (2, -2, -1), (2, -2, 1), (2, 2, -1), (2, 2, 1), (3, 0, -2), (3, 0, 2), (-1, -4, 0), (-1, 4, 0), (1, -4, 0), (1, 4, 0), (-3, -1, -1), (-3, -1, 1), (-3, 1, -1), (-3, 1, 1), (3, -1, -1), (3, -1, 1), (3, 1, -1), (3, 1, 1), (-2, -3, 0), (-2, 3, 0), (2, -3, 0), (2, 3, 0), (-4, 0, -1), (-4, 0, 1), (-3, -2, 0), (-3, 2, 0), (3, -2, 0), (3, 2, 0), (4, 0, -1), (4, 0, 1), (-4, -1, 0), (-4, 1, 0), (4, -1, 0), (4, 1, 0), (-5, 0, 0), (5, 0, 0), (0, -1, -5), (0, -1, 5), (0, 1, -5), (0, 1, 5), (-1, 0, -5), (-1, 0, 5), (0, -2, -4), (0, -2, 4), (0, 2, -4), (0, 2, 4), (1, 0, -5), (1, 0, 5), (-1, -1, -4), (-1, -1, 4), (-1, 1, -4), (-1, 1, 4), (0, -3, -3), (0, -3, 3), (0, 3, -3), (0, 3, 3), (1, -1, -4), (1, -1, 4), (1, 1, -4), (1, 1, 4), (-2, 0, -4), (-2, 0, 4), (0, -4, -2), (0, -4, 2), (0, 4, -2), (0, 4, 2), (2, 0, -4), (2, 0, 4), (-1, -2, -3), (-1, -2, 3), (-1, 2, -3), (-1, 2, 3), (1, -2, -3), (1, -2, 3), (1, 2, -3), (1, 2, 3), (-1, -3, -2), (-1, -3, 2), (-1, 3, -2), (-1, 3, 2), (0, -5, -1), (0, -5, 1), (0, 5, -1), (0, 5, 1), (1, -3, -2), (1, -3, 2), (1, 3, -2), (1, 3, 2), (-2, -1, -3), (-2, -1, 3), (-2, 1, -3), (-2, 1, 3), (2, -1, -3), (2, -1, 3), (2, 1, -3), (2, 1, 3), (-2, -2, -2), (-2, -2, 2), (-2, 2, -2), (-2, 2, 2), (2, -2, -2), (2, -2, 2), (2, 2, -2), (2, 2, 2), (-3, 0, -3), (-3, 0, 3), (-1, -4, -1), (-1, -4, 1), (-1, 4, -1), (-1, 4, 1), (1, -4, -1), (1, -4, 1), (1, 4, -1), (1, 4, 1), (3, 0, -3), (3, 0, 3), (-3, -1, -2), (-3, -1, 2), (-3, 1, -2), (-3, 1, 2), (3, -1, -2), (3, -1, 2), (3, 1, -2), (3, 1, 2), (-2, -3, -1), (-2, -3, 1), (-2, 3, -1), (-2, 3, 1), (-1, -5, 0), (-1, 5, 0), (1, -5, 0), (1, 5, 0), (2, -3, -1), (2, -3, 1), (2, 3, -1), (2, 3, 1), (-3, -2, -1), (-3, -2, 1), (-3, 2, -1), (-3, 2, 1), (3, -2, -1), (3, -2, 1), (3, 2, -1), (3, 2, 1), (-4, 0, -2), (-4, 0, 2), (-2, -4, 0), (-2, 4, 0), (2, -4, 0), (2, 4, 0), (4, 0, -2), (4, 0, 2), (-4, -1, -1), (-4, -1, 1), (-4, 1, -1), (-4, 1, 1), (-3, -3, 0), (-3, 3, 0), (3, -3, 0), (3, 3, 0), (4, -1, -1), (4, -1, 1), (4, 1, -1), (4, 1, 1), (-5, 0, -1), (-5, 0, 1), (-4, -2, 0), (-4, 2, 0), (4, -2, 0), (4, 2, 0), (5, 0, -1), (5, 0, 1), (-5, -1, 0), (-5, 1, 0), (5, -1, 0), (5, 1, 0), (0, -2, -5), (0, -2, 5), (0, 2, -5), (0, 2, 5), (-1, -1, -5), (-1, -1, 5), (-1, 1, -5), (-1, 1, 5), (0, -3, -4), (0, -3, 4), (0, 3, -4), (0, 3, 4), (1, -1, -5), (1, -1, 5), (1, 1, -5), (1, 1, 5), (-2, 0, -5), (-2, 0, 5), (2, 0, -5), (2, 0, 5), (-1, -2, -4), (-1, -2, 4), (-1, 2, -4), (-1, 2, 4), (0, -4, -3), (0, -4, 3), (0, 4, -3), (0, 4, 3), (1, -2, -4), (1, -2, 4), (1, 2, -4), (1, 2, 4), (0, -5, -2), (0, -5, 2), (0, 5, -2), (0, 5, 2), (-2, -1, -4), (-2, -1, 4), (-2, 1, -4), (-2, 1, 4), (-1, -3, -3), (-1, -3, 3), (-1, 3, -3), (-1, 3, 3), (1, -3, -3), (1, -3, 3), (1, 3, -3), (1, 3, 3), (2, -1, -4), (2, -1, 4), (2, 1, -4), (2, 1, 4), (-3, 0, -4), (-3, 0, 4), (-2, -2, -3), (-2, -2, 3), (-2, 2, -3), (-2, 2, 3), (2, -2, -3), (2, -2, 3), (2, 2, -3), (2, 2, 3), (3, 0, -4), (3, 0, 4), (-1, -4, -2), (-1, -4, 2), (-1, 4, -2), (-1, 4, 2), (1, -4, -2), (1, -4, 2), (1, 4, -2), (1, 4, 2), (-3, -1, -3), (-3, -1, 3), (-3, 1, -3), (-3, 1, 3), (-1, -5, -1), (-1, -5, 1), (-1, 5, -1), (-1, 5, 1), (1, -5, -1), (1, -5, 1), (1, 5, -1), (1, 5, 1), (3, -1, -3), (3, -1, 3), (3, 1, -3), (3, 1, 3), (-2, -3, -2), (-2, -3, 2), (-2, 3, -2), (-2, 3, 2), (2, -3, -2), (2, -3, 2), (2, 3, -2), (2, 3, 2), (-4, 0, -3), (-4, 0, 3), (-3, -2, -2), (-3, -2, 2), (-3, 2, -2), (-3, 2, 2), (-2, -4, -1), (-2, -4, 1), (-2, 4, -1), (-2, 4, 1), (2, -4, -1), (2, -4, 1), (2, 4, -1), (2, 4, 1), (3, -2, -2), (3, -2, 2), (3, 2, -2), (3, 2, 2), (4, 0, -3), (4, 0, 3), (-4, -1, -2), (-4, -1, 2), (-4, 1, -2), (-4, 1, 2), (-3, -3, -1), (-3, -3, 1), (-3, 3, -1), (-3, 3, 1), (-2, -5, 0), (-2, 5, 0), (2, -5, 0), (2, 5, 0), (3, -3, -1), (3, -3, 1), (3, 3, -1), (3, 3, 1), (4, -1, -2), (4, -1, 2), (4, 1, -2), (4, 1, 2), (-5, 0, -2), (-5, 0, 2), (-4, -2, -1), (-4, -2, 1), (-4, 2, -1), (-4, 2, 1), (-3, -4, 0), (-3, 4, 0), (3, -4, 0), (3, 4, 0), (4, -2, -1), (4, -2, 1), (4, 2, -1), (4, 2, 1), (5, 0, -2), (5, 0, 2), (-5, -1, -1), (-5, -1, 1), (-5, 1, -1), (-5, 1, 1), (-4, -3, 0), (-4, 3, 0), (4, -3, 0), (4, 3, 0), (5, -1, -1), (5, -1, 1), (5, 1, -1), (5, 1, 1), (-5, -2, 0), (-5, 2, 0), (5, -2, 0), (5, 2, 0), (0, -3, -5), (0, -3, 5), (0, 3, -5), (0, 3, 5), (-1, -2, -5), (-1, -2, 5), (-1, 2, -5), (-1, 2, 5), (0, -4, -4), (0, -4, 4), (0, 4, -4), (0, 4, 4), (1, -2, -5), (1, -2, 5), (1, 2, -5), (1, 2, 5), (-2, -1, -5), (-2, -1, 5), (-2, 1, -5), (-2, 1, 5), (-1, -3, -4), (-1, -3, 4), (-1, 3, -4), (-1, 3, 4), (0, -5, -3), (0, -5, 3), (0, 5, -3), (0, 5, 3), (1, -3, -4), (1, -3, 4), (1, 3, -4), (1, 3, 4), (2, -1, -5), (2, -1, 5), (2, 1, -5), (2, 1, 5), (-3, 0, -5), (-3, 0, 5), (-2, -2, -4), (-2, -2, 4), (-2, 2, -4), (-2, 2, 4), (-1, -4, -3), (-1, -4, 3), (-1, 4, -3), (-1, 4, 3), (1, -4, -3), (1, -4, 3), (1, 4, -3), (1, 4, 3), (2, -2, -4), (2, -2, 4), (2, 2, -4), (2, 2, 4), (3, 0, -5), (3, 0, 5), (-3, -1, -4), (-3, -1, 4), (-3, 1, -4), (-3, 1, 4), (3, -1, -4), (3, -1, 4), (3, 1, -4), (3, 1, 4), (-2, -3, -3), (-2, -3, 3), (-2, 3, -3), (-2, 3, 3), (-1, -5, -2), (-1, -5, 2), (-1, 5, -2), (-1, 5, 2), (1, -5, -2), (1, -5, 2), (1, 5, -2), (1, 5, 2), (2, -3, -3), (2, -3, 3), (2, 3, -3), (2, 3, 3), (-4, 0, -4), (-4, 0, 4), (-3, -2, -3), (-3, -2, 3), (-3, 2, -3), (-3, 2, 3), (-2, -4, -2), (-2, -4, 2), (-2, 4, -2), (-2, 4, 2), (2, -4, -2), (2, -4, 2), (2, 4, -2), (2, 4, 2), (3, -2, -3), (3, -2, 3), (3, 2, -3), (3, 2, 3), (4, 0, -4), (4, 0, 4), (-3, -3, -2), (-3, -3, 2), (-3, 3, -2), (-3, 3, 2), (-2, -5, -1), (-2, -5, 1), (-2, 5, -1), (-2, 5, 1), (2, -5, -1), (2, -5, 1), (2, 5, -1), (2, 5, 1), (3, -3, -2), (3, -3, 2), (3, 3, -2), (3, 3, 2), (-4, -1, -3), (-4, -1, 3), (-4, 1, -3), (-4, 1, 3), (4, -1, -3), (4, -1, 3), (4, 1, -3), (4, 1, 3), (-5, 0, -3), (-5, 0, 3), (-4, -2, -2), (-4, -2, 2), (-4, 2, -2), (-4, 2, 2), (-3, -4, -1), (-3, -4, 1), (-3, 4, -1), (-3, 4, 1), (3, -4, -1), (3, -4, 1), (3, 4, -1), (3, 4, 1), (4, -2, -2), (4, -2, 2), (4, 2, -2), (4, 2, 2), (5, 0, -3), (5, 0, 3), (-5, -1, -2), (-5, -1, 2), (-5, 1, -2), (-5, 1, 2), (-4, -3, -1), (-4, -3, 1), (-4, 3, -1), (-4, 3, 1), (-3, -5, 0), (-3, 5, 0), (3, -5, 0), (3, 5, 0), (4, -3, -1), (4, -3, 1), (4, 3, -1), (4, 3, 1), (5, -1, -2), (5, -1, 2), (5, 1, -2), (5, 1, 2), (-4, -4, 0), (-4, 4, 0), (4, -4, 0), (4, 4, 0), (-5, -2, -1), (-5, -2, 1), (-5, 2, -1), (-5, 2, 1), (5, -2, -1), (5, -2, 1), (5, 2, -1), (5, 2, 1), (-5, -3, 0), (-5, 3, 0), (5, -3, 0), (5, 3, 0), (0, -4, -5), (0, -4, 5), (0, 4, -5), (0, 4, 5), (-1, -3, -5), (-1, -3, 5), (-1, 3, -5), (-1, 3, 5), (0, -5, -4), (0, -5, 4), (0, 5, -4), (0, 5, 4), (1, -3, -5), (1, -3, 5), (1, 3, -5), (1, 3, 5), (-2, -2, -5), (-2, -2, 5), (-2, 2, -5), (-2, 2, 5), (2, -2, -5), (2, -2, 5), (2, 2, -5), (2, 2, 5), (-1, -4, -4), (-1, -4, 4), (-1, 4, -4), (-1, 4, 4), (1, -4, -4), (1, -4, 4), (1, 4, -4), (1, 4, 4), (-3, -1, -5), (-3, -1, 5), (-3, 1, -5), (-3, 1, 5), (-2, -3, -4), (-2, -3, 4), (-2, 3, -4), (-2, 3, 4), (-1, -5, -3), (-1, -5, 3), (-1, 5, -3), (-1, 5, 3), (1, -5, -3), (1, -5, 3), (1, 5, -3), (1, 5, 3), (2, -3, -4), (2, -3, 4), (2, 3, -4), (2, 3, 4), (3, -1, -5), (3, -1, 5), (3, 1, -5), (3, 1, 5), (-4, 0, -5), (-4, 0, 5), (-3, -2, -4), (-3, -2, 4), (-3, 2, -4), (-3, 2, 4), (3, -2, -4), (3, -2, 4), (3, 2, -4), (3, 2, 4), (4, 0, -5), (4, 0, 5), (-2, -4, -3), (-2, -4, 3), (-2, 4, -3), (-2, 4, 3), (2, -4, -3), (2, -4, 3), (2, 4, -3), (2, 4, 3), (-4, -1, -4), (-4, -1, 4), (-4, 1, -4), (-4, 1, 4), (-3, -3, -3), (-3, -3, 3), (-3, 3, -3), (-3, 3, 3), (-2, -5, -2), (-2, -5, 2), (-2, 5, -2), (-2, 5, 2), (2, -5, -2), (2, -5, 2), (2, 5, -2), (2, 5, 2), (3, -3, -3), (3, -3, 3), (3, 3, -3), (3, 3, 3), (4, -1, -4), (4, -1, 4), (4, 1, -4), (4, 1, 4), (-3, -4, -2), (-3, -4, 2), (-3, 4, -2), (-3, 4, 2), (3, -4, -2), (3, -4, 2), (3, 4, -2), (3, 4, 2), (-5, 0, -4), (-5, 0, 4), (-4, -2, -3), (-4, -2, 3), (-4, 2, -3), (-4, 2, 3), (4, -2, -3), (4, -2, 3), (4, 2, -3), (4, 2, 3), (5, 0, -4), (5, 0, 4), (-5, -1, -3), (-5, -1, 3), (-5, 1, -3), (-5, 1, 3), (-4, -3, -2), (-4, -3, 2), (-4, 3, -2), (-4, 3, 2), (-3, -5, -1), (-3, -5, 1), (-3, 5, -1), (-3, 5, 1), (3, -5, -1), (3, -5, 1), (3, 5, -1), (3, 5, 1), (4, -3, -2), (4, -3, 2), (4, 3, -2), (4, 3, 2), (5, -1, -3), (5, -1, 3), (5, 1, -3), (5, 1, 3), (-4, -4, -1), (-4, -4, 1), (-4, 4, -1), (-4, 4, 1), (4, -4, -1), (4, -4, 1), (4, 4, -1), (4, 4, 1), (-5, -2, -2), (-5, -2, 2), (-5, 2, -2), (-5, 2, 2), (5, -2, -2), (5, -2, 2), (5, 2, -2), (5, 2, 2), (-4, -5, 0), (-4, 5, 0), (4, -5, 0), (4, 5, 0), (-5, -3, -1), (-5, -3, 1), (-5, 3, -1), (-5, 3, 1), (5, -3, -1), (5, -3, 1), (5, 3, -1), (5, 3, 1), (-5, -4, 0), (-5, 4, 0), (5, -4, 0), (5, 4, 0), (0, -5, -5), (0, -5, 5), (0, 5, -5), (0, 5, 5), (-1, -4, -5), (-1, -4, 5), (-1, 4, -5), (-1, 4, 5), (1, -4, -5), (1, -4, 5), (1, 4, -5), (1, 4, 5), (-2, -3, -5), (-2, -3, 5), (-2, 3, -5), (-2, 3, 5), (-1, -5, -4), (-1, -5, 4), (-1, 5, -4), (-1, 5, 4), (1, -5, -4), (1, -5, 4), (1, 5, -4), (1, 5, 4), (2, -3, -5), (2, -3, 5), (2, 3, -5), (2, 3, 5), (-3, -2, -5), (-3, -2, 5), (-3, 2, -5), (-3, 2, 5), (-2, -4, -4), (-2, -4, 4), (-2, 4, -4), (-2, 4, 4), (2, -4, -4), (2, -4, 4), (2, 4, -4), (2, 4, 4), (3, -2, -5), (3, -2, 5), (3, 2, -5), (3, 2, 5), (-4, -1, -5), (-4, -1, 5), (-4, 1, -5), (-4, 1, 5), (-3, -3, -4), (-3, -3, 4), (-3, 3, -4), (-3, 3, 4), (-2, -5, -3), (-2, -5, 3), (-2, 5, -3), (-2, 5, 3), (2, -5, -3), (2, -5, 3), (2, 5, -3), (2, 5, 3), (3, -3, -4), (3, -3, 4), (3, 3, -4), (3, 3, 4), (4, -1, -5), (4, -1, 5), (4, 1, -5), (4, 1, 5), (-5, 0, -5), (-5, 0, 5), (-4, -2, -4), (-4, -2, 4), (-4, 2, -4), (-4, 2, 4), (-3, -4, -3), (-3, -4, 3), (-3, 4, -3), (-3, 4, 3), (3, -4, -3), (3, -4, 3), (3, 4, -3), (3, 4, 3), (4, -2, -4), (4, -2, 4), (4, 2, -4), (4, 2, 4), (5, 0, -5), (5, 0, 5), (-3, -5, -2), (-3, -5, 2), (-3, 5, -2), (-3, 5, 2), (3, -5, -2), (3, -5, 2), (3, 5, -2), (3, 5, 2), (-5, -1, -4), (-5, -1, 4), (-5, 1, -4), (-5, 1, 4), (-4, -3, -3), (-4, -3, 3), (-4, 3, -3), (-4, 3, 3), (4, -3, -3), (4, -3, 3), (4, 3, -3), (4, 3, 3), (5, -1, -4), (5, -1, 4), (5, 1, -4), (5, 1, 4), (-4, -4, -2), (-4, -4, 2), (-4, 4, -2), (-4, 4, 2), (4, -4, -2), (4, -4, 2), (4, 4, -2), (4, 4, 2), (-5, -2, -3), (-5, -2, 3), (-5, 2, -3), (-5, 2, 3), (5, -2, -3), (5, -2, 3), (5, 2, -3), (5, 2, 3), (-4, -5, -1), (-4, -5, 1), (-4, 5, -1), (-4, 5, 1), (4, -5, -1), (4, -5, 1), (4, 5, -1), (4, 5, 1), (-5, -3, -2), (-5, -3, 2), (-5, 3, -2), (-5, 3, 2), (5, -3, -2), (5, -3, 2), (5, 3, -2), (5, 3, 2), (-5, -4, -1), (-5, -4, 1), (-5, 4, -1), (-5, 4, 1), (5, -4, -1), (5, -4, 1), (5, 4, -1), (5, 4, 1), (-5, -5, 0), (-5, 5, 0), (5, -5, 0), (5, 5, 0), (-1, -5, -5), (-1, -5, 5), (-1, 5, -5), (-1, 5, 5), (1, -5, -5), (1, -5, 5), (1, 5, -5), (1, 5, 5), (-2, -4, -5), (-2, -4, 5), (-2, 4, -5), (-2, 4, 5), (2, -4, -5), (2, -4, 5), (2, 4, -5), (2, 4, 5), (-3, -3, -5), (-3, -3, 5), (-3, 3, -5), (-3, 3, 5), (-2, -5, -4), (-2, -5, 4), (-2, 5, -4), (-2, 5, 4), (2, -5, -4), (2, -5, 4), (2, 5, -4), (2, 5, 4), (3, -3, -5), (3, -3, 5), (3, 3, -5), (3, 3, 5), (-4, -2, -5), (-4, -2, 5), (-4, 2, -5), (-4, 2, 5), (-3, -4, -4), (-3, -4, 4), (-3, 4, -4), (-3, 4, 4), (3, -4, -4), (3, -4, 4), (3, 4, -4), (3, 4, 4), (4, -2, -5), (4, -2, 5), (4, 2, -5), (4, 2, 5), (-5, -1, -5), (-5, -1, 5), (-5, 1, -5), (-5, 1, 5), (-4, -3, -4), (-4, -3, 4), (-4, 3, -4), (-4, 3, 4), (-3, -5, -3), (-3, -5, 3), (-3, 5, -3), (-3, 5, 3), (3, -5, -3), (3, -5, 3), (3, 5, -3), (3, 5, 3), (4, -3, -4), (4, -3, 4), (4, 3, -4), (4, 3, 4), (5, -1, -5), (5, -1, 5), (5, 1, -5), (5, 1, 5), (-5, -2, -4), (-5, -2, 4), (-5, 2, -4), (-5, 2, 4), (-4, -4, -3), (-4, -4, 3), (-4, 4, -3), (-4, 4, 3), (4, -4, -3), (4, -4, 3), (4, 4, -3), (4, 4, 3), (5, -2, -4), (5, -2, 4), (5, 2, -4), (5, 2, 4), (-4, -5, -2), (-4, -5, 2), (-4, 5, -2), (-4, 5, 2), (4, -5, -2), (4, -5, 2), (4, 5, -2), (4, 5, 2), (-5, -3, -3), (-5, -3, 3), (-5, 3, -3), (-5, 3, 3), (5, -3, -3), (5, -3, 3), (5, 3, -3), (5, 3, 3), (-5, -4, -2), (-5, -4, 2), (-5, 4, -2), (-5, 4, 2), (5, -4, -2), (5, -4, 2), (5, 4, -2), (5, 4, 2), (-5, -5, -1), (-5, -5, 1), (-5, 5, -1), (-5, 5, 1), (5, -5, -1), (5, -5, 1), (5, 5, -1), (5, 5, 1), (-2, -5, -5), (-2, -5, 5), (-2, 5, -5), (-2, 5, 5), (2, -5, -5), (2, -5, 5), (2, 5, -5), (2, 5, 5), (-3, -4, -5), (-3, -4, 5), (-3, 4, -5), (-3, 4, 5), (3, -4, -5), (3, -4, 5), (3, 4, -5), (3, 4, 5), (-4, -3, -5), (-4, -3, 5), (-4, 3, -5), (-4, 3, 5), (-3, -5, -4), (-3, -5, 4), (-3, 5, -4), (-3, 5, 4), (3, -5, -4), (3, -5, 4), (3, 5, -4), (3, 5, 4), (4, -3, -5), (4, -3, 5), (4, 3, -5), (4, 3, 5), (-4, -4, -4), (-4, -4, 4), (-4, 4, -4), (-4, 4, 4), (4, -4, -4), (4, -4, 4), (4, 4, -4), (4, 4, 4), (-5, -2, -5), (-5, -2, 5), (-5, 2, -5), (-5, 2, 5), (5, -2, -5), (5, -2, 5), (5, 2, -5), (5, 2, 5), (-5, -3, -4), (-5, -3, 4), (-5, 3, -4), (-5, 3, 4), (-4, -5, -3), (-4, -5, 3), (-4, 5, -3), (-4, 5, 3), (4, -5, -3), (4, -5, 3), (4, 5, -3), (4, 5, 3), (5, -3, -4), (5, -3, 4), (5, 3, -4), (5, 3, 4), (-5, -4, -3), (-5, -4, 3), (-5, 4, -3), (-5, 4, 3), (5, -4, -3), (5, -4, 3), (5, 4, -3), (5, 4, 3), (-5, -5, -2), (-5, -5, 2), (-5, 5, -2), (-5, 5, 2), (5, -5, -2), (5, -5, 2), (5, 5, -2), (5, 5, 2), (-3, -5, -5), (-3, -5, 5), (-3, 5, -5), (-3, 5, 5), (3, -5, -5), (3, -5, 5), (3, 5, -5), (3, 5, 5), (-4, -4, -5), (-4, -4, 5), (-4, 4, -5), (-4, 4, 5), (4, -4, -5), (4, -4, 5), (4, 4, -5), (4, 4, 5), (-4, -5, -4), (-4, -5, 4), (-4, 5, -4), (-4, 5, 4), (4, -5, -4), (4, -5, 4), (4, 5, -4), (4, 5, 4), (-5, -3, -5), (-5, -3, 5), (-5, 3, -5), (-5, 3, 5), (5, -3, -5), (5, -3, 5), (5, 3, -5), (5, 3, 5), (-5, -4, -4), (-5, -4, 4), (-5, 4, -4), (-5, 4, 4), (5, -4, -4), (5, -4, 4), (5, 4, -4), (5, 4, 4), (-5, -5, -3), (-5, -5, 3), (-5, 5, -3), (-5, 5, 3), (5, -5, -3), (5, -5, 3), (5, 5, -3), (5, 5, 3), (-4, -5, -5), (-4, -5, 5), (-4, 5, -5), (-4, 5, 5), (4, -5, -5), (4, -5, 5), (4, 5, -5), (4, 5, 5), (-5, -4, -5), (-5, -4, 5), (-5, 4, -5), (-5, 4, 5), (5, -4, -5), (5, -4, 5), (5, 4, -5), (5, 4, 5), (-5, -5, -4), (-5, -5, 4), (-5, 5, -4), (-5, 5, 4), (5, -5, -4), (5, -5, 4), (5, 5, -4), (5, 5, 4), (-5, -5, -5), (-5, -5, 5), (-5, 5, -5), (-5, 5, 5), (5, -5, -5), (5, -5, 5), (5, 5, -5), (5, 5, 5)], 'time_announce_schedule': <scheduler.Scheduler object at 0x7f7aa1a84c90>, 'max_connections_per_ip': 3, 'debug_log': False, 'game_mode': 0, 'map_rotator_type': <type 'itertools.cycle'>, 'speedhack_detect': True, 'port': 32887, 'max_connections': 34, 'bossTeam': <__main__.FeatureTeam object at 0x7f7aa1a84b10>, 'console': None, 'respawn_waves': True, 'players': {}, 'spectator_team': <__main__.FeatureTeam object at 0x7f7aa1a84a90>, 'teams': {0: <__main__.FeatureTeam object at 0x7f7aa1a84ad0>, 1: <__main__.FeatureTeam object at 0x7f7aa1a84b10>, -1: <__main__.FeatureTeam object at 0x7f7aa1a84a90>}, 'ban_manager': <bansubscribe.BanManager object at 0x7f7aa1a7d990>, 'entities': [], 'team1_color': (255, 102, 0), 'time_announcements': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 30, 60, 120, 180, 240, 300, 600, 900, 1200, 1800, 2400, 3000], 'advance_on_win': 1, 'config': {u'profile': False, u'motd': [u'Dobro pojalovat`. Snova.', u'Karta %(map_name)s by %(map_author)s', u'Mod  %(game_mode)s'], u'help': [u'Lampoviy.', u'Karta %(map_name)s by %(map_author)s', u'Mod  %(game_mode)s', u"'/streak' pokazyvaet skolko ubiystv podryad vy sovershili", u"'/votekick # [reason]' kickayet chiteroblyadey (kak reshit bezdushnaya tolpa)", u"'/time' vremya do smeni karti"], u'load_saved_map': False, u'spade_teamkills_on_grief': False, u'votekick_public_votes': True, u'scripts': [u'boss'], u'max_connections_per_ip': 3, u'debug_log': False, u'default_ban_duration': 1440, u'game_mode': u'ctf', u'speedhack_detect': True, u'port': 32887, u'server_prefix': u'', u'login_retries': 3, u'cap_limit': 10, u'respawn_waves': True, u'squad_respawn_time': 32, u'status_server': {u'logging': False, u'enabled': False, u'port': 32886}, u'afk_time_limit': 30, u'team1': {u'color': [255, 102, 0], u'name': u'2ch'}, u'team2': {u'color': [0, 255, 0], u'name': u'0ch'}, u'maps': [u'random', u'pinpoint', u'normandie', u'assault2'], u'master': False, u'time_announcements': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 30, 60, 120, 180, 240, 300, 600, 900, 1200, 1800, 2400, 3000], u'tips': [u'Vi na Lampovom servachke', u"'/streak' pokazyvaet skolko ubiystv podryad vy sovershili", u"'/votekick # [reason]' kickayet chiteroblyadey (kak reshit bezdushnaya tolpa)", u'Ispolzuy lopatu s umom! Ona bolno byet.'], u'advance_on_win': True, u'network_interface': u'', u'grief_friendly_fire_time': 5, u'friendly_fire': u'on_grief', u'votemap_player_driven': False, u'passwords': {u'admin': [u'bunimo33'], u'moderator': [u'hujiko23'], u'guard': [u'ftgyhu31'], u'trusted': [u'trustedHellYeah']}, u'random_rotation': False, u'rules': [u'Rule #1: Op - huy', u'Rule #2: Cheateroblyad - ne chelovek. Smeytes nad nim. Unijayte ego.', u'Rule #3: Vse ostalnoe i tak yasno.'], u'votemap_extension_time': 15, u'user_blocks_only': False, u'fall_damage': True, u'votemap_autoschedule': False, u'ban_publish': {u'enabled': False, u'port': 32885}, u'default_time_limit': 120, u'respawn_time': 16, u'ssh': {u'enabled': False, u'port': 32887, u'users': {u'user': u'ssh_pass_change_this'}}, u'rotate_daily': True, u'balanced_teams': 2, u'max_players': 32, u'logfile': u'./logs/log.txt', u'votemap_percentage': 80, u'votemap_public_votes': True, u'squad_size': 4, u'irc': {u'username': u'PySnip', u'commandprefix': u'!', u'chatprefix': u'.', u'realname': u'PySnip', u'enabled': False, u'server': u'irc.quakenet.org', u'password': u'', u'nickname': u'PySnip', u'port': 6667, u'channel': u'#MyServerChannel'}, u'name': u'LAMPOVIY SERVACHOK', u'votekick_percentage': 35, u'rights': {u'moderator': [u'advance', u'cancel', u'dban', u'fog', u'from', u'goto', u'hackinfo', u'hban', u'invisible', u'ip', u'kick', u'kickafk', u'kill', u'map', u'master', u'move', u'mute', u'resetgame', u'switch', u'teleport', u'teleport_other', u'tpsilent', u'togglebuild', u'togglekill', u'togglevotekick', u'trust', u'undoban', u'unmute', u'unstick', u'where', u'whowas'], u'guard': [u'cancel', u'fog', u'from', u'goto', u'hackinfo', u'hban', u'ip', u'kick', u'kickafk', u'kill', u'move', u'mute', u'switch', u'teleport', u'teleport_other', u'togglebuild', u'togglekill', u'togglevotekick', u'trust', u'unmute', u'unstick', u'where', u'whowas']}, u'teamswitch_interval': 0, u'rollback_on_game_end': False, u'ban_subscribe': {u'enabled': True, u'urls': [[u'http://www.blacklist.spadille.net/subscribe.json', []]]}, u'melee_damage': 80, u'votekick_ban_duration': 30, u'auto_squad': False, u'tip_frequency': 5, u'votemap_time': 120, u'set_god_build': False}, 'friendly_fire': u'on_grief', 'passwords': {u'admin': [u'bunimo33'], u'moderator': [u'hujiko23'], u'guard': [u'ftgyhu31'], u'trusted': [u'trustedHellYeah']}, 'login_retries': 3, 'bans': <networkdict.NetworkDict object at 0x7f7aa1a7d410>, 'green_team': <__main__.FeatureTeam object at 0x7f7aa1a84b10>, 'start_time': 1466253225.510654, 'fall_damage': True, 'win_count': count(1), 'maps': [<map.RotationInfo object at 0x7f7aa1a84b90>, <map.RotationInfo object at 0x7f7aa1a84bd0>, <map.RotationInfo object at 0x7f7aa1a84c10>, <map.RotationInfo object at 0x7f7aa1a84c50>], 'host': <enet.Host object at 0x7f7aa1a8d710>, 'default_time_limit': 120, 'team2_color': (0, 255, 0), 'blue_team': <__main__.FeatureTeam object at 0x7f7aa1a84ad0>, 'team1_name': u'2ch', 'balanced_teams': 2, 'max_players': 32, 'max_score': 10, 'map_info': <map.Map object at 0x7f7aa1a84d50>, 'map_rotator': <itertools.cycle object at 0x7f7aa1a8d830>, 'team2_name': u'0ch', 'default_cap_limit': 10, 'world': <pyspades.world.World object at 0x7f7aa1a8cdc0>, 'end_calls': [<__main__.EndCall object at 0x7f7aa1a84d90>, <__main__.EndCall object at 0x7f7aa1a84dd0>, <__main__.EndCall object at 0x7f7aa1a84e10>, <__main__.EndCall object at 0x7f7aa1a84e50>, <__main__.EndCall object at 0x7f7aa1a84e90>, <__main__.EndCall object at 0x7f7aa1a84ed0>, <__main__.EndCall object at 0x7f7aa1a84f10>, <__main__.EndCall object at 0x7f7aa1a84f50>, <__main__.EndCall object at 0x7f7aa1a84f90>, <__main__.EndCall object at 0x7f7aa1a84fd0>, <__main__.EndCall object at 0x7f7aa1790050>, <__main__.EndCall object at 0x7f7aa1790090>, <__main__.EndCall object at 0x7f7aa17900d0>, <__main__.EndCall object at 0x7f7aa1790110>, <__main__.EndCall object at 0x7f7aa1790150>, <__main__.EndCall object at 0x7f7aa1790190>, <__main__.EndCall object at 0x7f7aa17901d0>, <__main__.EndCall object at 0x7f7aa1790210>, <__main__.EndCall object at 0x7f7aa1790250>, <__main__.EndCall object at 0x7f7aa1790290>, <__main__.EndCall object at 0x7f7aa17902d0>, <__main__.EndCall object at 0x7f7aa1790310>], 'friendly_fire_time': 5, 'clients': {}, 'default_ban_time': 1440, 'melee_damage': 80, 'hard_bans': set([]), 'planned_map': None, 'game_mode_name': u'ctf', 'server_prefix': '', 'respawn_time': 16, 'teamswitch_interval': 0, 'player_memory': deque([], maxlen=100), 'set_god_build': False}
+2016-06-18 15:33:49+0300 [-] Temporarily disabling observer LegacyLogObserverWrapper(<bound method FileLogObserver.emit of <twisted.python.log.FileLogObserver instance at 0x7f7aa1a8d638>>) due to exception: [Failure instance: Traceback: <type 'exceptions.IOError'>: [Errno 11] Resource temporarily unavailable
+	../pyspades/server.py:1603:set_map
+	./scripts/boss.py:49:on_map_change
+	/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/logger/_io.py:170:write
+	/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/logger/_logger.py:132:emit
+	--- <exception caught here> ---
+	/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/logger/_observer.py:131:__call__
+	/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/logger/_legacy.py:93:__call__
+	/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/python/log.py:557:emit
+	/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/python/util.py:715:untilConcludes
+	]
+	Traceback (most recent call last):
+	  File "../pyspades/server.py", line 1603, in set_map
+	    self.on_map_change(map)
+	  File "./scripts/boss.py", line 49, in on_map_change
+	    print(self.__dict__)
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/logger/_io.py", line 170, in write
+	    self.log.emit(self.level, format=u"{log_io}", log_io=line)
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/logger/_logger.py", line 132, in emit
+	    self.observer(event)
+	--- <exception caught here> ---
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/logger/_observer.py", line 131, in __call__
+	    observer(event)
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/logger/_legacy.py", line 93, in __call__
+	    self.legacyObserver(event)
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/python/log.py", line 557, in emit
+	    util.untilConcludes(self.write, timeStr + " " + msgStr)
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/python/util.py", line 715, in untilConcludes
+	    return f(*a, **kw)
+	exceptions.IOError: [Errno 11] Resource temporarily unavailable
+	
+2016-06-18 15:33:49+0300 [-] Started server...
+2016-06-18 15:33:49+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 15:33:51+0300 [-] Received SIGINT, shutting down.
+2016-06-18 15:33:51+0300 [-] Main loop terminated.
+2016-06-18 15:38:41+0300 [-] pyspades server started on Sat Jun 18 15:38:41 2016
+2016-06-18 15:38:41+0300 [-] Log opened.
+2016-06-18 15:38:41+0300 [-] Generating map 'random #793879148'...
+2016-06-18 15:38:43+0300 [-] Map loaded successfully.
+2016-06-18 15:38:43+0300 [-] {'update_loop': LoopingCall<0.016666666666666666>(BossProtocol.update, *(), **{}), 'advance_call': <twisted.internet.base.DelayedCall instance at 0x7f2623c66878>, 'spade_teamkills_on_grief': False, 'player_ids': <pyspades.types.IDPool object at 0x7f2623c5da90>, 'map': <pyspades.vxl.VXLData object at 0x7f2626933b70>, 'connections': {}, 'pos_table': [(0, 0, 0), (0, 0, -1), (0, 0, 1), (0, -1, 0), (0, 1, 0), (-1, 0, 0), (1, 0, 0), (0, 0, -2), (0, 0, 2), (0, -1, -1), (0, -1, 1), (0, 1, -1), (0, 1, 1), (-1, 0, -1), (-1, 0, 1), (0, -2, 0), (0, 2, 0), (1, 0, -1), (1, 0, 1), (-1, -1, 0), (-1, 1, 0), (1, -1, 0), (1, 1, 0), (-2, 0, 0), (2, 0, 0), (0, 0, -3), (0, 0, 3), (0, -1, -2), (0, -1, 2), (0, 1, -2), (0, 1, 2), (-1, 0, -2), (-1, 0, 2), (0, -2, -1), (0, -2, 1), (0, 2, -1), (0, 2, 1), (1, 0, -2), (1, 0, 2), (-1, -1, -1), (-1, -1, 1), (-1, 1, -1), (-1, 1, 1), (1, -1, -1), (1, -1, 1), (1, 1, -1), (1, 1, 1), (0, -3, 0), (0, 3, 0), (-2, 0, -1), (-2, 0, 1), (-1, -2, 0), (-1, 2, 0), (1, -2, 0), (1, 2, 0), (2, 0, -1), (2, 0, 1), (-2, -1, 0), (-2, 1, 0), (2, -1, 0), (2, 1, 0), (-3, 0, 0), (3, 0, 0), (0, 0, -4), (0, 0, 4), (0, -1, -3), (0, -1, 3), (0, 1, -3), (0, 1, 3), (-1, 0, -3), (-1, 0, 3), (0, -2, -2), (0, -2, 2), (0, 2, -2), (0, 2, 2), (1, 0, -3), (1, 0, 3), (-1, -1, -2), (-1, -1, 2), (-1, 1, -2), (-1, 1, 2), (0, -3, -1), (0, -3, 1), (0, 3, -1), (0, 3, 1), (1, -1, -2), (1, -1, 2), (1, 1, -2), (1, 1, 2), (-2, 0, -2), (-2, 0, 2), (-1, -2, -1), (-1, -2, 1), (-1, 2, -1), (-1, 2, 1), (0, -4, 0), (0, 4, 0), (1, -2, -1), (1, -2, 1), (1, 2, -1), (1, 2, 1), (2, 0, -2), (2, 0, 2), (-2, -1, -1), (-2, -1, 1), (-2, 1, -1), (-2, 1, 1), (-1, -3, 0), (-1, 3, 0), (1, -3, 0), (1, 3, 0), (2, -1, -1), (2, -1, 1), (2, 1, -1), (2, 1, 1), (-3, 0, -1), (-3, 0, 1), (-2, -2, 0), (-2, 2, 0), (2, -2, 0), (2, 2, 0), (3, 0, -1), (3, 0, 1), (-3, -1, 0), (-3, 1, 0), (3, -1, 0), (3, 1, 0), (-4, 0, 0), (4, 0, 0), (0, 0, -5), (0, 0, 5), (0, -1, -4), (0, -1, 4), (0, 1, -4), (0, 1, 4), (-1, 0, -4), (-1, 0, 4), (0, -2, -3), (0, -2, 3), (0, 2, -3), (0, 2, 3), (1, 0, -4), (1, 0, 4), (-1, -1, -3), (-1, -1, 3), (-1, 1, -3), (-1, 1, 3), (0, -3, -2), (0, -3, 2), (0, 3, -2), (0, 3, 2), (1, -1, -3), (1, -1, 3), (1, 1, -3), (1, 1, 3), (-2, 0, -3), (-2, 0, 3), (-1, -2, -2), (-1, -2, 2), (-1, 2, -2), (-1, 2, 2), (0, -4, -1), (0, -4, 1), (0, 4, -1), (0, 4, 1), (1, -2, -2), (1, -2, 2), (1, 2, -2), (1, 2, 2), (2, 0, -3), (2, 0, 3), (-2, -1, -2), (-2, -1, 2), (-2, 1, -2), (-2, 1, 2), (-1, -3, -1), (-1, -3, 1), (-1, 3, -1), (-1, 3, 1), (0, -5, 0), (0, 5, 0), (1, -3, -1), (1, -3, 1), (1, 3, -1), (1, 3, 1), (2, -1, -2), (2, -1, 2), (2, 1, -2), (2, 1, 2), (-3, 0, -2), (-3, 0, 2), (-2, -2, -1), (-2, -2, 1), (-2, 2, -1), (-2, 2, 1), (2, -2, -1), (2, -2, 1), (2, 2, -1), (2, 2, 1), (3, 0, -2), (3, 0, 2), (-1, -4, 0), (-1, 4, 0), (1, -4, 0), (1, 4, 0), (-3, -1, -1), (-3, -1, 1), (-3, 1, -1), (-3, 1, 1), (3, -1, -1), (3, -1, 1), (3, 1, -1), (3, 1, 1), (-2, -3, 0), (-2, 3, 0), (2, -3, 0), (2, 3, 0), (-4, 0, -1), (-4, 0, 1), (-3, -2, 0), (-3, 2, 0), (3, -2, 0), (3, 2, 0), (4, 0, -1), (4, 0, 1), (-4, -1, 0), (-4, 1, 0), (4, -1, 0), (4, 1, 0), (-5, 0, 0), (5, 0, 0), (0, -1, -5), (0, -1, 5), (0, 1, -5), (0, 1, 5), (-1, 0, -5), (-1, 0, 5), (0, -2, -4), (0, -2, 4), (0, 2, -4), (0, 2, 4), (1, 0, -5), (1, 0, 5), (-1, -1, -4), (-1, -1, 4), (-1, 1, -4), (-1, 1, 4), (0, -3, -3), (0, -3, 3), (0, 3, -3), (0, 3, 3), (1, -1, -4), (1, -1, 4), (1, 1, -4), (1, 1, 4), (-2, 0, -4), (-2, 0, 4), (0, -4, -2), (0, -4, 2), (0, 4, -2), (0, 4, 2), (2, 0, -4), (2, 0, 4), (-1, -2, -3), (-1, -2, 3), (-1, 2, -3), (-1, 2, 3), (1, -2, -3), (1, -2, 3), (1, 2, -3), (1, 2, 3), (-1, -3, -2), (-1, -3, 2), (-1, 3, -2), (-1, 3, 2), (0, -5, -1), (0, -5, 1), (0, 5, -1), (0, 5, 1), (1, -3, -2), (1, -3, 2), (1, 3, -2), (1, 3, 2), (-2, -1, -3), (-2, -1, 3), (-2, 1, -3), (-2, 1, 3), (2, -1, -3), (2, -1, 3), (2, 1, -3), (2, 1, 3), (-2, -2, -2), (-2, -2, 2), (-2, 2, -2), (-2, 2, 2), (2, -2, -2), (2, -2, 2), (2, 2, -2), (2, 2, 2), (-3, 0, -3), (-3, 0, 3), (-1, -4, -1), (-1, -4, 1), (-1, 4, -1), (-1, 4, 1), (1, -4, -1), (1, -4, 1), (1, 4, -1), (1, 4, 1), (3, 0, -3), (3, 0, 3), (-3, -1, -2), (-3, -1, 2), (-3, 1, -2), (-3, 1, 2), (3, -1, -2), (3, -1, 2), (3, 1, -2), (3, 1, 2), (-2, -3, -1), (-2, -3, 1), (-2, 3, -1), (-2, 3, 1), (-1, -5, 0), (-1, 5, 0), (1, -5, 0), (1, 5, 0), (2, -3, -1), (2, -3, 1), (2, 3, -1), (2, 3, 1), (-3, -2, -1), (-3, -2, 1), (-3, 2, -1), (-3, 2, 1), (3, -2, -1), (3, -2, 1), (3, 2, -1), (3, 2, 1), (-4, 0, -2), (-4, 0, 2), (-2, -4, 0), (-2, 4, 0), (2, -4, 0), (2, 4, 0), (4, 0, -2), (4, 0, 2), (-4, -1, -1), (-4, -1, 1), (-4, 1, -1), (-4, 1, 1), (-3, -3, 0), (-3, 3, 0), (3, -3, 0), (3, 3, 0), (4, -1, -1), (4, -1, 1), (4, 1, -1), (4, 1, 1), (-5, 0, -1), (-5, 0, 1), (-4, -2, 0), (-4, 2, 0), (4, -2, 0), (4, 2, 0), (5, 0, -1), (5, 0, 1), (-5, -1, 0), (-5, 1, 0), (5, -1, 0), (5, 1, 0), (0, -2, -5), (0, -2, 5), (0, 2, -5), (0, 2, 5), (-1, -1, -5), (-1, -1, 5), (-1, 1, -5), (-1, 1, 5), (0, -3, -4), (0, -3, 4), (0, 3, -4), (0, 3, 4), (1, -1, -5), (1, -1, 5), (1, 1, -5), (1, 1, 5), (-2, 0, -5), (-2, 0, 5), (2, 0, -5), (2, 0, 5), (-1, -2, -4), (-1, -2, 4), (-1, 2, -4), (-1, 2, 4), (0, -4, -3), (0, -4, 3), (0, 4, -3), (0, 4, 3), (1, -2, -4), (1, -2, 4), (1, 2, -4), (1, 2, 4), (0, -5, -2), (0, -5, 2), (0, 5, -2), (0, 5, 2), (-2, -1, -4), (-2, -1, 4), (-2, 1, -4), (-2, 1, 4), (-1, -3, -3), (-1, -3, 3), (-1, 3, -3), (-1, 3, 3), (1, -3, -3), (1, -3, 3), (1, 3, -3), (1, 3, 3), (2, -1, -4), (2, -1, 4), (2, 1, -4), (2, 1, 4), (-3, 0, -4), (-3, 0, 4), (-2, -2, -3), (-2, -2, 3), (-2, 2, -3), (-2, 2, 3), (2, -2, -3), (2, -2, 3), (2, 2, -3), (2, 2, 3), (3, 0, -4), (3, 0, 4), (-1, -4, -2), (-1, -4, 2), (-1, 4, -2), (-1, 4, 2), (1, -4, -2), (1, -4, 2), (1, 4, -2), (1, 4, 2), (-3, -1, -3), (-3, -1, 3), (-3, 1, -3), (-3, 1, 3), (-1, -5, -1), (-1, -5, 1), (-1, 5, -1), (-1, 5, 1), (1, -5, -1), (1, -5, 1), (1, 5, -1), (1, 5, 1), (3, -1, -3), (3, -1, 3), (3, 1, -3), (3, 1, 3), (-2, -3, -2), (-2, -3, 2), (-2, 3, -2), (-2, 3, 2), (2, -3, -2), (2, -3, 2), (2, 3, -2), (2, 3, 2), (-4, 0, -3), (-4, 0, 3), (-3, -2, -2), (-3, -2, 2), (-3, 2, -2), (-3, 2, 2), (-2, -4, -1), (-2, -4, 1), (-2, 4, -1), (-2, 4, 1), (2, -4, -1), (2, -4, 1), (2, 4, -1), (2, 4, 1), (3, -2, -2), (3, -2, 2), (3, 2, -2), (3, 2, 2), (4, 0, -3), (4, 0, 3), (-4, -1, -2), (-4, -1, 2), (-4, 1, -2), (-4, 1, 2), (-3, -3, -1), (-3, -3, 1), (-3, 3, -1), (-3, 3, 1), (-2, -5, 0), (-2, 5, 0), (2, -5, 0), (2, 5, 0), (3, -3, -1), (3, -3, 1), (3, 3, -1), (3, 3, 1), (4, -1, -2), (4, -1, 2), (4, 1, -2), (4, 1, 2), (-5, 0, -2), (-5, 0, 2), (-4, -2, -1), (-4, -2, 1), (-4, 2, -1), (-4, 2, 1), (-3, -4, 0), (-3, 4, 0), (3, -4, 0), (3, 4, 0), (4, -2, -1), (4, -2, 1), (4, 2, -1), (4, 2, 1), (5, 0, -2), (5, 0, 2), (-5, -1, -1), (-5, -1, 1), (-5, 1, -1), (-5, 1, 1), (-4, -3, 0), (-4, 3, 0), (4, -3, 0), (4, 3, 0), (5, -1, -1), (5, -1, 1), (5, 1, -1), (5, 1, 1), (-5, -2, 0), (-5, 2, 0), (5, -2, 0), (5, 2, 0), (0, -3, -5), (0, -3, 5), (0, 3, -5), (0, 3, 5), (-1, -2, -5), (-1, -2, 5), (-1, 2, -5), (-1, 2, 5), (0, -4, -4), (0, -4, 4), (0, 4, -4), (0, 4, 4), (1, -2, -5), (1, -2, 5), (1, 2, -5), (1, 2, 5), (-2, -1, -5), (-2, -1, 5), (-2, 1, -5), (-2, 1, 5), (-1, -3, -4), (-1, -3, 4), (-1, 3, -4), (-1, 3, 4), (0, -5, -3), (0, -5, 3), (0, 5, -3), (0, 5, 3), (1, -3, -4), (1, -3, 4), (1, 3, -4), (1, 3, 4), (2, -1, -5), (2, -1, 5), (2, 1, -5), (2, 1, 5), (-3, 0, -5), (-3, 0, 5), (-2, -2, -4), (-2, -2, 4), (-2, 2, -4), (-2, 2, 4), (-1, -4, -3), (-1, -4, 3), (-1, 4, -3), (-1, 4, 3), (1, -4, -3), (1, -4, 3), (1, 4, -3), (1, 4, 3), (2, -2, -4), (2, -2, 4), (2, 2, -4), (2, 2, 4), (3, 0, -5), (3, 0, 5), (-3, -1, -4), (-3, -1, 4), (-3, 1, -4), (-3, 1, 4), (3, -1, -4), (3, -1, 4), (3, 1, -4), (3, 1, 4), (-2, -3, -3), (-2, -3, 3), (-2, 3, -3), (-2, 3, 3), (-1, -5, -2), (-1, -5, 2), (-1, 5, -2), (-1, 5, 2), (1, -5, -2), (1, -5, 2), (1, 5, -2), (1, 5, 2), (2, -3, -3), (2, -3, 3), (2, 3, -3), (2, 3, 3), (-4, 0, -4), (-4, 0, 4), (-3, -2, -3), (-3, -2, 3), (-3, 2, -3), (-3, 2, 3), (-2, -4, -2), (-2, -4, 2), (-2, 4, -2), (-2, 4, 2), (2, -4, -2), (2, -4, 2), (2, 4, -2), (2, 4, 2), (3, -2, -3), (3, -2, 3), (3, 2, -3), (3, 2, 3), (4, 0, -4), (4, 0, 4), (-3, -3, -2), (-3, -3, 2), (-3, 3, -2), (-3, 3, 2), (-2, -5, -1), (-2, -5, 1), (-2, 5, -1), (-2, 5, 1), (2, -5, -1), (2, -5, 1), (2, 5, -1), (2, 5, 1), (3, -3, -2), (3, -3, 2), (3, 3, -2), (3, 3, 2), (-4, -1, -3), (-4, -1, 3), (-4, 1, -3), (-4, 1, 3), (4, -1, -3), (4, -1, 3), (4, 1, -3), (4, 1, 3), (-5, 0, -3), (-5, 0, 3), (-4, -2, -2), (-4, -2, 2), (-4, 2, -2), (-4, 2, 2), (-3, -4, -1), (-3, -4, 1), (-3, 4, -1), (-3, 4, 1), (3, -4, -1), (3, -4, 1), (3, 4, -1), (3, 4, 1), (4, -2, -2), (4, -2, 2), (4, 2, -2), (4, 2, 2), (5, 0, -3), (5, 0, 3), (-5, -1, -2), (-5, -1, 2), (-5, 1, -2), (-5, 1, 2), (-4, -3, -1), (-4, -3, 1), (-4, 3, -1), (-4, 3, 1), (-3, -5, 0), (-3, 5, 0), (3, -5, 0), (3, 5, 0), (4, -3, -1), (4, -3, 1), (4, 3, -1), (4, 3, 1), (5, -1, -2), (5, -1, 2), (5, 1, -2), (5, 1, 2), (-4, -4, 0), (-4, 4, 0), (4, -4, 0), (4, 4, 0), (-5, -2, -1), (-5, -2, 1), (-5, 2, -1), (-5, 2, 1), (5, -2, -1), (5, -2, 1), (5, 2, -1), (5, 2, 1), (-5, -3, 0), (-5, 3, 0), (5, -3, 0), (5, 3, 0), (0, -4, -5), (0, -4, 5), (0, 4, -5), (0, 4, 5), (-1, -3, -5), (-1, -3, 5), (-1, 3, -5), (-1, 3, 5), (0, -5, -4), (0, -5, 4), (0, 5, -4), (0, 5, 4), (1, -3, -5), (1, -3, 5), (1, 3, -5), (1, 3, 5), (-2, -2, -5), (-2, -2, 5), (-2, 2, -5), (-2, 2, 5), (2, -2, -5), (2, -2, 5), (2, 2, -5), (2, 2, 5), (-1, -4, -4), (-1, -4, 4), (-1, 4, -4), (-1, 4, 4), (1, -4, -4), (1, -4, 4), (1, 4, -4), (1, 4, 4), (-3, -1, -5), (-3, -1, 5), (-3, 1, -5), (-3, 1, 5), (-2, -3, -4), (-2, -3, 4), (-2, 3, -4), (-2, 3, 4), (-1, -5, -3), (-1, -5, 3), (-1, 5, -3), (-1, 5, 3), (1, -5, -3), (1, -5, 3), (1, 5, -3), (1, 5, 3), (2, -3, -4), (2, -3, 4), (2, 3, -4), (2, 3, 4), (3, -1, -5), (3, -1, 5), (3, 1, -5), (3, 1, 5), (-4, 0, -5), (-4, 0, 5), (-3, -2, -4), (-3, -2, 4), (-3, 2, -4), (-3, 2, 4), (3, -2, -4), (3, -2, 4), (3, 2, -4), (3, 2, 4), (4, 0, -5), (4, 0, 5), (-2, -4, -3), (-2, -4, 3), (-2, 4, -3), (-2, 4, 3), (2, -4, -3), (2, -4, 3), (2, 4, -3), (2, 4, 3), (-4, -1, -4), (-4, -1, 4), (-4, 1, -4), (-4, 1, 4), (-3, -3, -3), (-3, -3, 3), (-3, 3, -3), (-3, 3, 3), (-2, -5, -2), (-2, -5, 2), (-2, 5, -2), (-2, 5, 2), (2, -5, -2), (2, -5, 2), (2, 5, -2), (2, 5, 2), (3, -3, -3), (3, -3, 3), (3, 3, -3), (3, 3, 3), (4, -1, -4), (4, -1, 4), (4, 1, -4), (4, 1, 4), (-3, -4, -2), (-3, -4, 2), (-3, 4, -2), (-3, 4, 2), (3, -4, -2), (3, -4, 2), (3, 4, -2), (3, 4, 2), (-5, 0, -4), (-5, 0, 4), (-4, -2, -3), (-4, -2, 3), (-4, 2, -3), (-4, 2, 3), (4, -2, -3), (4, -2, 3), (4, 2, -3), (4, 2, 3), (5, 0, -4), (5, 0, 4), (-5, -1, -3), (-5, -1, 3), (-5, 1, -3), (-5, 1, 3), (-4, -3, -2), (-4, -3, 2), (-4, 3, -2), (-4, 3, 2), (-3, -5, -1), (-3, -5, 1), (-3, 5, -1), (-3, 5, 1), (3, -5, -1), (3, -5, 1), (3, 5, -1), (3, 5, 1), (4, -3, -2), (4, -3, 2), (4, 3, -2), (4, 3, 2), (5, -1, -3), (5, -1, 3), (5, 1, -3), (5, 1, 3), (-4, -4, -1), (-4, -4, 1), (-4, 4, -1), (-4, 4, 1), (4, -4, -1), (4, -4, 1), (4, 4, -1), (4, 4, 1), (-5, -2, -2), (-5, -2, 2), (-5, 2, -2), (-5, 2, 2), (5, -2, -2), (5, -2, 2), (5, 2, -2), (5, 2, 2), (-4, -5, 0), (-4, 5, 0), (4, -5, 0), (4, 5, 0), (-5, -3, -1), (-5, -3, 1), (-5, 3, -1), (-5, 3, 1), (5, -3, -1), (5, -3, 1), (5, 3, -1), (5, 3, 1), (-5, -4, 0), (-5, 4, 0), (5, -4, 0), (5, 4, 0), (0, -5, -5), (0, -5, 5), (0, 5, -5), (0, 5, 5), (-1, -4, -5), (-1, -4, 5), (-1, 4, -5), (-1, 4, 5), (1, -4, -5), (1, -4, 5), (1, 4, -5), (1, 4, 5), (-2, -3, -5), (-2, -3, 5), (-2, 3, -5), (-2, 3, 5), (-1, -5, -4), (-1, -5, 4), (-1, 5, -4), (-1, 5, 4), (1, -5, -4), (1, -5, 4), (1, 5, -4), (1, 5, 4), (2, -3, -5), (2, -3, 5), (2, 3, -5), (2, 3, 5), (-3, -2, -5), (-3, -2, 5), (-3, 2, -5), (-3, 2, 5), (-2, -4, -4), (-2, -4, 4), (-2, 4, -4), (-2, 4, 4), (2, -4, -4), (2, -4, 4), (2, 4, -4), (2, 4, 4), (3, -2, -5), (3, -2, 5), (3, 2, -5), (3, 2, 5), (-4, -1, -5), (-4, -1, 5), (-4, 1, -5), (-4, 1, 5), (-3, -3, -4), (-3, -3, 4), (-3, 3, -4), (-3, 3, 4), (-2, -5, -3), (-2, -5, 3), (-2, 5, -3), (-2, 5, 3), (2, -5, -3), (2, -5, 3), (2, 5, -3), (2, 5, 3), (3, -3, -4), (3, -3, 4), (3, 3, -4), (3, 3, 4), (4, -1, -5), (4, -1, 5), (4, 1, -5), (4, 1, 5), (-5, 0, -5), (-5, 0, 5), (-4, -2, -4), (-4, -2, 4), (-4, 2, -4), (-4, 2, 4), (-3, -4, -3), (-3, -4, 3), (-3, 4, -3), (-3, 4, 3), (3, -4, -3), (3, -4, 3), (3, 4, -3), (3, 4, 3), (4, -2, -4), (4, -2, 4), (4, 2, -4), (4, 2, 4), (5, 0, -5), (5, 0, 5), (-3, -5, -2), (-3, -5, 2), (-3, 5, -2), (-3, 5, 2), (3, -5, -2), (3, -5, 2), (3, 5, -2), (3, 5, 2), (-5, -1, -4), (-5, -1, 4), (-5, 1, -4), (-5, 1, 4), (-4, -3, -3), (-4, -3, 3), (-4, 3, -3), (-4, 3, 3), (4, -3, -3), (4, -3, 3), (4, 3, -3), (4, 3, 3), (5, -1, -4), (5, -1, 4), (5, 1, -4), (5, 1, 4), (-4, -4, -2), (-4, -4, 2), (-4, 4, -2), (-4, 4, 2), (4, -4, -2), (4, -4, 2), (4, 4, -2), (4, 4, 2), (-5, -2, -3), (-5, -2, 3), (-5, 2, -3), (-5, 2, 3), (5, -2, -3), (5, -2, 3), (5, 2, -3), (5, 2, 3), (-4, -5, -1), (-4, -5, 1), (-4, 5, -1), (-4, 5, 1), (4, -5, -1), (4, -5, 1), (4, 5, -1), (4, 5, 1), (-5, -3, -2), (-5, -3, 2), (-5, 3, -2), (-5, 3, 2), (5, -3, -2), (5, -3, 2), (5, 3, -2), (5, 3, 2), (-5, -4, -1), (-5, -4, 1), (-5, 4, -1), (-5, 4, 1), (5, -4, -1), (5, -4, 1), (5, 4, -1), (5, 4, 1), (-5, -5, 0), (-5, 5, 0), (5, -5, 0), (5, 5, 0), (-1, -5, -5), (-1, -5, 5), (-1, 5, -5), (-1, 5, 5), (1, -5, -5), (1, -5, 5), (1, 5, -5), (1, 5, 5), (-2, -4, -5), (-2, -4, 5), (-2, 4, -5), (-2, 4, 5), (2, -4, -5), (2, -4, 5), (2, 4, -5), (2, 4, 5), (-3, -3, -5), (-3, -3, 5), (-3, 3, -5), (-3, 3, 5), (-2, -5, -4), (-2, -5, 4), (-2, 5, -4), (-2, 5, 4), (2, -5, -4), (2, -5, 4), (2, 5, -4), (2, 5, 4), (3, -3, -5), (3, -3, 5), (3, 3, -5), (3, 3, 5), (-4, -2, -5), (-4, -2, 5), (-4, 2, -5), (-4, 2, 5), (-3, -4, -4), (-3, -4, 4), (-3, 4, -4), (-3, 4, 4), (3, -4, -4), (3, -4, 4), (3, 4, -4), (3, 4, 4), (4, -2, -5), (4, -2, 5), (4, 2, -5), (4, 2, 5), (-5, -1, -5), (-5, -1, 5), (-5, 1, -5), (-5, 1, 5), (-4, -3, -4), (-4, -3, 4), (-4, 3, -4), (-4, 3, 4), (-3, -5, -3), (-3, -5, 3), (-3, 5, -3), (-3, 5, 3), (3, -5, -3), (3, -5, 3), (3, 5, -3), (3, 5, 3), (4, -3, -4), (4, -3, 4), (4, 3, -4), (4, 3, 4), (5, -1, -5), (5, -1, 5), (5, 1, -5), (5, 1, 5), (-5, -2, -4), (-5, -2, 4), (-5, 2, -4), (-5, 2, 4), (-4, -4, -3), (-4, -4, 3), (-4, 4, -3), (-4, 4, 3), (4, -4, -3), (4, -4, 3), (4, 4, -3), (4, 4, 3), (5, -2, -4), (5, -2, 4), (5, 2, -4), (5, 2, 4), (-4, -5, -2), (-4, -5, 2), (-4, 5, -2), (-4, 5, 2), (4, -5, -2), (4, -5, 2), (4, 5, -2), (4, 5, 2), (-5, -3, -3), (-5, -3, 3), (-5, 3, -3), (-5, 3, 3), (5, -3, -3), (5, -3, 3), (5, 3, -3), (5, 3, 3), (-5, -4, -2), (-5, -4, 2), (-5, 4, -2), (-5, 4, 2), (5, -4, -2), (5, -4, 2), (5, 4, -2), (5, 4, 2), (-5, -5, -1), (-5, -5, 1), (-5, 5, -1), (-5, 5, 1), (5, -5, -1), (5, -5, 1), (5, 5, -1), (5, 5, 1), (-2, -5, -5), (-2, -5, 5), (-2, 5, -5), (-2, 5, 5), (2, -5, -5), (2, -5, 5), (2, 5, -5), (2, 5, 5), (-3, -4, -5), (-3, -4, 5), (-3, 4, -5), (-3, 4, 5), (3, -4, -5), (3, -4, 5), (3, 4, -5), (3, 4, 5), (-4, -3, -5), (-4, -3, 5), (-4, 3, -5), (-4, 3, 5), (-3, -5, -4), (-3, -5, 4), (-3, 5, -4), (-3, 5, 4), (3, -5, -4), (3, -5, 4), (3, 5, -4), (3, 5, 4), (4, -3, -5), (4, -3, 5), (4, 3, -5), (4, 3, 5), (-4, -4, -4), (-4, -4, 4), (-4, 4, -4), (-4, 4, 4), (4, -4, -4), (4, -4, 4), (4, 4, -4), (4, 4, 4), (-5, -2, -5), (-5, -2, 5), (-5, 2, -5), (-5, 2, 5), (5, -2, -5), (5, -2, 5), (5, 2, -5), (5, 2, 5), (-5, -3, -4), (-5, -3, 4), (-5, 3, -4), (-5, 3, 4), (-4, -5, -3), (-4, -5, 3), (-4, 5, -3), (-4, 5, 3), (4, -5, -3), (4, -5, 3), (4, 5, -3), (4, 5, 3), (5, -3, -4), (5, -3, 4), (5, 3, -4), (5, 3, 4), (-5, -4, -3), (-5, -4, 3), (-5, 4, -3), (-5, 4, 3), (5, -4, -3), (5, -4, 3), (5, 4, -3), (5, 4, 3), (-5, -5, -2), (-5, -5, 2), (-5, 5, -2), (-5, 5, 2), (5, -5, -2), (5, -5, 2), (5, 5, -2), (5, 5, 2), (-3, -5, -5), (-3, -5, 5), (-3, 5, -5), (-3, 5, 5), (3, -5, -5), (3, -5, 5), (3, 5, -5), (3, 5, 5), (-4, -4, -5), (-4, -4, 5), (-4, 4, -5), (-4, 4, 5), (4, -4, -5), (4, -4, 5), (4, 4, -5), (4, 4, 5), (-4, -5, -4), (-4, -5, 4), (-4, 5, -4), (-4, 5, 4), (4, -5, -4), (4, -5, 4), (4, 5, -4), (4, 5, 4), (-5, -3, -5), (-5, -3, 5), (-5, 3, -5), (-5, 3, 5), (5, -3, -5), (5, -3, 5), (5, 3, -5), (5, 3, 5), (-5, -4, -4), (-5, -4, 4), (-5, 4, -4), (-5, 4, 4), (5, -4, -4), (5, -4, 4), (5, 4, -4), (5, 4, 4), (-5, -5, -3), (-5, -5, 3), (-5, 5, -3), (-5, 5, 3), (5, -5, -3), (5, -5, 3), (5, 5, -3), (5, 5, 3), (-4, -5, -5), (-4, -5, 5), (-4, 5, -5), (-4, 5, 5), (4, -5, -5), (4, -5, 5), (4, 5, -5), (4, 5, 5), (-5, -4, -5), (-5, -4, 5), (-5, 4, -5), (-5, 4, 5), (5, -4, -5), (5, -4, 5), (5, 4, -5), (5, 4, 5), (-5, -5, -4), (-5, -5, 4), (-5, 5, -4), (-5, 5, 4), (5, -5, -4), (5, -5, 4), (5, 5, -4), (5, 5, 4), (-5, -5, -5), (-5, -5, 5), (-5, 5, -5), (-5, 5, 5), (5, -5, -5), (5, -5, 5), (5, 5, -5), (5, 5, 5)], 'time_announce_schedule': <scheduler.Scheduler object at 0x7f2623c5dcd0>, 'max_connections_per_ip': 3, 'debug_log': False, 'game_mode': 0, 'map_rotator_type': <type 'itertools.cycle'>, 'speedhack_detect': True, 'port': 32887, 'max_connections': 34, 'bossTeam': <__main__.FeatureTeam object at 0x7f2623c5db50>, 'console': None, 'respawn_waves': True, 'players': {}, 'spectator_team': <__main__.FeatureTeam object at 0x7f2623c5dad0>, 'teams': {0: <__main__.FeatureTeam object at 0x7f2623c5db10>, 1: <__main__.FeatureTeam object at 0x7f2623c5db50>, -1: <__main__.FeatureTeam object at 0x7f2623c5dad0>}, 'ban_manager': <bansubscribe.BanManager object at 0x7f2623c569d0>, 'entities': [], 'team1_color': (255, 102, 0), 'time_announcements': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 30, 60, 120, 180, 240, 300, 600, 900, 1200, 1800, 2400, 3000], 'advance_on_win': 1, 'config': {u'profile': False, u'motd': [u'Dobro pojalovat`. Snova.', u'Karta %(map_name)s by %(map_author)s', u'Mod  %(game_mode)s'], u'help': [u'Lampoviy.', u'Karta %(map_name)s by %(map_author)s', u'Mod  %(game_mode)s', u"'/streak' pokazyvaet skolko ubiystv podryad vy sovershili", u"'/votekick # [reason]' kickayet chiteroblyadey (kak reshit bezdushnaya tolpa)", u"'/time' vremya do smeni karti"], u'load_saved_map': False, u'spade_teamkills_on_grief': False, u'votekick_public_votes': True, u'scripts': [u'boss'], u'max_connections_per_ip': 3, u'debug_log': False, u'default_ban_duration': 1440, u'game_mode': u'ctf', u'speedhack_detect': True, u'port': 32887, u'server_prefix': u'', u'login_retries': 3, u'cap_limit': 10, u'respawn_waves': True, u'squad_respawn_time': 32, u'status_server': {u'logging': False, u'enabled': False, u'port': 32886}, u'afk_time_limit': 30, u'team1': {u'color': [255, 102, 0], u'name': u'2ch'}, u'team2': {u'color': [0, 255, 0], u'name': u'0ch'}, u'maps': [u'random', u'pinpoint', u'normandie', u'assault2'], u'master': False, u'time_announcements': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 30, 60, 120, 180, 240, 300, 600, 900, 1200, 1800, 2400, 3000], u'tips': [u'Vi na Lampovom servachke', u"'/streak' pokazyvaet skolko ubiystv podryad vy sovershili", u"'/votekick # [reason]' kickayet chiteroblyadey (kak reshit bezdushnaya tolpa)", u'Ispolzuy lopatu s umom! Ona bolno byet.'], u'advance_on_win': True, u'network_interface': u'', u'grief_friendly_fire_time': 5, u'friendly_fire': u'on_grief', u'votemap_player_driven': False, u'passwords': {u'admin': [u'bunimo33'], u'moderator': [u'hujiko23'], u'guard': [u'ftgyhu31'], u'trusted': [u'trustedHellYeah']}, u'random_rotation': False, u'rules': [u'Rule #1: Op - huy', u'Rule #2: Cheateroblyad - ne chelovek. Smeytes nad nim. Unijayte ego.', u'Rule #3: Vse ostalnoe i tak yasno.'], u'votemap_extension_time': 15, u'user_blocks_only': False, u'fall_damage': True, u'votemap_autoschedule': False, u'ban_publish': {u'enabled': False, u'port': 32885}, u'default_time_limit': 120, u'respawn_time': 16, u'ssh': {u'enabled': False, u'port': 32887, u'users': {u'user': u'ssh_pass_change_this'}}, u'rotate_daily': True, u'balanced_teams': 2, u'max_players': 32, u'logfile': u'./logs/log.txt', u'votemap_percentage': 80, u'votemap_public_votes': True, u'squad_size': 4, u'irc': {u'username': u'PySnip', u'commandprefix': u'!', u'chatprefix': u'.', u'realname': u'PySnip', u'enabled': False, u'server': u'irc.quakenet.org', u'password': u'', u'nickname': u'PySnip', u'port': 6667, u'channel': u'#MyServerChannel'}, u'name': u'LAMPOVIY SERVACHOK', u'votekick_percentage': 35, u'rights': {u'moderator': [u'advance', u'cancel', u'dban', u'fog', u'from', u'goto', u'hackinfo', u'hban', u'invisible', u'ip', u'kick', u'kickafk', u'kill', u'map', u'master', u'move', u'mute', u'resetgame', u'switch', u'teleport', u'teleport_other', u'tpsilent', u'togglebuild', u'togglekill', u'togglevotekick', u'trust', u'undoban', u'unmute', u'unstick', u'where', u'whowas'], u'guard': [u'cancel', u'fog', u'from', u'goto', u'hackinfo', u'hban', u'ip', u'kick', u'kickafk', u'kill', u'move', u'mute', u'switch', u'teleport', u'teleport_other', u'togglebuild', u'togglekill', u'togglevotekick', u'trust', u'unmute', u'unstick', u'where', u'whowas']}, u'teamswitch_interval': 0, u'rollback_on_game_end': False, u'ban_subscribe': {u'enabled': True, u'urls': [[u'http://www.blacklist.spadille.net/subscribe.json', []]]}, u'melee_damage': 80, u'votekick_ban_duration': 30, u'auto_squad': False, u'tip_frequency': 5, u'votemap_time': 120, u'set_god_build': False}, 'friendly_fire': u'on_grief', 'passwords': {u'admin': [u'bunimo33'], u'moderator': [u'hujiko23'], u'guard': [u'ftgyhu31'], u'trusted': [u'trustedHellYeah']}, 'login_retries': 3, 'bans': <networkdict.NetworkDict object at 0x7f2623c56450>, 'green_team': <__main__.FeatureTeam object at 0x7f2623c5db50>, 'start_time': 1466253521.516887, 'fall_damage': True, 'win_count': count(1), 'maps': [<map.RotationInfo object at 0x7f2623c5dbd0>, <map.RotationInfo object at 0x7f2623c5dc10>, <map.RotationInfo object at 0x7f2623c5dc50>, <map.RotationInfo object at 0x7f2623c5dc90>], 'host': <enet.Host object at 0x7f2623c66710>, 'default_time_limit': 120, 'team2_color': (0, 255, 0), 'blue_team': <__main__.FeatureTeam object at 0x7f2623c5db10>, 'team1_name': u'2ch', 'balanced_teams': 2, 'max_players': 32, 'max_score': 10, 'map_info': <map.Map object at 0x7f2623c5dd90>, 'map_rotator': <itertools.cycle object at 0x7f2623c66830>, 'team2_name': u'0ch', 'default_cap_limit': 10, 'world': <pyspades.world.World object at 0x7f2623c65d20>, 'end_calls': [<__main__.EndCall object at 0x7f2623c5ddd0>, <__main__.EndCall object at 0x7f2623c5de10>, <__main__.EndCall object at 0x7f2623c5de50>, <__main__.EndCall object at 0x7f2623c5de90>, <__main__.EndCall object at 0x7f2623c5ded0>, <__main__.EndCall object at 0x7f2623c5df10>, <__main__.EndCall object at 0x7f2623c5df50>, <__main__.EndCall object at 0x7f2623c5df90>, <__main__.EndCall object at 0x7f2623c5dfd0>, <__main__.EndCall object at 0x7f2623965050>, <__main__.EndCall object at 0x7f2623965090>, <__main__.EndCall object at 0x7f26239650d0>, <__main__.EndCall object at 0x7f2623965110>, <__main__.EndCall object at 0x7f2623965150>, <__main__.EndCall object at 0x7f2623965190>, <__main__.EndCall object at 0x7f26239651d0>, <__main__.EndCall object at 0x7f2623965210>, <__main__.EndCall object at 0x7f2623965250>, <__main__.EndCall object at 0x7f2623965290>, <__main__.EndCall object at 0x7f26239652d0>, <__main__.EndCall object at 0x7f2623965310>, <__main__.EndCall object at 0x7f2623965350>], 'friendly_fire_time': 5, 'clients': {}, 'default_ban_time': 1440, 'melee_damage': 80, 'hard_bans': set([]), 'planned_map': None, 'game_mode_name': u'ctf', 'server_prefix': '', 'respawn_time': 16, 'teamswitch_interval': 0, 'player_memory': deque([], maxlen=100), 'set_god_build': False}
+2016-06-18 15:38:43+0300 [-] Temporarily disabling observer LegacyLogObserverWrapper(<bound method FileLogObserver.emit of <twisted.python.log.FileLogObserver instance at 0x7f2623c66638>>) due to exception: [Failure instance: Traceback: <type 'exceptions.IOError'>: [Errno 11] Resource temporarily unavailable
+	../pyspades/server.py:1603:set_map
+	./scripts/boss.py:47:on_map_change
+	/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/logger/_io.py:170:write
+	/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/logger/_logger.py:132:emit
+	--- <exception caught here> ---
+	/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/logger/_observer.py:131:__call__
+	/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/logger/_legacy.py:93:__call__
+	/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/python/log.py:557:emit
+	/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/python/util.py:715:untilConcludes
+	]
+	Traceback (most recent call last):
+	  File "../pyspades/server.py", line 1603, in set_map
+	    self.on_map_change(map)
+	  File "./scripts/boss.py", line 47, in on_map_change
+	    print(self.__dict__)
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/logger/_io.py", line 170, in write
+	    self.log.emit(self.level, format=u"{log_io}", log_io=line)
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/logger/_logger.py", line 132, in emit
+	    self.observer(event)
+	--- <exception caught here> ---
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/logger/_observer.py", line 131, in __call__
+	    observer(event)
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/logger/_legacy.py", line 93, in __call__
+	    self.legacyObserver(event)
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/python/log.py", line 557, in emit
+	    util.untilConcludes(self.write, timeStr + " " + msgStr)
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/python/util.py", line 715, in untilConcludes
+	    return f(*a, **kw)
+	exceptions.IOError: [Errno 11] Resource temporarily unavailable
+	
+2016-06-18 15:38:43+0300 [-] Started server...
+2016-06-18 15:38:44+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 15:38:50+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 15:38:51+0300 [-] ['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_can_build', '_connection_ack', '_on_fall', '_on_reload', '_send_connection_data', 'add_score', 'address', 'admin', 'ban', 'best_streak', 'blocks', 'building', 'capture_flag', 'chat_count', 'chat_time', 'check_refill', 'color', 'continue_map_transfer', 'deaf', 'disconnect', 'disconnected', 'drop_flag', 'filter_animation_data', 'filter_visibility_data', 'filter_weapon_input', 'fly', 'freeze_animation', 'get_location', 'get_respawn_time', 'get_spawn_location', 'god', 'god_build', 'grenade_exploded', 'grenades', 'hit', 'hp', 'invisible', 'is_location_free', 'is_valid_position', 'kick', 'kill', 'killing', 'kills', 'last_block', 'last_block_destroy', 'last_chat', 'last_position_update', 'last_refill', 'last_switch', 'latency', 'loader_received', 'login_retries', 'map_data', 'map_packets_sent', 'mute', 'name', 'on_animation_update', 'on_block_build', 'on_block_build_attempt', 'on_block_destroy', 'on_block_removed', 'on_chat', 'on_chat_sent', 'on_color_set', 'on_color_set_attempt', 'on_command', 'on_connect', 'on_disconnect', 'on_fall', 'on_flag_capture', 'on_flag_drop', 'on_flag_take', 'on_grenade', 'on_grenade_thrown', 'on_hack_attempt', 'on_hit', 'on_join', 'on_kill', 'on_line_build', 'on_line_build_attempt', 'on_login', 'on_orientation_update', 'on_position_update', 'on_refill', 'on_reset', 'on_secondary_fire_set', 'on_shoot_set', 'on_spawn', 'on_spawn_location', 'on_team_changed', 'on_team_join', 'on_tool_changed', 'on_tool_set_attempt', 'on_user_login', 'on_walk_update', 'on_weapon_set', 'peer', 'player_id', 'printable_name', 'protocol', 'rapid_hack_detect', 'rapids', 'refill', 'reset', 'respawn', 'respawn_time', 'rights', 'saved_loaders', 'send_chat', 'send_contained', 'send_data', 'send_lines', 'send_map', 'set_hp', 'set_location', 'set_location_safe', 'set_team', 'set_weapon', 'spawn', 'spawn_call', 'speedhack_detect', 'streak', 'take_flag', 'team', 'timed_out', 'timeout_call', 'timers', 'tool', 'user_types', 'weapon', 'weapon_object', 'world_object']
+2016-06-18 15:43:57+0300 [-] Received SIGINT, shutting down.
+2016-06-18 15:43:57+0300 [-] Main loop terminated.
+2016-06-18 15:43:58+0300 [-] pyspades server started on Sat Jun 18 15:43:58 2016
+2016-06-18 15:43:58+0300 [-] Log opened.
+2016-06-18 15:43:58+0300 [-] Generating map 'random #638486458'...
+2016-06-18 15:44:00+0300 [-] Map loaded successfully.
+2016-06-18 15:44:00+0300 [-] Started server...
+2016-06-18 15:44:00+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 15:44:22+0300 [-] Unhandled error in Deferred:
+2016-06-18 15:44:22+0300 [-] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/base.py", line 1194, in run
+	    self.mainLoop()
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/base.py", line 1203, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/base.py", line 825, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/task.py", line 239, in __call__
+	    d = defer.maybeDeferred(self.f, *self.a, **self.kw)
+	--- <exception caught here> ---
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/defer.py", line 150, in maybeDeferred
+	    result = f(*args, **kw)
+	  File "../pyspades/server.py", line 1574, in update
+	    player.continue_map_transfer()
+	  File "../pyspades/server.py", line 1083, in continue_map_transfer
+	    self.send_map()
+	  File "../pyspades/server.py", line 1074, in send_map
+	    self.on_join()
+	  File "./scripts/boss.py", line 23, in on_join
+	    self.makeBoss = makeBoss
+	exceptions.NameError: global name 'makeBoss' is not defined
+	
+2016-06-18 15:45:18+0300 [-] Received SIGINT, shutting down.
+2016-06-18 15:45:18+0300 [-] Main loop terminated.
+2016-06-18 15:45:19+0300 [-] pyspades server started on Sat Jun 18 15:45:19 2016
+2016-06-18 15:45:19+0300 [-] Log opened.
+2016-06-18 15:45:19+0300 [-] Generating map 'random #2002310606'...
+2016-06-18 15:45:21+0300 [-] Map loaded successfully.
+2016-06-18 15:45:21+0300 [-] Started server...
+2016-06-18 15:45:21+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 15:45:52+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 15:47:19+0300 [-] Received SIGINT, shutting down.
+2016-06-18 15:47:19+0300 [-] Main loop terminated.
+2016-06-18 15:47:20+0300 [-] pyspades server started on Sat Jun 18 15:47:20 2016
+2016-06-18 15:47:20+0300 [-] Log opened.
+2016-06-18 15:47:20+0300 [-] Generating map 'random #2096534046'...
+2016-06-18 15:47:22+0300 [-] Map loaded successfully.
+2016-06-18 15:47:22+0300 [-] Started server...
+2016-06-18 15:47:23+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 15:47:31+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 15:47:32+0300 [-] Traceback (most recent call last):
+2016-06-18 15:47:32+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 15:47:32+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 15:47:32+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 15:47:32+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 15:47:32+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 15:47:32+0300 [-]     connection.loader_received(packet)
+2016-06-18 15:47:32+0300 [-]   File "../pyspades/server.py", line 518, in loader_received
+2016-06-18 15:47:32+0300 [-]     self.on_block_build(x, y, z)
+2016-06-18 15:47:32+0300 [-]   File "./scripts/boss.py", line 41, in on_block_build
+2016-06-18 15:47:32+0300 [-]     self.protocol.initializeBossMode()
+2016-06-18 15:47:32+0300 [-] TypeError: initializeBossMode() takes no arguments (1 given)
+2016-06-18 15:47:33+0300 [-] Traceback (most recent call last):
+2016-06-18 15:47:33+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 15:47:33+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 15:47:33+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 15:47:33+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 15:47:33+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 15:47:33+0300 [-]     connection.loader_received(packet)
+2016-06-18 15:47:33+0300 [-]   File "../pyspades/server.py", line 518, in loader_received
+2016-06-18 15:47:33+0300 [-]     self.on_block_build(x, y, z)
+2016-06-18 15:47:33+0300 [-]   File "./scripts/boss.py", line 41, in on_block_build
+2016-06-18 15:47:33+0300 [-]     self.protocol.initializeBossMode()
+2016-06-18 15:47:33+0300 [-] TypeError: initializeBossMode() takes no arguments (1 given)
+2016-06-18 15:47:56+0300 [-] Received SIGINT, shutting down.
+2016-06-18 15:47:56+0300 [-] Main loop terminated.
+2016-06-18 15:47:56+0300 [-] pyspades server started on Sat Jun 18 15:47:56 2016
+2016-06-18 15:47:56+0300 [-] Log opened.
+2016-06-18 15:47:56+0300 [-] Generating map 'random #1205122914'...
+2016-06-18 15:48:00+0300 [-] Map loaded successfully.
+2016-06-18 15:48:00+0300 [-] Started server...
+2016-06-18 15:48:00+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 15:48:09+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 15:48:10+0300 [-] Traceback (most recent call last):
+2016-06-18 15:48:10+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 15:48:10+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 15:48:10+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 15:48:10+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 15:48:10+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 15:48:10+0300 [-]     connection.loader_received(packet)
+2016-06-18 15:48:10+0300 [-]   File "../pyspades/server.py", line 518, in loader_received
+2016-06-18 15:48:10+0300 [-]     self.on_block_build(x, y, z)
+2016-06-18 15:48:10+0300 [-]   File "./scripts/boss.py", line 41, in on_block_build
+2016-06-18 15:48:10+0300 [-]     self.protocol.initializeBossMode()
+2016-06-18 15:48:10+0300 [-]   File "./scripts/boss.py", line 51, in initializeBossMode
+2016-06-18 15:48:10+0300 [-]     self.send_chat('Choosing boss');
+2016-06-18 15:48:10+0300 [-] NameError: global name 'self' is not defined
+2016-06-18 15:48:32+0300 [-] Received SIGINT, shutting down.
+2016-06-18 15:48:32+0300 [-] Main loop terminated.
+2016-06-18 15:48:33+0300 [-] pyspades server started on Sat Jun 18 15:48:33 2016
+2016-06-18 15:48:33+0300 [-] Log opened.
+2016-06-18 15:48:33+0300 [-] Generating map 'random #1282951251'...
+2016-06-18 15:48:36+0300 [-] Map loaded successfully.
+2016-06-18 15:48:36+0300 [-] Started server...
+2016-06-18 15:48:37+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 15:48:51+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 15:48:52+0300 [-] Traceback (most recent call last):
+2016-06-18 15:48:52+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 15:48:52+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 15:48:52+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 15:48:52+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 15:48:52+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 15:48:52+0300 [-]     connection.loader_received(packet)
+2016-06-18 15:48:52+0300 [-]   File "../pyspades/server.py", line 518, in loader_received
+2016-06-18 15:48:52+0300 [-]     self.on_block_build(x, y, z)
+2016-06-18 15:48:52+0300 [-]   File "./scripts/boss.py", line 41, in on_block_build
+2016-06-18 15:48:52+0300 [-]     self.protocol.initializeBossMode()
+2016-06-18 15:48:52+0300 [-]   File "./scripts/boss.py", line 51, in initializeBossMode
+2016-06-18 15:48:52+0300 [-]     protocol.send_chat('Choosing boss');
+2016-06-18 15:48:52+0300 [-] TypeError: unbound method send_chat() must be called with FeatureProtocol instance as first argument (got str instance instead)
+2016-06-18 15:49:24+0300 [-] Received SIGINT, shutting down.
+2016-06-18 15:49:24+0300 [-] Main loop terminated.
+2016-06-18 15:49:25+0300 [-] pyspades server started on Sat Jun 18 15:49:25 2016
+2016-06-18 15:49:25+0300 [-] Log opened.
+2016-06-18 15:49:25+0300 [-] Generating map 'random #404528646'...
+2016-06-18 15:49:28+0300 [-] Map loaded successfully.
+2016-06-18 15:49:28+0300 [-] Started server...
+2016-06-18 15:49:29+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 15:49:40+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 15:49:42+0300 [-] Traceback (most recent call last):
+2016-06-18 15:49:42+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 15:49:42+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 15:49:42+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 15:49:42+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 15:49:42+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 15:49:42+0300 [-]     connection.loader_received(packet)
+2016-06-18 15:49:42+0300 [-]   File "../pyspades/server.py", line 518, in loader_received
+2016-06-18 15:49:42+0300 [-]     self.on_block_build(x, y, z)
+2016-06-18 15:49:42+0300 [-]   File "./scripts/boss.py", line 41, in on_block_build
+2016-06-18 15:49:42+0300 [-]     self.protocol.initializeBossMode()
+2016-06-18 15:49:42+0300 [-]   File "./scripts/boss.py", line 51, in initializeBossMode
+2016-06-18 15:49:42+0300 [-]     self.protocol.send_chat('Choosing boss');
+2016-06-18 15:49:42+0300 [-] NameError: global name 'self' is not defined
+2016-06-18 15:49:42+0300 [-] Traceback (most recent call last):
+2016-06-18 15:49:42+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 15:49:42+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 15:49:42+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 15:49:42+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 15:49:42+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 15:49:42+0300 [-]     connection.loader_received(packet)
+2016-06-18 15:49:42+0300 [-]   File "../pyspades/server.py", line 518, in loader_received
+2016-06-18 15:49:42+0300 [-]     self.on_block_build(x, y, z)
+2016-06-18 15:49:42+0300 [-]   File "./scripts/boss.py", line 41, in on_block_build
+2016-06-18 15:49:42+0300 [-]     self.protocol.initializeBossMode()
+2016-06-18 15:49:42+0300 [-]   File "./scripts/boss.py", line 51, in initializeBossMode
+2016-06-18 15:49:42+0300 [-]     self.protocol.send_chat('Choosing boss');
+2016-06-18 15:49:42+0300 [-] NameError: global name 'self' is not defined
+2016-06-18 15:51:00+0300 [-] Received SIGINT, shutting down.
+2016-06-18 15:51:00+0300 [-] Main loop terminated.
+2016-06-18 15:51:01+0300 [-] pyspades server started on Sat Jun 18 15:51:01 2016
+2016-06-18 15:51:01+0300 [-] Log opened.
+2016-06-18 15:51:01+0300 [-] Generating map 'random #971423926'...
+2016-06-18 15:51:04+0300 [-] Map loaded successfully.
+2016-06-18 15:51:04+0300 [-] Started server...
+2016-06-18 15:51:04+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 15:51:16+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 15:51:17+0300 [-] Traceback (most recent call last):
+2016-06-18 15:51:17+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 15:51:17+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 15:51:17+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 15:51:17+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 15:51:17+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 15:51:17+0300 [-]     connection.loader_received(packet)
+2016-06-18 15:51:17+0300 [-]   File "../pyspades/server.py", line 518, in loader_received
+2016-06-18 15:51:17+0300 [-]     self.on_block_build(x, y, z)
+2016-06-18 15:51:17+0300 [-]   File "./scripts/boss.py", line 41, in on_block_build
+2016-06-18 15:51:17+0300 [-]     self.protocol.initializeBossMode()
+2016-06-18 15:51:17+0300 [-]   File "./scripts/boss.py", line 52, in initializeBossMode
+2016-06-18 15:51:17+0300 [-]     self.connections[random.randint(1, playerCount)].connection.makeBoss()
+2016-06-18 15:51:17+0300 [-] NameError: global name 'playerCount' is not defined
+2016-06-18 15:51:35+0300 [-] Received SIGINT, shutting down.
+2016-06-18 15:51:35+0300 [-] Main loop terminated.
+2016-06-18 15:51:36+0300 [-] pyspades server started on Sat Jun 18 15:51:36 2016
+2016-06-18 15:51:36+0300 [-] Log opened.
+2016-06-18 15:51:36+0300 [-] Generating map 'random #1752274595'...
+2016-06-18 15:51:38+0300 [-] Map loaded successfully.
+2016-06-18 15:51:38+0300 [-] Started server...
+2016-06-18 15:51:39+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 15:51:48+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 15:51:49+0300 [-] Traceback (most recent call last):
+2016-06-18 15:51:49+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 15:51:49+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 15:51:49+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 15:51:49+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 15:51:49+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 15:51:49+0300 [-]     connection.loader_received(packet)
+2016-06-18 15:51:49+0300 [-]   File "../pyspades/server.py", line 518, in loader_received
+2016-06-18 15:51:49+0300 [-]     self.on_block_build(x, y, z)
+2016-06-18 15:51:49+0300 [-]   File "./scripts/boss.py", line 41, in on_block_build
+2016-06-18 15:51:49+0300 [-]     self.protocol.initializeBossMode()
+2016-06-18 15:51:49+0300 [-]   File "./scripts/boss.py", line 52, in initializeBossMode
+2016-06-18 15:51:49+0300 [-]     self.connections[random.randint(1, self.playerCount)].connection.makeBoss()
+2016-06-18 15:51:49+0300 [-]   File "/usr/lib64/python2.7/random.py", line 242, in randint
+2016-06-18 15:51:49+0300 [-]     return self.randrange(a, b+1)
+2016-06-18 15:51:49+0300 [-]   File "/usr/lib64/python2.7/random.py", line 218, in randrange
+2016-06-18 15:51:49+0300 [-]     raise ValueError, "empty range for randrange() (%d,%d, %d)" % (istart, istop, width)
+2016-06-18 15:51:49+0300 [-] ValueError: empty range for randrange() (1,1, 0)
+2016-06-18 15:52:29+0300 [-] Received SIGINT, shutting down.
+2016-06-18 15:52:29+0300 [-] Main loop terminated.
+2016-06-18 15:52:29+0300 [-] pyspades server started on Sat Jun 18 15:52:29 2016
+2016-06-18 15:52:29+0300 [-] Log opened.
+2016-06-18 15:52:29+0300 [-] Generating map 'random #1578071460'...
+2016-06-18 15:52:33+0300 [-] Map loaded successfully.
+2016-06-18 15:52:33+0300 [-] Started server...
+2016-06-18 15:52:33+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 15:52:43+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 15:52:44+0300 [-] Traceback (most recent call last):
+2016-06-18 15:52:44+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 15:52:44+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 15:52:44+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 15:52:44+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 15:52:44+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 15:52:44+0300 [-]     connection.loader_received(packet)
+2016-06-18 15:52:44+0300 [-]   File "../pyspades/server.py", line 518, in loader_received
+2016-06-18 15:52:44+0300 [-]     self.on_block_build(x, y, z)
+2016-06-18 15:52:44+0300 [-]   File "./scripts/boss.py", line 41, in on_block_build
+2016-06-18 15:52:44+0300 [-]     self.protocol.initializeBossMode()
+2016-06-18 15:52:44+0300 [-]   File "./scripts/boss.py", line 52, in initializeBossMode
+2016-06-18 15:52:44+0300 [-]     self.connections[1].connection.makeBoss()
+2016-06-18 15:52:44+0300 [-] AttributeError: 'BossConnection' object has no attribute 'connection'
+2016-06-18 15:53:02+0300 [-] Received SIGINT, shutting down.
+2016-06-18 15:53:02+0300 [-] Main loop terminated.
+2016-06-18 15:53:03+0300 [-] pyspades server started on Sat Jun 18 15:53:03 2016
+2016-06-18 15:53:03+0300 [-] Log opened.
+2016-06-18 15:53:03+0300 [-] Generating map 'random #1682694160'...
+2016-06-18 15:53:07+0300 [-] Map loaded successfully.
+2016-06-18 15:53:07+0300 [-] Started server...
+2016-06-18 15:53:07+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 15:53:16+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 15:53:18+0300 [-] Traceback (most recent call last):
+2016-06-18 15:53:18+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 15:53:18+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 15:53:18+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 15:53:18+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 15:53:18+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 15:53:18+0300 [-]     connection.loader_received(packet)
+2016-06-18 15:53:18+0300 [-]   File "../pyspades/server.py", line 518, in loader_received
+2016-06-18 15:53:18+0300 [-]     self.on_block_build(x, y, z)
+2016-06-18 15:53:18+0300 [-]   File "./scripts/boss.py", line 41, in on_block_build
+2016-06-18 15:53:18+0300 [-]     self.protocol.initializeBossMode()
+2016-06-18 15:53:18+0300 [-]   File "./scripts/boss.py", line 52, in initializeBossMode
+2016-06-18 15:53:18+0300 [-]     self.connections[1].makeBoss()
+2016-06-18 15:53:18+0300 [-] TypeError: makeBoss() takes no arguments (1 given)
+2016-06-18 15:53:29+0300 [-] Received SIGINT, shutting down.
+2016-06-18 15:53:29+0300 [-] Main loop terminated.
+2016-06-18 15:53:29+0300 [-] pyspades server started on Sat Jun 18 15:53:29 2016
+2016-06-18 15:53:29+0300 [-] Log opened.
+2016-06-18 15:53:29+0300 [-] Generating map 'random #1734421282'...
+2016-06-18 15:53:33+0300 [-] Map loaded successfully.
+2016-06-18 15:53:33+0300 [-] Started server...
+2016-06-18 15:53:33+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 15:53:46+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 15:53:47+0300 [-] lol
+2016-06-18 15:54:38+0300 [-] Received SIGINT, shutting down.
+2016-06-18 15:54:38+0300 [-] Main loop terminated.
+2016-06-18 15:54:39+0300 [-] pyspades server started on Sat Jun 18 15:54:39 2016
+2016-06-18 15:54:39+0300 [-] Log opened.
+2016-06-18 15:54:39+0300 [-] Generating map 'random #125646670'...
+2016-06-18 15:54:42+0300 [-] Map loaded successfully.
+2016-06-18 15:54:43+0300 [-] Started server...
+2016-06-18 15:54:43+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 15:54:58+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 16:01:05+0300 [-] Received SIGINT, shutting down.
+2016-06-18 16:01:05+0300 [-] Main loop terminated.
+2016-06-18 16:01:06+0300 [-] pyspades server started on Sat Jun 18 16:01:06 2016
+2016-06-18 16:01:06+0300 [-] Log opened.
+2016-06-18 16:01:06+0300 [-] Generating map 'random #251426629'...
+2016-06-18 16:01:08+0300 [-] Map loaded successfully.
+2016-06-18 16:01:08+0300 [-] Started server...
+2016-06-18 16:01:09+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 16:01:21+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 16:02:32+0300 [-] Received SIGINT, shutting down.
+2016-06-18 16:02:32+0300 [-] Main loop terminated.
+2016-06-18 16:02:33+0300 [-] pyspades server started on Sat Jun 18 16:02:33 2016
+2016-06-18 16:02:33+0300 [-] Log opened.
+2016-06-18 16:02:33+0300 [-] Generating map 'random #1114437884'...
+2016-06-18 16:02:36+0300 [-] Map loaded successfully.
+2016-06-18 16:02:36+0300 [-] Started server...
+2016-06-18 16:02:37+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 16:02:59+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 16:17:02+0300 [-] Received SIGINT, shutting down.
+2016-06-18 16:17:02+0300 [-] Main loop terminated.
+2016-06-18 16:17:02+0300 [-] pyspades server started on Sat Jun 18 16:17:02 2016
+2016-06-18 16:17:02+0300 [-] Log opened.
+2016-06-18 16:17:02+0300 [-] Generating map 'random #885672780'...
+2016-06-18 16:17:05+0300 [-] Map loaded successfully.
+2016-06-18 16:17:05+0300 [-] Started server...
+2016-06-18 16:17:05+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 16:17:16+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 16:17:32+0300 [-] Received SIGINT, shutting down.
+2016-06-18 16:17:32+0300 [-] Main loop terminated.
+2016-06-18 16:17:33+0300 [-] pyspades server started on Sat Jun 18 16:17:33 2016
+2016-06-18 16:17:33+0300 [-] Log opened.
+2016-06-18 16:17:33+0300 [-] Generating map 'random #1782649330'...
+2016-06-18 16:17:36+0300 [-] Map loaded successfully.
+2016-06-18 16:17:36+0300 [-] Started server...
+2016-06-18 16:17:37+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 16:17:49+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 16:17:58+0300 [-] Received SIGINT, shutting down.
+2016-06-18 16:17:58+0300 [-] Main loop terminated.
+2016-06-18 16:18:17+0300 [-] pyspades server started on Sat Jun 18 16:18:17 2016
+2016-06-18 16:18:17+0300 [-] Log opened.
+2016-06-18 16:18:17+0300 [-] Generating map 'random #225408808'...
+2016-06-18 16:18:19+0300 [-] Map loaded successfully.
+2016-06-18 16:18:19+0300 [-] Started server...
+2016-06-18 16:18:19+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 16:18:24+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 16:18:34+0300 [-] Architektor_kun disconnected!
+2016-06-18 16:20:04+0300 [-] Received SIGINT, shutting down.
+2016-06-18 16:20:04+0300 [-] Main loop terminated.
+2016-06-18 16:20:05+0300 [-] pyspades server started on Sat Jun 18 16:20:05 2016
+2016-06-18 16:20:05+0300 [-] Log opened.
+2016-06-18 16:20:05+0300 [-] Generating map 'random #253234742'...
+2016-06-18 16:20:06+0300 [-] Map loaded successfully.
+2016-06-18 16:20:06+0300 [-] Started server...
+2016-06-18 16:20:07+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 16:20:34+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 16:20:47+0300 [-] LOLOL
+2016-06-18 16:20:49+0300 [-] LOLOL
+2016-06-18 16:20:49+0300 [-] LOLOL
+2016-06-18 16:22:32+0300 [-] Received SIGINT, shutting down.
+2016-06-18 16:22:32+0300 [-] Main loop terminated.
+2016-06-18 16:22:32+0300 [-] pyspades server started on Sat Jun 18 16:22:32 2016
+2016-06-18 16:22:32+0300 [-] Log opened.
+2016-06-18 16:22:33+0300 [-] Generating map 'random #834218791'...
+2016-06-18 16:22:35+0300 [-] Map loaded successfully.
+2016-06-18 16:22:35+0300 [-] Started server...
+2016-06-18 16:22:35+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 16:22:44+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 16:22:44+0300 [-] Traceback (most recent call last):
+2016-06-18 16:22:44+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 16:22:44+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 16:22:44+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 16:22:44+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 16:22:44+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 16:22:44+0300 [-]     connection.loader_received(packet)
+2016-06-18 16:22:44+0300 [-]   File "../pyspades/server.py", line 260, in loader_received
+2016-06-18 16:22:44+0300 [-]     self.spawn()
+2016-06-18 16:22:44+0300 [-]   File "../pyspades/server.py", line 749, in spawn
+2016-06-18 16:22:44+0300 [-]     self.on_spawn((x, y, z))
+2016-06-18 16:22:44+0300 [-] TypeError: on_spawn() takes exactly 1 argument (2 given)
+2016-06-18 16:22:57+0300 [-] <Architektor_kun> /kill  -> You can't use this command
+2016-06-18 16:23:08+0300 [-] <Architektor_kun> /login bunimo33
+2016-06-18 16:23:10+0300 [-] <Architektor_kun> /kill  -> Invalid number of arguments for kill
+2016-06-18 16:23:13+0300 [-] <Architektor_kun> /kill archi
+2016-06-18 16:23:28+0300 [-] Unhandled Error
+	Traceback (most recent call last):
+	  File "run.py", line 1088, in <module>
+	    reactor.run()
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/base.py", line 1194, in run
+	    self.mainLoop()
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/base.py", line 1203, in mainLoop
+	    self.runUntilCurrent()
+	--- <exception caught here> ---
+	  File "/home/syberic/AOSServer/PySnip/venv/lib/python2.7/site-packages/twisted/internet/base.py", line 825, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "../pyspades/server.py", line 749, in spawn
+	    self.on_spawn((x, y, z))
+	exceptions.TypeError: on_spawn() takes exactly 1 argument (2 given)
+	
+2016-06-18 16:24:30+0300 [-] Received SIGINT, shutting down.
+2016-06-18 16:24:30+0300 [-] Main loop terminated.
+2016-06-18 16:24:31+0300 [-] pyspades server started on Sat Jun 18 16:24:31 2016
+2016-06-18 16:24:31+0300 [-] Log opened.
+2016-06-18 16:24:31+0300 [-] Generating map 'random #1408866899'...
+2016-06-18 16:24:34+0300 [-] Map loaded successfully.
+2016-06-18 16:24:34+0300 [-] Started server...
+2016-06-18 16:24:34+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 16:24:47+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 16:24:47+0300 [-] Traceback (most recent call last):
+2016-06-18 16:24:47+0300 [-]   File "../pyspades/protocol.py", line 165, in update
+2016-06-18 16:24:47+0300 [-]     self.data_received(peer, event.packet)
+2016-06-18 16:24:47+0300 [-]   File "run.py", line 935, in data_received
+2016-06-18 16:24:47+0300 [-]     ServerProtocol.data_received(self, peer, packet)
+2016-06-18 16:24:47+0300 [-]   File "../pyspades/protocol.py", line 117, in data_received
+2016-06-18 16:24:47+0300 [-]     connection.loader_received(packet)
+2016-06-18 16:24:47+0300 [-]   File "../pyspades/server.py", line 260, in loader_received
+2016-06-18 16:24:47+0300 [-]     self.spawn()
+2016-06-18 16:24:47+0300 [-]   File "../pyspades/server.py", line 749, in spawn
+2016-06-18 16:24:47+0300 [-]     self.on_spawn((x, y, z))
+2016-06-18 16:24:47+0300 [-] TypeError: on_spawn() takes exactly 4 arguments (2 given)
+2016-06-18 16:25:12+0300 [-] Received SIGINT, shutting down.
+2016-06-18 16:25:12+0300 [-] Main loop terminated.
+2016-06-18 16:25:13+0300 [-] pyspades server started on Sat Jun 18 16:25:13 2016
+2016-06-18 16:25:13+0300 [-] Log opened.
+2016-06-18 16:25:13+0300 [-] Generating map 'random #382275140'...
+2016-06-18 16:25:16+0300 [-] Map loaded successfully.
+2016-06-18 16:25:16+0300 [-] Started server...
+2016-06-18 16:25:16+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 16:25:24+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 16:25:24+0300 [-] {'protocol': <scripts.boss.BossProtocol object at 0x7fdf15d3ef10>, 'rapids': <pyspades.server.SlidingWindow object at 0x7fdf14f12790>, 'rapid_hack_detect': True, 'grenades': 3, 'player_id': 0, 'saved_loaders': None, 'speedhack_detect': True, 'spawn_call': None, 'weapon_object': <pyspades.weapon.Rifle object at 0x7fdf130d0d90>, 'tool': 0, 'blocks': 50, 'hp': 100, 'respawn_time': 16, 'world_object': <pyspades.world.Character object at 0x7fdf15d40670>, 'address': (u'127.0.0.1', 50326), 'peer': <enet.Peer object at 0x7fdf1dc9b690>, 'name': 'Architektor_kun', 'rights': AttributeSet([]), 'weapon': 0, 'printable_name': 'Architektor_kun', 'user_types': AttributeSet([]), 'team': <__main__.FeatureTeam object at 0x7fdf15d5bb10>, 'map_data': None}
+2016-06-18 16:25:40+0300 [-] <Architektor_kun> /login  -> Invalid number of arguments for login
+2016-06-18 16:25:43+0300 [-] <Architektor_kun> /logni bunimo33
+2016-06-18 16:25:46+0300 [-] <Architektor_kun> /login bunimo33
+2016-06-18 16:25:48+0300 [-] <Architektor_kun> /kill ar
+2016-06-18 16:25:52+0300 [-] {'streak': 0, 'protocol': <scripts.boss.BossProtocol object at 0x7fdf15d3ef10>, 'rapids': <pyspades.server.SlidingWindow object at 0x7fdf14f12790>, 'color': (111, 111, 111), 'rapid_hack_detect': True, 'grenades': 3, 'player_id': 0, 'saved_loaders': None, 'speedhack_detect': False, 'spawn_call': None, 'weapon_object': <pyspades.weapon.Rifle object at 0x7fdf130d0d90>, 'last_position_update': 1466256348.34173, 'tool': 0, 'blocks': 50, 'hp': 100, 'respawn_time': 16, 'world_object': <pyspades.world.Character object at 0x7fdf15d40670>, 'address': (u'127.0.0.1', 50326), 'peer': <enet.Peer object at 0x7fdf1dc9b690>, 'name': 'Architektor_kun', 'rights': AttributeSet(['mute', 'ip', 'servername', 'dban', 'rotationadd', 'unlock', 'kill', 'teleport', 'timelimit', 'god', 'revertrotation', 'togglebuild', 'fog', 'master', 'wban', 'lock', 'unstick', 'unban', 'kick', 'map', 'move', 'goto', 'heal', 'tpsilent', 'toggleteamkill', 'undoban', 'invisible', 'globalchat', 'rotation', 'togglekill', 'fly', 'advance', 'hban', 'unmute', 'say', 'whowas', 'switch', 'resetgame', 'setbalance', 'ban', 'godbuild', 'where', 'banip']), 'admin': True, 'weapon': 0, 'printable_name': 'Architektor_kun', 'user_types': AttributeSet([u'admin']), 'team': <__main__.FeatureTeam object at 0x7fdf15d5bb10>, 'map_data': None}
+2016-06-18 16:26:04+0300 [-] Received SIGINT, shutting down.
+2016-06-18 16:26:04+0300 [-] Main loop terminated.
+2016-06-18 16:26:04+0300 [-] pyspades server started on Sat Jun 18 16:26:04 2016
+2016-06-18 16:26:04+0300 [-] Log opened.
+2016-06-18 16:26:04+0300 [-] Generating map 'random #1758524173'...
+2016-06-18 16:26:08+0300 [-] Map loaded successfully.
+2016-06-18 16:26:08+0300 [-] Started server...
+2016-06-18 16:26:09+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 16:26:19+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 16:26:19+0300 [-] {'protocol': <scripts.boss.BossProtocol object at 0x7fc03e50bf10>, 'rapids': <pyspades.server.SlidingWindow object at 0x7fc03d6da790>, 'rapid_hack_detect': True, 'grenades': 3, 'player_id': 0, 'saved_loaders': None, 'speedhack_detect': True, 'spawn_call': None, 'weapon_object': <pyspades.weapon.Rifle object at 0x7fc03c099d90>, 'tool': 1, 'blocks': 50, 'hp': 100, 'respawn_time': 16, 'world_object': <pyspades.world.Character object at 0x7fc03e50dde0>, 'address': (u'127.0.0.1', 42705), 'peer': <enet.Peer object at 0x7fc046468690>, 'name': 'Architektor_kun', 'rights': AttributeSet([]), 'weapon': 0, 'printable_name': 'Architektor_kun', 'user_types': AttributeSet([]), 'team': <__main__.FeatureTeam object at 0x7fc03e528b10>, 'last_switch': 1466256379.378898, 'map_data': None}
+2016-06-18 16:33:07+0300 [-] Received SIGINT, shutting down.
+2016-06-18 16:33:07+0300 [-] Main loop terminated.
+2016-06-18 16:33:08+0300 [-] pyspades server started on Sat Jun 18 16:33:08 2016
+2016-06-18 16:33:08+0300 [-] Log opened.
+2016-06-18 16:33:08+0300 [-] Generating map 'random #381425189'...
+2016-06-18 16:33:10+0300 [-] Map loaded successfully.
+2016-06-18 16:33:10+0300 [-] Started server...
+2016-06-18 16:33:11+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 16:33:23+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 16:57:11+0300 [-] Received SIGINT, shutting down.
+2016-06-18 16:57:12+0300 [-] Main loop terminated.
+2016-06-18 17:00:00+0300 [-] pyspades server started on Sat Jun 18 17:00:00 2016
+2016-06-18 17:00:00+0300 [-] Log opened.
+2016-06-18 17:00:00+0300 [-] Generating map 'random #1015008547'...
+2016-06-18 17:00:02+0300 [-] Map loaded successfully.
+2016-06-18 17:00:02+0300 [-] Started server...
+2016-06-18 17:00:02+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 17:00:10+0300 [-] Architektor_kun (IP 127.0.0.1, ID 0) entered the game!
+2016-06-18 17:00:30+0300 [-] Received SIGINT, shutting down.
+2016-06-18 17:00:30+0300 [-] Main loop terminated.
+2016-06-18 17:01:25+0300 [-] pyspades server started on Sat Jun 18 17:01:25 2016
+2016-06-18 17:01:25+0300 [-] Log opened.
+2016-06-18 17:01:25+0300 [-] Generating map 'random #600818853'...
+2016-06-18 17:01:27+0300 [-] Map loaded successfully.
+2016-06-18 17:01:27+0300 [-] Started server...
+2016-06-18 17:01:28+0300 [-] Server identifier is aos://1323108803:32887
+2016-06-18 17:01:28+0300 [-] Received SIGINT, shutting down.
+2016-06-18 17:01:28+0300 [-] Main loop terminated.

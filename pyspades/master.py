@@ -78,12 +78,12 @@ class MasterConnection(BaseConnection):
             self.defer = None
     
     def set_count(self, value):
-        add_server.count = value
+        add_server.count = 20 + value
         self.send_contained(add_server)
     
     def send_server(self):
         protocol = self.server_protocol
-        add_server.count = None
+        add_server.count = 20
         add_server.name = protocol.name[:MAX_SERVER_NAME_SIZE]
         add_server.game_mode = protocol.get_mode_name()[:MAX_GAME_MODE_SIZE]
         add_server.map = protocol.map_info.short_name[:MAX_MAP_NAME_SIZE]

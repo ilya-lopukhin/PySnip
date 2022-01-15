@@ -678,9 +678,9 @@ class ServerConnection(BaseConnection):
         self.send_contained(position_data)
     
     def refill(self, local = False):
-        self.hp = 100
-        self.grenades = 3
-        self.blocks = 50
+        self.hp = 120
+        self.grenades = 1
+        self.blocks = 5
         self.weapon_object.restock()
         if not local:
             self.send_contained(restock)
@@ -854,7 +854,7 @@ class ServerConnection(BaseConnection):
     def set_hp(self, value, hit_by = None, type = WEAPON_KILL, 
                hit_indicator = None, grenade = None):
         value = int(value)
-        self.hp = max(0, min(100, value))
+        self.hp = max(0, min(120, value))
         if self.hp <= 0:
             self.kill(hit_by, type, grenade)
             return

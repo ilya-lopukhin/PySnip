@@ -36,7 +36,6 @@ Changelog
 # Edits by iCherry, Hourai (Yui)
 # Bugfix by lecom ;)
 
-from pyspades.contained import killaction
 from pyspades.server import grenade_packet
 from pyspades.world import Grenade
 from pyspades.common import Vertex3, make_color
@@ -419,11 +418,6 @@ def apply_script(protocol, connection, config):
                 invis_time = [5, 7, 13]
                 lvl_time = invis_time[player.intel_p_lvl[INVIS] - 1]
                 self.send_chat('You are INVISIBLE for %d seconds now!' % lvl_time)
-                kill_action = KillAction()
-                kill_action.kill_type = choice([GRENADE_KILL, FALL_KILL])
-                kill_action.player_id = kill_action.killer_id = player.player_id
-                callLater(1.0 / NETWORK_FPS, protocol.send_contained,
-                        kill_action, sender = player)
             else:
                 self.send_chat('You are now VISIBLE!')
                 x, y, z = player.world_object.position.get()

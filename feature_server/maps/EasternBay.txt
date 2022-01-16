@@ -1,0 +1,7 @@
+name = 'Eastern Bay'
+version = '1.2'
+author = 'Sasquatch'
+description = 'A slice of the Adirondack State Park in New York.'
+extensions = {
+	'tow_cp_points': [(64,448),(110,394),(244,359),(260,143),(394,110),(448,64)]
+}

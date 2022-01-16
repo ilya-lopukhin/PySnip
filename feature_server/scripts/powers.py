@@ -36,6 +36,7 @@ Changelog
 # Edits by iCherry, Hourai (Yui)
 # Bugfix by lecom ;)
 
+from pyspades.contained import KillAction
 from pyspades.server import grenade_packet
 from pyspades.world import Grenade
 from pyspades.common import Vertex3, make_color
@@ -50,7 +51,7 @@ import buildbox
 import cbc
 
 ARMOR, DEADLY_DICE, TEAMMATE, TELEP, REGEN, POISON, NADEPL, ERECTOR, JETPACK, INVIS = xrange(10)
-TP_RANGE = [0, 24, 32, 64]
+TP_RANGE = [0, 48, 64, 96]
 
 def clearpowers(connection):
     connection.intel_clear()
@@ -187,7 +188,6 @@ add(pp)
 def current(connection):
     connection.send_chat("Type /clearpowers to remove all your current powers")
     message = "You have " + connection.explain_power()
-    connection.send_chat(message)
     return message
 add(current)
 
@@ -418,6 +418,11 @@ def apply_script(protocol, connection, config):
                 invis_time = [5, 7, 13]
                 lvl_time = invis_time[player.intel_p_lvl[INVIS] - 1]
                 self.send_chat('You are INVISIBLE for %d seconds now!' % lvl_time)
+                kill_action = KillAction()
+                kill_action.kill_type = choice([GRENADE_KILL, FALL_KILL])
+                kill_action.player_id = kill_action.killer_id = player.player_id
+                callLater(1.0 / NETWORK_FPS, protocol.send_contained,
+                        kill_action, sender = player)
             else:
                 self.send_chat('You are now VISIBLE!')
                 x, y, z = player.world_object.position.get()
@@ -456,7 +461,17 @@ def apply_script(protocol, connection, config):
                 return
             self.headshot_splode = False
             if self.poison > 0 and self.poisoner is not None and self.poisoner.world_object is not None:
-                self.hit(self.poison, self.poisoner)
+                if self.hp > self.poison:
+                    self.hit(self.poison, self.poisoner)
+                else:
+                    kill_action = KillAction()
+                    kill_action.kill_type = MELEE_KILL
+                    kill_action.player_id = self.player_id
+                    kill_action.killer_id = self.poisoner.player_id
+                    self.send_chat('%s poison killed you' % self.poisoner.name)
+                    self.poisoner.send_chat('your poison killed %s' % self.name)
+                    callLater(1.0 / NETWORK_FPS, protocol.send_contained,
+                            kill_action, sender = player)
 
             elif self.intel_p_lvl[4] > 0:
                 if self.intel_p_lvl[4] == 3:

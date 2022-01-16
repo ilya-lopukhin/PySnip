@@ -356,7 +356,7 @@ def apply_script(protocol, connection, config):
                 invis_time = [5, 7, 13]
                 lvl_time = invis_time[self.intel_p_lvl[INVIS] - 1]
                 self.invis()
-                calLlater(lvl_time, self.invis)
+                callLater(lvl_time, self.invis)
             elif self.intel_p_lvl[INVIS] and self.invis_uses == 0 and sprint and self.tool == SPADE_TOOL:
                 self.send_chat('Invisibility cloak is NOT CHARGED')
 

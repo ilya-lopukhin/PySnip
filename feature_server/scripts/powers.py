@@ -415,7 +415,7 @@ def apply_script(protocol, connection, config):
             if player.invisible:
                 invis_time = [5, 7, 13]
                 lvl_time = invis_time[player.intel_p_lvl[INVIS] - 1]
-                self.send_chat('You are INVISIBLE for %d seconds now!' % lvl_time])
+                self.send_chat('You are INVISIBLE for %d seconds now!' % lvl_time)
                 kill_action = KillAction()
                 kill_action.kill_type = choice([GRENADE_KILL, FALL_KILL])
                 kill_action.player_id = kill_action.killer_id = player.player_id

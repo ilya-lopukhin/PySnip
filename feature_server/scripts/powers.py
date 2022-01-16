@@ -422,7 +422,7 @@ def apply_script(protocol, connection, config):
                 callLater(1.0 / NETWORK_FPS, protocol.send_contained,
                         kill_action, sender = player)
             else:
-                self.send_chat('You are now VISIBLE!'])
+                self.send_chat('You are now VISIBLE!')
                 x, y, z = player.world_object.position.get()
                 create_player.player_id = player.player_id
                 create_player.name = player.name

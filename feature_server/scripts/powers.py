@@ -186,6 +186,7 @@ add(pp)
 def current(connection):
     connection.send_chat("Type /clearpowers to remove all your current powers")
     message = "You have " + connection.explain_power()
+    connection.send_chat(message)
     return message
 add(current)
 
@@ -242,8 +243,8 @@ def apply_script(protocol, connection, config):
             message += ("Poison Bullets level %s, " % self.intel_p_lvl[5]) if self.intel_p_lvl[5] > 0 else ""
             message += ("Nadesplosion level %s, " % self.intel_p_lvl[6]) if self.intel_p_lvl[6] > 0 else ""
             message += ("Erector level %s, " % self.intel_p_lvl[7]) if self.intel_p_lvl[7] > 0 else ""
-            message += ("Jetpack level %s" % self.intel_p_lvl[8]) if self.intel_p_lvl[8] > 0 else ""
-            message += ("Invis level %s" % self.intel_p_lvl[9]) if self.intel_p_lvl[9] > 0 else ""
+            message += ("Jetpack level %s, " % self.intel_p_lvl[8]) if self.intel_p_lvl[8] > 0 else ""
+            message += ("Invis level %s, " % self.intel_p_lvl[9]) if self.intel_p_lvl[9] > 0 else ""
             if message == "powers: ":
                 message = "no powers"
             else:
@@ -349,13 +350,13 @@ def apply_script(protocol, connection, config):
                 tools = ['double-jump', 'propulsion', 'jetpack']
                 self.send_chat('You are out of %(tool)s uses' % { 'tool': tools[self.intel_p_lvl[JETPACK]] })
 
-            if self.intel_p_lvl[INVIS] and self.invis_uses > 0 and sprint and self.tool == SPADE:
+            if self.intel_p_lvl[INVIS] and self.invis_uses > 0 and sprint and self.tool == SPADE_TOOL:
                 self.invis_uses = self.invis_uses - 1
                 invis_time = [5, 7, 13]
                 lvl_time = invis_time[self.intel_p_lvl[INVIS] - 1]
                 self.invis()
                 calLlater(lvl_time, self.invis)
-            elif self.intel_p_lvl[INVIS] and self.invis_uses == 0 and sprint and self.tool == SPADE:
+            elif self.intel_p_lvl[INVIS] and self.invis_uses == 0 and sprint and self.tool == SPADE_TOOL:
                 self.send_chat('Invisibility cloak is NOT CHARGED')
 
             return connection.on_animation_update(self, jump, crouch, sneak, sprint)
@@ -381,7 +382,7 @@ def apply_script(protocol, connection, config):
                 self.extra_jumps = 5
             elif self.intel_p_lvl[JETPACK] == 3:
                 self.send_chat('Your JETPACK is refilled, use crouch button in mid-air to use')
-                self.extra_jumps = 35
+                self.extra_jumps = 33
 
             if self.intel_p_lvl[INVIS] > 0:
                 self.send_chat('SPRINT with SPADE to activate invisibility cloak!')

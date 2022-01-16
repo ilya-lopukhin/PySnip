@@ -74,7 +74,7 @@ add(checkpowers)
 
 def power(connection, value = 12):
     value = int(value) - 1
-    if value <= 10:
+    if value >= 11:
         connection.send_chat("Type /c or /current to see current powers")
         connection.send_chat("Type /pp or /powerpref for info on setting prefered power")
         connection.send_chat('3 - Good Teammate     6 - Poison Bullets     7 - Nadesplosion')

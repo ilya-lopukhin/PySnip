@@ -72,9 +72,9 @@ def checkpowers(connection, player_id=None):
 
 add(checkpowers)
 
-def power(connection, value = 10):
+def power(connection, value = 12):
     value = int(value) - 1
-    if value >= 10:
+    if value <= 10:
         connection.send_chat("Type /c or /current to see current powers")
         connection.send_chat("Type /pp or /powerpref for info on setting prefered power")
         connection.send_chat('3 - Good Teammate     6 - Poison Bullets     7 - Nadesplosion')
@@ -137,7 +137,7 @@ def power(connection, value = 10):
         connection.send_chat("Invisibility cloak:")
 add(power)
 
-def p(connection, value = 10):
+def p(connection, value = 12):
     power(connection, value)
 add(p)
 
@@ -165,21 +165,21 @@ def toggle_erector(connection):
     connection.send_chat("Toggled erector power to %r" % connection.Ttoggle_erector)
 add(toggle_erector)
 
-def powerpref(connection, value = 11):
+def powerpref(connection, value = 12):
     value = int(value) - 1
-    if value >= 11:
+    if value >= 10:
         connection.send_chat('3 - Good Teammate     6 - Poison Bullets     7 - Nadesplosion')
         connection.send_chat('2 - Deadly Dice       5 - Regeneration       8 - Erector')
         connection.send_chat('1 - Armor             4 - Teleportation      9 - Jetpack')
         connection.send_chat('                                            10 - Invisibility')
         connection.send_chat("Type /pp or /powerpref # to set a preference")
         connection.send_chat("Preference is ignored on your first intel grab.")
-    elif value < 11:
+    elif value < 10:
         connection.intel_power_pref = value
         connection.send_chat("Preference saved.")
 add(powerpref)
 
-def pp(connection, value = 11):
+def pp(connection, value = 12):
     powerpref(connection, value)
 add(pp)
 
@@ -242,8 +242,8 @@ def apply_script(protocol, connection, config):
             message += ("Poison Bullets level %s, " % self.intel_p_lvl[5]) if self.intel_p_lvl[5] > 0 else ""
             message += ("Nadesplosion level %s, " % self.intel_p_lvl[6]) if self.intel_p_lvl[6] > 0 else ""
             message += ("Erector level %s, " % self.intel_p_lvl[7]) if self.intel_p_lvl[7] > 0 else ""
-            message += ("Jetpack level %s" % self.intel_p_lvl[8]) if self.intel_temp == 8 else message
-            message += ("Invis level %s" % self.intel_p_lvl[9]) if self.intel_temp == 9 else message
+            message += ("Jetpack level %s" % self.intel_p_lvl[8]) if self.intel_p_lvl[8] > 0 else ""
+            message += ("Invis level %s" % self.intel_p_lvl[9]) if self.intel_p_lvl[9] > 0 else ""
             if message == "powers: ":
                 message = "no powers"
             else:
@@ -327,9 +327,9 @@ def apply_script(protocol, connection, config):
                     if dice_roll <= 3 and killer.intel_p_lvl[6] == 1:
                         killer.nadesplode(self)
                 killer.power_kills = killer.power_kills + 1
-                if killer.power_kills == 5:
+                if killer.power_kills == 8:
                     killer.power_kills = 0
-                    killer.send_chat("You get a power-up for 5 streak!")
+                    killer.send_chat("You get a power-up for 8 streak!")
                     killer.intel_upgrade()
             return connection.on_kill(self, killer, type, grenade)
 
@@ -590,7 +590,7 @@ def apply_script(protocol, connection, config):
                 say("You have every power maxed out, what a MONSTER")
                 return False
             dice_roll = random.randint(0, 9)
-            if self.intel_power_pref != 11 and sum(self.intel_p_lvl) != 0:
+            if self.intel_power_pref != 12 and sum(self.intel_p_lvl) != 0:
                 dice_roll = self.intel_power_pref
                 if self.intel_p_lvl[dice_roll] < 3:
                     self.intel_p_lvl[dice_roll] += 1
@@ -612,7 +612,7 @@ def apply_script(protocol, connection, config):
             self.poisoner = None
             self.poison = 0
             self.intel_p_lvl = [0,0,0,0,0,0,0,0,0,0]
-            self.intel_power_pref = 11
+            self.intel_power_pref = 12
             self.intel_temp = False
 
     class IntelPowerProtocol(protocol):

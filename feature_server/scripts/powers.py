@@ -167,7 +167,7 @@ add(toggle_erector)
 
 def powerpref(connection, value = 11):
     value = int(value) - 1
-    if value => 11:
+    if value >= 11:
         connection.send_chat('3 - Good Teammate     6 - Poison Bullets     7 - Nadesplosion')
         connection.send_chat('2 - Deadly Dice       5 - Regeneration       8 - Erector')
         connection.send_chat('1 - Armor             4 - Teleportation      9 - Jetpack')

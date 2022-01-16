@@ -337,25 +337,25 @@ def apply_script(protocol, connection, config):
             if self.intel_p_lvl[JETPACK] and self.extra_jumps > 0 and crouch and self.world_object.velocity.z != 0.0:
                 jump = True
                 self.extra_jumps = self.extra_jumps - 1
-                if self.extra_jumps === 20:
+                if self.extra_jumps == 20:
                     self.send_chat('Your jetpack is starting to run out')
-                elif self.extra_jumps === 10:
+                elif self.extra_jumps == 10:
                     self.send_chat('Your jetpack will run out soon')
                 elif self.extra_jumps < 5 and self.extra_jumps > 1:
                     self.send_chat('You have %s extra jumps', % self.extra_jumps)
                     
                     
-            elif self.intel_p_lvl[JETPACK] and self.extra_jumps === 0 and crouch and self.world_object.velocity.z != 0.0:
+            elif self.intel_p_lvl[JETPACK] and self.extra_jumps == 0 and crouch and self.world_object.velocity.z != 0.0:
                 tools = ['double-jump', 'propulsion', 'jetpack']
                 self.send_chat('You are out of %(tool)s uses' % { 'tool': tools[self.intel_p_lvl[JETPACK]] })
 
-            if self.intel_p_lvl[INVIS] and self.invis_uses > 0 and sprint and self.tool === SPADE:
+            if self.intel_p_lvl[INVIS] and self.invis_uses > 0 and sprint and self.tool == SPADE:
                 self.invis_uses = self.invis_uses - 1
                 invis_time = [5, 7, 13]
                 lvl_time = invis_time[self.intel_p_lvl[INVIS] - 1]
                 self.invis()
                 calLlater(lvl_time, self.invis)
-            elif self.intel_p_lvl[INVIS] and self.invis_uses === 0 and sprint and self.tool === SPADE:
+            elif self.intel_p_lvl[INVIS] and self.invis_uses == 0 and sprint and self.tool == SPADE:
                 self.send_chat('Invisibility cloak is NOT CHARGED')
 
             return connection.on_animation_update(self, jump, crouch, sneak, sprint)

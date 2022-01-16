@@ -35,11 +35,13 @@ Changelog
 # Script by Danke!
 # Edits by iCherry, Hourai (Yui)
 # Bugfix by lecom ;)
+
+from pyspades.contained import killaction
 from pyspades.server import grenade_packet
 from pyspades.world import Grenade
-from pyspades.common import Vertex3
+from pyspades.common import Vertex3, make_color
 from pyspades.collision import distance_3d_vector
-from pyspades.server import block_action
+from pyspades.server import block_action, create_player, set_tool, set_color, input_data, weapon_input
 from pyspades.constants import *
 from commands import add, admin
 from twisted.internet.reactor import callLater, seconds

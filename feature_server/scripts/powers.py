@@ -342,7 +342,7 @@ def apply_script(protocol, connection, config):
                 elif self.extra_jumps == 10:
                     self.send_chat('Your jetpack will run out soon')
                 elif self.extra_jumps < 5 and self.extra_jumps > 1:
-                    self.send_chat('You have %s extra jumps', % self.extra_jumps)
+                    self.send_chat('You have %s extra jumps' % self.extra_jumps)
                     
                     
             elif self.intel_p_lvl[JETPACK] and self.extra_jumps == 0 and crouch and self.world_object.velocity.z != 0.0:

@@ -1,5 +1,5 @@
 {
-    "name" : "LAMPOVIY SERVACHOK",
+    "name" : "LAMPOVII SERVACHOK",
     "motd" : [
         "Dobro pojalovat`. Snova.",
         "Karta %(map_name)s by %(map_author)s",
@@ -25,17 +25,17 @@
         "Rule #2: Cheateroblyad - ne chelovek. Smeytes nad nim. Unijayte ego.",
         "Rule #3: Vse ostalnoe i tak yasno."
     ],
-    "master" : false,
-    "max_players" : 32,
+    "master" : true,
+    "max_players" : 20,
     "max_connections_per_ip" : 3,
     "port" : 32887,
     "network_interface" : "",
 
-    "game_mode" : "boss",
-    "cap_limit" : 10,
-    "default_time_limit" : 120,
+    "game_mode" : "ctf",
+    "cap_limit" : 25,
+    "default_time_limit" : 12000,
     "advance_on_win" : true,
-    "maps" : ["nuketown"],
+    "maps" : ["emperor_palace"],
     "random_rotation" : false,
 
     "respawn_time" : 16,
@@ -44,10 +44,10 @@
     "grief_friendly_fire_time" : 5,
     "spade_teamkills_on_grief" : false,
     "balanced_teams" : 2,
-    "teamswitch_interval" : 0,
+    "teamswitch_interval" : 7,
 
     "speedhack_detect" : true,
-    "votekick_percentage" : 35,
+    "votekick_percentage" : 45,
     "votekick_ban_duration" : 30,
     "votekick_public_votes" : true,
     "votemap_public_votes" : true,
@@ -57,7 +57,7 @@
     "votemap_time" : 120,
     "votemap_percentage" : 80,
 
-    "melee_damage" : 80,
+    "melee_damage" : 50,
     "fall_damage" : true,
     "user_blocks_only" : false,
     "set_god_build" : false,
@@ -73,18 +73,17 @@
     "profile" : false,
 
     "team1" : {
-        "name" : "PLEBS",
-        "color" : [88, 88, 88]
+        "name" : "2ch",
+        "color" : [255, 112, 0]
     },
     "team2" : {
-        "name" : "BOSS",
-        "color" : [0, 0, 0]
+        "name" : "0chan",
+        "color" : [96, 204, 48]
     },
    "passwords" : {
         "admin" : ["bunimo33"],
         "moderator" : ["hujiko23"],
-        "guard" : ["ftgyhu31"],
-        "trusted" : ["trustedHellYeah"]
+        "guard" : ["ftgyhu31"]
     },
     "rights" : {
         "moderator" : ["advance", "cancel", "dban", "fog", "from", "goto", "hackinfo", "hban", "invisible", "ip", "kick", "kickafk", "kill", "map", "master", "move", "mute", "resetgame", "switch", "teleport", "teleport_other", "tpsilent", "togglebuild", "togglekill", "togglevotekick", "trust", "undoban", "unmute", "unstick", "where", "whowas"],
@@ -125,13 +124,28 @@
         "chatprefix" : "."
     },
     "scripts" : [
-        "boss"
+	"rpg",
+	"ks_announce",
+	"powers",
+	"map_extensions",
+        "afk",
+        "blockinfo",
+        "bugfix",
+        "daycycle",
+        "markers",
+        "rapid",
+	"infiblocks",
+        "savemap",
+        "votekick",
+        "welcome",
+	"strongblock"
     ],
 
-    "squad_respawn_time" : 32,
+    "squad_respawn_time" : 20,
     "squad_size" : 4,
-    "auto_squad" : false,
-    "load_saved_map" : false,
+    "auto_squad" : true,
+    "load_saved_map" : true,
     "rollback_on_game_end" : false,
     "afk_time_limit" : 30
 }
+

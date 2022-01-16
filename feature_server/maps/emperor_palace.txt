@@ -1,0 +1,10 @@
+name = 'Emperor Palace'
+version = '1.0'
+author = 'Architektor-kun'
+description = ('Rebel forces attacking emperor palace!')
+fog = (184, 197, 201)
+extensions = { 
+	'water_damage' : 50,
+	'heavens_color' : (250, 130, 40, 255),
+	'tow_cp_points': [(98, 243), (106, 246), (182, 254), (263, 224), (319, 223), (376, 206), (409, 161), (390, 150)]
+}

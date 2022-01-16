@@ -51,8 +51,6 @@ import cbc
 ARMOR, DEADLY_DICE, TEAMMATE, TELEP, REGEN, POISON, NADEPL, ERECTOR, JETPACK, INVIS = xrange(10)
 TP_RANGE = [0, 24, 32, 64]
 
-def invisible(connection):
-
 def clearpowers(connection):
     connection.intel_clear()
     return "You've sucessfully lost all your powers!"

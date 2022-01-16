@@ -48,8 +48,10 @@ import commands
 import buildbox
 import cbc
 
-ARMOR, DEADLY_DICE, TEAMMATE, TELEP, REGEN, POISON, NADEPL, ERECTOR = xrange(8)
-TP_RANGE = [0, 16, 32, 64]
+ARMOR, DEADLY_DICE, TEAMMATE, TELEP, REGEN, POISON, NADEPL, ERECTOR, JETPACK, INVIS = xrange(10)
+TP_RANGE = [0, 24, 32, 64]
+
+def invisible(connection):
 
 def clearpowers(connection):
     connection.intel_clear()
@@ -72,15 +74,16 @@ def checkpowers(connection, player_id=None):
 
 add(checkpowers)
 
-def power(connection, value = 8):
-    value = int(value)
-    if value > 7:
-        connection.send_chat("Type /current to see current powers")
-        connection.send_chat("Type /powerpref for info on setting prefered power")
-        connection.send_chat('2 - Good Teammate     5 - Poison Bullets     6 - Nadesplosion')
-        connection.send_chat('1 - Deadly Dice       4 - Regeneration       7 - Erector')
-        connection.send_chat('0 - Armor             3 - Teleportation')
-        connection.send_chat("Type /power # to read about a power:")
+def power(connection, value = 10):
+    value = int(value) - 1
+    if value >= 10:
+        connection.send_chat("Type /c or /current to see current powers")
+        connection.send_chat("Type /pp or /powerpref for info on setting prefered power")
+        connection.send_chat('3 - Good Teammate     6 - Poison Bullets     7 - Nadesplosion')
+        connection.send_chat('2 - Deadly Dice       5 - Regeneration       8 - Erector')
+        connection.send_chat('1 - Armor             4 - Teleportation      9 - Jetpack')
+        connection.send_chat('                                            10 - Invisibility')
+        connection.send_chat("Type /p # or /power # to read about a power:")
     elif value == ARMOR:
         connection.send_chat("Level 3 - Take 50% damage from body-shots and grenades.")
         connection.send_chat("Level 2 - Take 66% damage from body-shots and grenades.")
@@ -124,7 +127,22 @@ def power(connection, value = 8):
         connection.send_chat("Level 2 - Every block place makes a 4 high pillar (5 uses)")
         connection.send_chat("Level 1 - Every block place makes a 2 high pillar (5 uses)")
         connection.send_chat("The power of Erector (Toggle with /toggle_erector):")
+    elif value == JETPACK:
+        connection.send_chat("Level 3 - You have a JETPACK and you can fly over a big distance")
+        connection.send_chat("Level 2 - You have a short-time PROPULSION engine to leap over obstacles")
+        connection.send_chat("Level 1 - You have a one-time-use DOUBLE-JUMP pneumatic system")
+        connection.send_chat("The power of FLYING, starting with double-jump and ending with JETPACK:")
+    elif value == INVIS:
+        connection.send_chat("Level 3 - You can enter invisibility for 13 seconds")
+        connection.send_chat("Level 2 - You can enter invisibility for 7 seconds")
+        connection.send_chat("Level 1 - You can enter invisibility for 5 seconds")
+        connection.send_chat("Invisibility cloak:")
 add(power)
+
+def p(connection, value = 10):
+    power(connection, value)
+add(p)
+
 
 @admin
 def cheatpower(connection):
@@ -149,18 +167,23 @@ def toggle_erector(connection):
     connection.send_chat("Toggled erector power to %r" % connection.Ttoggle_erector)
 add(toggle_erector)
 
-def powerpref(connection, value = 8):
-    value = int(value)
-    if value > 7:
-        connection.send_chat('2 - Good Teammate     5 - Poison Bullets     6 - Nadesplosion')
-        connection.send_chat('1 - Deadly Dice       4 - Regeneration       7 - Erector')
-        connection.send_chat('0 - Armor             3 - Teleportation')
-        connection.send_chat("Type /powerpref # to set a preference")
+def powerpref(connection, value = 11):
+    value = int(value) - 1
+    if value => 11:
+        connection.send_chat('3 - Good Teammate     6 - Poison Bullets     7 - Nadesplosion')
+        connection.send_chat('2 - Deadly Dice       5 - Regeneration       8 - Erector')
+        connection.send_chat('1 - Armor             4 - Teleportation      9 - Jetpack')
+        connection.send_chat('                                            10 - Invisibility')
+        connection.send_chat("Type /pp or /powerpref # to set a preference")
         connection.send_chat("Preference is ignored on your first intel grab.")
-    elif value <= 8:
+    elif value < 11:
         connection.intel_power_pref = value
         connection.send_chat("Preference saved.")
 add(powerpref)
+
+def pp(connection, value = 11):
+    powerpref(connection, value)
+add(pp)
 
 def current(connection):
     connection.send_chat("Type /clearpowers to remove all your current powers")
@@ -168,13 +191,17 @@ def current(connection):
     return message
 add(current)
 
+def c(connection):
+    current(connection)
+add(c)
+
 def apply_script(protocol, connection, config):
     protocol, connection = cbc.apply_script(protocol, connection, config)
 
     class IntelPowerConnection(connection):
 
         def __init__(self, *args, **kwargs):
-            self.intel_p_lvl = [0,0,0,0,0,0,0,0]
+            self.intel_p_lvl = [0,0,0,0,0,0,0,0,0,0]
             connection.__init__(self, *args, **kwargs)
 
         def on_login(self, name):
@@ -182,6 +209,8 @@ def apply_script(protocol, connection, config):
             self.headshot_splode = False
             self.power_kills = 0
             self.erector_uses = 0
+            self.extra_jumps = 0
+            self.invis_uses = 0
             self.Ttoggle_erector = True
             self.Ttoggle_teleport = True
             self.grenade_immunity_msg_timeout = False
@@ -201,6 +230,8 @@ def apply_script(protocol, connection, config):
             message = ("Poison Bullets level %s" % self.intel_p_lvl[5]) if self.intel_temp == 5 else message
             message = ("Nadesplosion level %s" % self.intel_p_lvl[6]) if self.intel_temp == 6 else message
             message = ("Erector level %s" % self.intel_p_lvl[7]) if self.intel_temp == 7 else message
+            message = ("Jetpack level %s" % self.intel_p_lvl[8]) if self.intel_temp == 8 else message
+            message = ("Invis level %s" % self.intel_p_lvl[9]) if self.intel_temp == 9 else message
             return(message)
 
         def explain_power(self):
@@ -213,6 +244,8 @@ def apply_script(protocol, connection, config):
             message += ("Poison Bullets level %s, " % self.intel_p_lvl[5]) if self.intel_p_lvl[5] > 0 else ""
             message += ("Nadesplosion level %s, " % self.intel_p_lvl[6]) if self.intel_p_lvl[6] > 0 else ""
             message += ("Erector level %s, " % self.intel_p_lvl[7]) if self.intel_p_lvl[7] > 0 else ""
+            message += ("Jetpack level %s" % self.intel_p_lvl[8]) if self.intel_temp == 8 else message
+            message += ("Invis level %s" % self.intel_p_lvl[9]) if self.intel_temp == 9 else message
             if message == "powers: ":
                 message = "no powers"
             else:
@@ -275,7 +308,7 @@ def apply_script(protocol, connection, config):
 
         def on_kill(self, killer, type, grenade):
             if killer != self and killer is not None:
-                self.send_chat("Type /power for more info on Intel Powers")
+                self.send_chat("Type /p or /power for more info on Intel Powers")
                 self.send_chat("You were killed by %s who had %s" % (killer.name, killer.explain_power()))
                 if killer.intel_p_lvl[2] > 0:
                     healcount = 0
@@ -296,11 +329,38 @@ def apply_script(protocol, connection, config):
                     if dice_roll <= 3 and killer.intel_p_lvl[6] == 1:
                         killer.nadesplode(self)
                 killer.power_kills = killer.power_kills + 1
-                if killer.power_kills == 10:
+                if killer.power_kills == 5:
                     killer.power_kills = 0
-                    killer.send_chat("You have reached 10 kills, you get a power-up!")
+                    killer.send_chat("You get a power-up for 5 streak!")
                     killer.intel_upgrade()
             return connection.on_kill(self, killer, type, grenade)
+
+        def on_animation_update(self, jump, crouch, sneak, sprint):
+            if self.intel_p_lvl[JETPACK] and self.extra_jumps > 0 and crouch and self.world_object.velocity.z != 0.0:
+                jump = True
+                self.extra_jumps = self.extra_jumps - 1
+                if self.extra_jumps === 20:
+                    self.send_chat('Your jetpack is starting to run out')
+                elif self.extra_jumps === 10:
+                    self.send_chat('Your jetpack will run out soon')
+                elif self.extra_jumps < 5 and self.extra_jumps > 1:
+                    self.send_chat('You have %s extra jumps', % self.extra_jumps)
+                    
+                    
+            elif self.intel_p_lvl[JETPACK] and self.extra_jumps === 0 and crouch and self.world_object.velocity.z != 0.0:
+                tools = ['double-jump', 'propulsion', 'jetpack']
+                self.send_chat('You are out of %(tool)s uses' % { 'tool': tools[self.intel_p_lvl[JETPACK]] })
+
+            if self.intel_p_lvl[INVIS] and self.invis_uses > 0 and sprint and self.tool === SPADE:
+                self.invis_uses = self.invis_uses - 1
+                invis_time = [5, 7, 13]
+                lvl_time = invis_time[self.intel_p_lvl[INVIS] - 1]
+                self.invis()
+                calLlater(lvl_time, self.invis)
+            elif self.intel_p_lvl[INVIS] and self.invis_uses === 0 and sprint and self.tool === SPADE:
+                self.send_chat('Invisibility cloak is NOT CHARGED')
+
+            return connection.on_animation_update(self, jump, crouch, sneak, sprint)
 
         def on_spawn(self, pos):
             if self.intel_p_lvl[3] == 3:
@@ -315,11 +375,25 @@ def apply_script(protocol, connection, config):
             else:
                 self.erector_uses = 5
 
+            if self.intel_p_lvl[JETPACK] == 1:
+                self.send_chat('Your DOUBLE-JUMP is refilled, use crouch button in mid-air to use')
+                self.extra_jumps = 1
+            elif self.intel_p_lvl[JETPACK] == 2:
+                self.send_chat('Your PROPULSION is refilled, use crouch button in mid-air to use')
+                self.extra_jumps = 5
+            elif self.intel_p_lvl[JETPACK] == 3:
+                self.send_chat('Your JETPACK is refilled, use crouch button in mid-air to use')
+                self.extra_jumps = 35
+
+            if self.intel_p_lvl[INVIS] > 0:
+                self.send_chat('SPRINT with SPADE to activate invisibility cloak!')
+                self.invis_uses = 1
+
             self.power_kills = 0
             self.poisoner = None
             self.poison = 0
             self.intel_downgrade()
-            self.send_chat("Type /power for more information!")
+            self.send_chat("Type /p or /power for more information!")
             self.send_chat("You have %s" % self.explain_power())
             return connection.on_spawn(self, pos)
 
@@ -334,6 +408,53 @@ def apply_script(protocol, connection, config):
                     player.set_hp(player.hp + value, type = FALL_KILL)
                     if player != self:
                         player.send_chat("You have been healed by %s " % self.name)
+
+        def invis(self):
+            protocol = self.protocol
+            player = self
+            player.invisible = not player.invisible
+            player.filter_visibility_data = player.invisible
+            if player.invisible:
+                invis_time = [5, 7, 13]
+                lvl_time = invis_time[player.intel_p_lvl[INVIS] - 1]
+                self.send_chat('You are INVISIBLE for %d seconds now!' % lvl_time])
+                kill_action = KillAction()
+                kill_action.kill_type = choice([GRENADE_KILL, FALL_KILL])
+                kill_action.player_id = kill_action.killer_id = player.player_id
+                callLater(1.0 / NETWORK_FPS, protocol.send_contained,
+                        kill_action, sender = player)
+            else:
+                self.send_chat('You are now VISIBLE!'])
+                x, y, z = player.world_object.position.get()
+                create_player.player_id = player.player_id
+                create_player.name = player.name
+                create_player.x = x
+                create_player.y = y
+                create_player.z = z
+                create_player.weapon = player.weapon
+                create_player.team = player.team.id
+                world_object = player.world_object
+                input_data.player_id = player.player_id
+                input_data.up = world_object.up
+                input_data.down = world_object.down
+                input_data.left = world_object.left
+                input_data.right = world_object.right
+                input_data.jump = world_object.jump
+                input_data.crouch = world_object.crouch
+                input_data.sneak = world_object.sneak
+                input_data.sprint = world_object.sprint
+                set_tool.player_id = player.player_id
+                set_tool.value = player.tool
+                set_color.player_id = player.player_id
+                set_color.value = make_color(*player.color)
+                weapon_input.primary = world_object.primary_fire
+                weapon_input.secondary = world_object.secondary_fire
+                protocol.send_contained(create_player, sender = player, save = True)
+                protocol.send_contained(set_tool, sender = player)
+                protocol.send_contained(set_color, sender = player, save = True)
+                protocol.send_contained(input_data, sender = player)
+                protocol.send_contained(weapon_input, sender = player)
+
 
         def intel_every_second(self):
             if self is None or self.hp <= 0:
@@ -402,7 +523,7 @@ def apply_script(protocol, connection, config):
         def on_flag_capture(self):
             if connection.on_flag_capture(self) is not False:
                 self.intel_temp = False
-                self.send_chat("Type /power for more information!")
+                self.send_chat("Type /p or /power for more information!")
                 self.send_chat("You have %s" % self.explain_power())
             connection.on_flag_capture(self)
 
@@ -467,17 +588,17 @@ def apply_script(protocol, connection, config):
 
         def intel_upgrade(self):
             say = self.send_chat
-            if sum(self.intel_p_lvl) >= 24:
-                say("You have every power maxed out!")
+            if sum(self.intel_p_lvl) >= 30:
+                say("You have every power maxed out, what a MONSTER")
                 return False
-            dice_roll = random.randint(0, 7)
-            if self.intel_power_pref != 8 and sum(self.intel_p_lvl) != 0:
+            dice_roll = random.randint(0, 9)
+            if self.intel_power_pref != 11 and sum(self.intel_p_lvl) != 0:
                 dice_roll = self.intel_power_pref
                 if self.intel_p_lvl[dice_roll] < 3:
                     self.intel_p_lvl[dice_roll] += 1
                     return dice_roll
             while (self.intel_p_lvl[dice_roll] == 3):
-                dice_roll = random.randint(0, 7)
+                dice_roll = random.randint(0, 9)
             self.intel_power_pref = dice_roll if sum(self.intel_p_lvl) != 0 or self.intel_power_pref == 7 else self.intel_power_pref
             self.intel_p_lvl[dice_roll] += 1
             return dice_roll
@@ -492,12 +613,18 @@ def apply_script(protocol, connection, config):
         def intel_clear(self):
             self.poisoner = None
             self.poison = 0
-            self.intel_p_lvl = [0,0,0,0,0,0,0,0]
-            self.intel_power_pref = 8
+            self.intel_p_lvl = [0,0,0,0,0,0,0,0,0,0]
+            self.intel_power_pref = 11
             self.intel_temp = False
 
     class IntelPowerProtocol(protocol):
         intel_second_counter = 0
+        def on_cp_capture(self, territory):
+            for player in territory.players:
+                player.send_chat('You got new power for securing a point!')
+                player.intel_upgrade()
+            protocol.on_cp_capture(self, territory)
+
         def on_game_end(self):
             for player in self.players.values():
                 player.intel_clear()

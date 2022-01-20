@@ -359,8 +359,14 @@ def apply_script(protocol, connection, config):
                 callLater(lvl_time, self.invis)
             elif self.intel_p_lvl[INVIS] and self.invis_uses == 0 and sprint and self.tool == SPADE_TOOL:
                 self.send_chat('Invisibility cloak is NOT CHARGED')
+                self.invis_uses = -1
 
             return connection.on_animation_update(self, jump, crouch, sneak, sprint)
+
+        def on_tool_change(self, tool):
+            if self.invisible:
+                self.send_chat('Changing tool dirupts your cloak')
+                self.invis()
 
         def on_spawn(self, pos):
             if self.intel_p_lvl[3] == 3:
@@ -471,7 +477,7 @@ def apply_script(protocol, connection, config):
                     self.send_chat('%s poison killed you' % self.poisoner.name)
                     self.poisoner.send_chat('your poison killed %s' % self.name)
                     callLater(1.0 / NETWORK_FPS, protocol.send_contained,
-                            kill_action, sender = player)
+                            kill_action, sender = self)
 
             elif self.intel_p_lvl[4] > 0:
                 if self.intel_p_lvl[4] == 3:
